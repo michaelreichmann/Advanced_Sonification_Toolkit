@@ -2,10 +2,12 @@
 
 *Max 9.0.5*
 
-Max Project for the first Version of the Advanced Sonification Toolkit.
-the toolkit enables **movement-based sonification** of recorded sensor data through the following core features:
+Max Project for the first Version of the **Advanced Sonification Toolkit**.
+
 
 ![Toolkit UI](./media/toolkit_Screenshot.png)
+
+The toolkit enables movement-based sonification of recorded sensor data through the following core features:
 
 <br/>
 
