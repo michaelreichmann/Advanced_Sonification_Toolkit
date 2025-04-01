@@ -1,13 +1,15 @@
-# OSC Send
+# Advanced Sonification Toolkit V_1
 
 *Max 9.0.5*
 
 Max Project for the first Version of the Advanced Sonification Toolkit.
 the toolkit enables **movement-based sonification** of recorded sensor data through the following core features:
 
+![Toolkit UI](./media/toolkit_Screenshot.png)
+
 <br/>
 
-#### Functionality Summary
+## Functionality Summary
 - **Modular, Input-Agnostic Design**:
   - Input data as a 2-channel `.wav` file:
     - **Channel 1**: Timestamps
@@ -27,13 +29,11 @@ the toolkit enables **movement-based sonification** of recorded sensor data thro
   - Control over waveform selection, playback, and data shaping.
 
 
-#### User Interface Overview
+## User Interface Overview
 
 The UI of the Sonification Toolkit in Max/MSP is designed to access to playback control, waveform navigation, channel management and data manipulation7filtering. It is modular and supports flexible integration of different sensor channels.
 
-![Toolkit UI](./media/toolkit_Screenshot.png)
-
-#####  Playback Section
+###  Playback Section
 - **Play / Pause / Stop buttons** for controlling the playback of data.
 - **Playback Speed**: Adjustable from 1–1000% .
 - **Data Metrics**:
@@ -41,13 +41,13 @@ The UI of the Sonification Toolkit in Max/MSP is designed to access to playback 
   - Total duration (in seconds).
 
 
-##### Input Channels
+### Input Channels
 - **Channel Selector**: Indicates the number of available channels. Currently supports:
   - Single-channel playback (expandable for multiple sensors).
 - Each input channel gets its own dedicated section for file loading and control.
 
 
-##### Waveform Navigation
+### Waveform Navigation
 - **Navigation Controls**:
   - Zoom in/out functionality for precise waveform inspection.
   - "Select All" option to highlight the entire signal.
@@ -55,22 +55,22 @@ The UI of the Sonification Toolkit in Max/MSP is designed to access to playback 
   - Shows the selection range in seconds.
   - Displays selection start, end, and duration.
 
-##### Channel View (e.g. "Channel 1")
+### Channel View (e.g. "Channel 1")
 Each input channel includes:
 
-###### File Loader
+### File Loader
 - Drag-and-drop or file picker to load a `.wav` file.
 - Displays file path and metadata.
 
-###### File Info
+### File Info
 - Minimum, maximum, and average value of the loaded signal data.
 
-###### Waveform Display
+### Waveform Display
 - Interactive waveform with indication of selected range.
 - Responds to zoom and navigation inputs.
 - Cursor displaying the playback position.
 
-##### Data Processing Controls
+### Data Processing Controls
 - **Interpolation Options**:.
   - Shows latency estimate.
 - **Clamp Data**:
