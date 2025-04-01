@@ -10,7 +10,7 @@ the toolkit enables **movement-based sonification** of recorded sensor data thro
 <br/>
 
 ## Functionality Summary
-- **Modular, Input-Agnostic Design**:
+- **Input:**:
   - Input data as a 2-channel `.wav` file:
     - **Channel 1**: Timestamps
     - **Channel 2**: Signal values
@@ -31,7 +31,7 @@ the toolkit enables **movement-based sonification** of recorded sensor data thro
 
 ## User Interface Overview
 
-The UI of the Sonification Toolkit in Max/MSP is designed to access to playback control, waveform navigation, channel management and data manipulation7filtering. It is modular and supports flexible integration of different sensor channels.
+The UI of the Sonification Toolkit in Max/MSP is designed to access playback control, waveform navigation, channel management and data manipulation7filtering. It is modular and supports flexible integration of different sensor channels.
 
 ###  Playback Section
 - **Play / Pause / Stop buttons** for controlling the playback of data.
@@ -42,30 +42,27 @@ The UI of the Sonification Toolkit in Max/MSP is designed to access to playback 
 
 
 ### Input Channels
-- **Channel Selector**: Indicates the number of available channels. Currently supports:
-  - Single-channel playback (expandable for multiple sensors).
-- Each input channel gets its own dedicated section for file loading and control.
-
+- **Channel Selector**: 
+  - Indicates the number of available channels.
 
 ### Waveform Navigation
 - **Navigation Controls**:
-  - Zoom in/out functionality for precise waveform inspection.
-  - "Select All" option to highlight the entire signal.
+  - Zooming and selection functionality for precise waveform inspection.
+
 - **Time Selection Panel**:
-  - Shows the selection range in seconds.
   - Displays selection start, end, and duration.
 
-### Channel View (e.g. "Channel 1")
+### Channel View
 Each input channel includes:
 
-### File Loader
+#### File Loader
 - Drag-and-drop or file picker to load a `.wav` file.
 - Displays file path and metadata.
 
-### File Info
+#### File Info
 - Minimum, maximum, and average value of the loaded signal data.
 
-### Waveform Display
+#### Waveform Display
 - Interactive waveform with indication of selected range.
 - Responds to zoom and navigation inputs.
 - Cursor displaying the playback position.
