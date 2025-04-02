@@ -12,7 +12,7 @@ The toolkit enables movement-based sonification of recorded sensor data through 
 <br/>
 
 ## Functionality Summary
-- **Input:**:
+- **Input**:
   - Input data as a 2-channel `.wav` file:
     - **Channel 1**: Timestamps
     - **Channel 2**: Signal values
