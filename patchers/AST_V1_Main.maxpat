@@ -459,7 +459,7 @@
 
 					}
 ,
-					"text" : "Selection Duration: 19.87 seconds"
+					"text" : "Selection Duration: 22.53 seconds"
 				}
 
 			}
@@ -629,7 +629,7 @@
 
 					}
 ,
-					"text" : "Selection End: 40.13 seconds"
+					"text" : "Selection End: 43.82 seconds"
 				}
 
 			}
@@ -663,7 +663,7 @@
 
 					}
 ,
-					"text" : "Selection Start: 20.27 seconds"
+					"text" : "Selection Start: 21.29 seconds"
 				}
 
 			}
@@ -1025,7 +1025,7 @@
 
 							}
  ],
-						"originid" : "pat-2348"
+						"originid" : "pat-2752"
 					}
 ,
 					"patching_rect" : [ 1768.0, 966.0, 114.0, 22.0 ],
@@ -1154,7 +1154,7 @@
 
 							}
  ],
-						"originid" : "pat-2352"
+						"originid" : "pat-2756"
 					}
 ,
 					"patching_rect" : [ 2137.0, 1035.0, 97.0, 22.0 ],
@@ -2398,7 +2398,7 @@
 
 			}
  ],
-		"originid" : "pat-2340",
+		"originid" : "pat-2744",
 		"parameters" : 		{
 			"obj-124" : [ "play", "play", 0 ],
 			"obj-136" : [ "stop", "stop", 0 ],
