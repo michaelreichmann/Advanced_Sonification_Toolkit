@@ -2,9 +2,9 @@
 	"name" : "AST_V1",
 	"version" : 1,
 	"creationdate" : 3826427134,
-	"modificationdate" : 3826427329,
+	"modificationdate" : 3826442471,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -20,6 +20,11 @@
 				"local" : 1
 			}
 ,
+			"AST_V1_receiveFromChannelDict.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"AST_V1_ChannelMain.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -29,11 +34,6 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
-			}
-,
-			"AST_V1_receiveFromChannelDict.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 ,
 			"AST_V1_viewChannelDict.maxpat" : 			{

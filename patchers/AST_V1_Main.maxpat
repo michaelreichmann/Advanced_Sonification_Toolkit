@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
+		"rect" : [ 555.0, 87.0, 1372.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -276,7 +276,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1326.0, 1002.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1364.000000000000227, 1028.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -292,7 +292,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1310.0, 1035.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1348.000000000000227, 1061.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -308,7 +308,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1294.0, 1068.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1332.000000000000227, 1094.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -324,7 +324,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1278.0, 1101.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1316.000000000000227, 1127.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -340,7 +340,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1262.0, 1134.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1300.000000000000227, 1160.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -352,7 +352,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 16,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 1262.0, 926.0, 259.000000000001137, 22.0 ],
+					"patching_rect" : [ 1300.0, 970.0, 259.000000000001137, 22.0 ],
 					"text" : "mc.unpack~ 16"
 				}
 
@@ -364,7 +364,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1262.0, 865.0, 175.0, 22.0 ],
+					"patching_rect" : [ 1300.0, 909.0, 175.0, 22.0 ],
 					"text" : "mc.receive~ channelSignals 16"
 				}
 
@@ -562,7 +562,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: 5995"
+					"text" : "Number Of Datapoints: -"
 				}
 
 			}
@@ -595,7 +595,7 @@
 
 					}
 ,
-					"text" : "Duration: 60.00 seconds"
+					"text" : "Duration: -"
 				}
 
 			}
@@ -1025,7 +1025,7 @@
 
 							}
  ],
-						"originid" : "pat-2752"
+						"originid" : "pat-5352"
 					}
 ,
 					"patching_rect" : [ 1768.0, 966.0, 114.0, 22.0 ],
@@ -1154,7 +1154,7 @@
 
 							}
  ],
-						"originid" : "pat-2756"
+						"originid" : "pat-5356"
 					}
 ,
 					"patching_rect" : [ 2137.0, 1035.0, 97.0, 22.0 ],
@@ -2398,7 +2398,7 @@
 
 			}
  ],
-		"originid" : "pat-2744",
+		"originid" : "pat-5344",
 		"parameters" : 		{
 			"obj-124" : [ "play", "play", 0 ],
 			"obj-136" : [ "stop", "stop", 0 ],
