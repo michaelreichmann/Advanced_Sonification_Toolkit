@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
+		"rect" : [ 34.0, 87.0, 913.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -20,8 +20,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 434.0, 323.0, 287.0, 22.0 ],
-					"text" : "AST_V1_2_receiveFromChannelDict 0 samplingrate"
+					"patching_rect" : [ 434.0, 323.0, 274.0, 22.0 ],
+					"text" : "AST_V1_receiveFromChannelDict 0 samplingrate"
 				}
 
 			}
@@ -32,8 +32,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 253.0, 241.0, 301.0, 22.0 ],
-					"text" : "AST_V1_2_receiveFromChannelDict 0 numDataPoints"
+					"patching_rect" : [ 253.0, 241.0, 287.0, 22.0 ],
+					"text" : "AST_V1_receiveFromChannelDict 0 numDataPoints"
 				}
 
 			}
@@ -152,7 +152,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "AST_V1_2_Channel.maxpat",
+					"name" : "AST_V1_Channel.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -459,7 +459,7 @@
 
 							}
  ],
-						"originid" : "pat-7748"
+						"originid" : "pat-2030"
 					}
 ,
 					"patching_rect" : [ 253.0, 367.0, 166.0, 22.0 ],
@@ -918,7 +918,7 @@
 
 							}
  ],
-						"originid" : "pat-7750"
+						"originid" : "pat-2032"
 					}
 ,
 					"patching_rect" : [ 71.0, 515.0, 565.0, 22.0 ],
@@ -1068,7 +1068,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 9.5, 153.0, 845.109375, 153.0, 845.109375, 425.3046875, 626.5, 425.3046875 ],
+					"midpoints" : [ 9.5, 156.0, 8.33984375, 156.0, 8.33984375, 200.5625, 741.62109375, 200.5625, 741.62109375, 414.0, 626.5, 414.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1088,39 +1088,7 @@
 
 			}
  ],
-		"originid" : "pat-7676",
-		"parameters" : 		{
-			"obj-9::obj-1" : [ "live.drop[1]", "live.drop", 0 ],
-			"obj-9::obj-122" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-9::obj-136" : [ "live.text[2]", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "AST_V1_2_Channel.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1_3.maxpat/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AST_V1_2_receiveFromChannelDict.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1_3.maxpat/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+		"originid" : "pat-1958"
 	}
 
 }

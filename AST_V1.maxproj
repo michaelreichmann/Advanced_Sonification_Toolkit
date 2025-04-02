@@ -1,8 +1,8 @@
 {
-	"name" : "AST_V1N",
+	"name" : "AST_V1",
 	"version" : 1,
-	"creationdate" : 3826426209,
-	"modificationdate" : 3826426333,
+	"creationdate" : 3826427134,
+	"modificationdate" : 3826427329,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,28 +10,33 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"AST_V1_2_Channel.maxpat" : 			{
+			"AST_V1_Auditory_Display_Template.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"AST_V1_2_receiveFromChannelDict.maxpat" : 			{
+			"AST_V1_Channel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"AST_V1_2_ChannelMain.maxpat" : 			{
+			"AST_V1_ChannelMain.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"AST_V1_2_Main.maxpat" : 			{
+			"AST_V1_Main.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
 			}
 ,
-			"AST_V1_2_viewChannelDict.maxpat" : 			{
+			"AST_V1_receiveFromChannelDict.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_viewChannelDict.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
