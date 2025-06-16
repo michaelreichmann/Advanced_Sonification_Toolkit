@@ -2,7 +2,7 @@
 	"name" : "AST_V1",
 	"version" : 1,
 	"creationdate" : 3826427134,
-	"modificationdate" : 3826442471,
+	"modificationdate" : 3832939627,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -37,6 +37,26 @@
 			}
 ,
 			"AST_V1_viewChannelDict.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_AD_Abstract.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_ChannelRouting.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_AD_Ambient.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_AD_Musical.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
