@@ -15,6 +15,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2114.893601894378662, 537.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-129",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -39,84 +51,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-118",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1844.680837869644165, 511.702123999595642, 87.0, 22.0 ],
-					"text" : "slide~ 441 441"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-116",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1678.723392248153687, 544.68084716796875, 184.957445621490479, 22.0 ],
-					"text" : "mc.*~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-115",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1844.680837869644165, 447.872337222099304, 85.0, 22.0 ],
-					"text" : "0 25 0 75 1 25"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-113",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 1844.680837869644165, 478.723400831222534, 34.0, 22.0 ],
-					"text" : "line~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-111",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1844.680837869644165, 414.893614053726196, 22.0, 22.0 ],
-					"text" : "t b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1844.680837869644165, 376.595741987228394, 65.0, 22.0 ],
-					"text" : "r ---routing"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2114.893601894378662, 541.489357829093933, 87.0, 22.0 ],
+					"patching_rect" : [ 2114.893601894378662, 498.936166644096375, 87.0, 22.0 ],
 					"text" : "loadmess 0.94"
 				}
 
@@ -303,7 +243,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1679.0, 418.181803226470947, 148.0, 22.0 ],
+					"patching_rect" : [ 1679.0, 537.0, 148.0, 22.0 ],
 					"text" : "mc.receive~ ---audioOut 2"
 				}
 
@@ -975,7 +915,7 @@
 
 					}
 ,
-					"text" : "Selection Duration: 13.31 seconds"
+					"text" : "Selection Duration: 15.68 seconds"
 				}
 
 			}
@@ -1078,7 +1018,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: 5995"
+					"text" : "Number Of Datapoints: -"
 				}
 
 			}
@@ -1111,7 +1051,7 @@
 
 					}
 ,
-					"text" : "Duration: 60.00 seconds"
+					"text" : "Duration: -"
 				}
 
 			}
@@ -1145,7 +1085,7 @@
 
 					}
 ,
-					"text" : "Selection End: 40.95 seconds"
+					"text" : "Selection End: 38.54 seconds"
 				}
 
 			}
@@ -1179,7 +1119,7 @@
 
 					}
 ,
-					"text" : "Selection Start: 27.64 seconds"
+					"text" : "Selection Start: 22.86 seconds"
 				}
 
 			}
@@ -2547,70 +2487,11 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"args" : [ 0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-14",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "AST_V1_ChannelMain.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 5.0, 215.0, 980.0, 139.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 215.0, 980.0, 139.0 ],
-					"varname" : "chanObjectName0",
-					"viewvisibility" : 1
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-234", 0 ],
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-115", 0 ],
-					"source" : [ "obj-111", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
-					"source" : [ "obj-113", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-113", 0 ],
-					"source" : [ "obj-115", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"source" : [ "obj-116", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-116", 1 ],
-					"source" : [ "obj-118", 0 ]
 				}
 
 			}
@@ -2682,6 +2563,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-235", 0 ],
 					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -2772,7 +2660,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -2986,7 +2874,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-116", 0 ],
+					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -3037,13 +2925,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-111", 0 ],
-					"source" : [ "obj-71", 0 ]
 				}
 
 			}
@@ -3102,9 +2983,6 @@
 			"obj-124" : [ "play", "play", 0 ],
 			"obj-136" : [ "stop", "stop", 0 ],
 			"obj-140" : [ "live.tab", "live.tab", 0 ],
-			"obj-14::obj-9::obj-1" : [ "live.drop[1]", "live.drop", 0 ],
-			"obj-14::obj-9::obj-122" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-14::obj-9::obj-136" : [ "live.text[2]", "live.text", 0 ],
 			"obj-230" : [ "playbakcSpeed", "playbakcSpeed", 0 ],
 			"obj-53" : [ "live.gain~", "Volume", 0 ],
 			"obj-59" : [ "live.button", "live.button", 0 ],
@@ -3123,20 +3001,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AST_V1_Channel.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AST_V1_ChannelMain.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "AST_V1_receiveFromChannelDict.maxpat",
 				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
 				"patcherrelativepath" : ".",
