@@ -2,7 +2,7 @@
 	"name" : "AST_V1",
 	"version" : 1,
 	"creationdate" : 3826427134,
-	"modificationdate" : 3832939627,
+	"modificationdate" : 3832987810,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -10,6 +10,36 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
+			"AST_V1_SM_AATest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_ChannelRouting.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_SM_Abstract.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_SM_Ambient.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_SM_Musical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V1_Sounddesign_Module_Template.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"AST_V1_Auditory_Display_Template.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -46,11 +76,6 @@
 				"local" : 1
 			}
 ,
-			"AST_V1_ChannelRouting.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"AST_V1_AD_Ambient.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -67,6 +92,16 @@
 			"toolkit_Screenshot.png" : 			{
 				"kind" : "imagefile",
 				"local" : 1
+			}
+,
+			"abstract_module_Screenshot.png" : 			{
+				"kind" : "imagefile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/media",
+					"projectrelativepath" : "./media"
+				}
+
 			}
 
 		}

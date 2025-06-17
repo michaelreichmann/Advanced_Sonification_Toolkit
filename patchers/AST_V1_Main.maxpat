@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
+		"rect" : [ 34.0, 87.0, 1014.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -68,9 +68,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.50569748878479, 20.095507502555847, 153.0, 22.0 ],
+					"patching_rect" : [ 995.50569748878479, 20.095507502555847, 181.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 995.50569748878479, 20.095507502555847, 153.0, 22.0 ],
+					"presentation_rect" : [ 995.50569748878479, 20.095507502555847, 181.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : "themecolor.live_control_zombie"
@@ -78,7 +78,7 @@
 
 					}
 ,
-					"text" : "AUDITORY DISPLAYS",
+					"text" : "SOUND DESIGN MODULE",
 					"textcolor" : [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ]
 				}
 
@@ -182,7 +182,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1764.0, 996.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1806.0, 996.0, 93.0, 22.0 ],
 					"text" : "cleanOnClosing"
 				}
 
@@ -194,7 +194,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1764.0, 958.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1806.0, 958.0, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -206,14 +206,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1612.0, 996.0, 131.0, 22.0 ],
-					"text" : "loadAuditoryDisplay $1"
+					"patching_rect" : [ 1612.0, 996.0, 157.0, 22.0 ],
+					"text" : "loadSounddesignModule $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"code" : "/*\n\t-load auditory display by patcher name\n*/\n\n\noutlets = 1;\r\n\n//position and spacing\r\nvar xSize = 470;\nvar ySize = 270;\n\nvar xPos = 995;\nvar yPos = 55;\r\n\r\nvar auditoryDisplay;\n\n//load Auditory Display\nfunction loadAuditoryDisplay(patcherName)\n{\t\r\n\t//create object\r\n\t//remove previous\r\n\tif(auditoryDisplay != null)\r\n\t{\r\n\t\tthis.patcher.remove(auditoryDisplay);\r\n\t}\n\tauditoryDisplay = this.patcher.newdefault(xPos, yPos, \"bpatcher\",\n\tpatcherName, \"presentation\", 1,\n\t\"presentation_rect\", xPos, yPos, xSize, ySize);\r\n\t\n\t\n\t//set object name\n    auditoryDisplay.varname = \"auditoryDisplay\"; \n\t\n\t//set presentation mode\n\tthis.patcher.message('script', 'sendbox', \"auditoryDisplay\", 'presentation', 1);\r\n\t\r\n\t//bang when changed\r\n\toutlet(0, \"bang\");\t\n}\n\n\n\nfunction cleanOnClosing()\r\n{\r\n\tif(auditoryDisplay != null)\r\n\t{\r\n\t\tthis.patcher.remove(auditoryDisplay);\r\n\t}\r\n}",
+					"code" : "/*\n\t-load sound design modules by patcher name\n*/\n\n\noutlets = 1;\r\n\n//position and spacing\r\nvar xSize = 470;\nvar ySize = 270;\n\nvar xPos = 995;\nvar yPos = 55;\r\n\r\nvar sounddesignModule;\n\n//load Sounddesign Module\nfunction loadSounddesignModule(patcherName)\n{\t\r\n\t//create object\r\n\t//remove previous\r\n\tif(sounddesignModule != null)\r\n\t{\r\n\t\tthis.patcher.remove(sounddesignModule);\r\n\t}\r\n\tif(patcherName != \"none\")\r\n\t{\r\n\t\tsounddesignModule = this.patcher.newdefault(xPos, yPos, \"bpatcher\",\n\t\tpatcherName, \"presentation\", 1,\n\t\t\"presentation_rect\", xPos, yPos, xSize, ySize);\r\n\t\n\t\n\t\t//set object name\n    \tsounddesignModule.varname = \"sounddesignModule\"; \n\t\t\n\t\t//set presentation mode\n\t\tthis.patcher.message('script', 'sendbox', \"sounddesignModule\", 'presentation', 1);\r\n\t\r\n\t\t//bang when changed\r\n\t\toutlet(0, \"bang\");\r\n\t}\n\t\n}\n\n\nfunction cleanOnClosing()\r\n{\r\n\tif(sounddesignModule != null)\r\n\t{\r\n\t\tthis.patcher.remove(sounddesignModule);\r\n\t}\r\n}",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -223,7 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1612.0, 1042.0, 702.0, 632.0 ],
+					"patching_rect" : [ 1612.0, 1042.0, 763.0, 642.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -249,9 +249,21 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 1000.0, 700.0 ],
+						"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 272.0, 250.0, 79.0, 22.0 ],
+									"text" : "append none"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-42",
 									"maxclass" : "newobj",
@@ -270,7 +282,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.5, 377.0, 71.0, 22.0 ],
+									"patching_rect" : [ 113.5, 384.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -280,10 +292,10 @@
 									"id" : "obj-32",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "clear" ],
-									"patching_rect" : [ 50.0, 208.0, 232.0, 22.0 ],
-									"text" : "t s clear"
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "clear" ],
+									"patching_rect" : [ 50.0, 208.0, 463.0, 22.0 ],
+									"text" : "t s b clear"
 								}
 
 							}
@@ -294,8 +306,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 81.5, 346.0, 147.0, 22.0 ],
-									"text" : "regexp (.*AST_V1_AD_.*)"
+									"patching_rect" : [ 81.5, 346.0, 149.0, 22.0 ],
+									"text" : "regexp (.*AST_V1_SM_.*)"
 								}
 
 							}
@@ -359,7 +371,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 113.5, 437.0, 30.0, 30.0 ]
+									"patching_rect" : [ 113.5, 475.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -367,8 +379,23 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
-									"midpoints" : [ 272.5, 416.8984375, 123.0, 416.8984375 ],
+									"midpoints" : [ 281.5, 432.1796875, 123.0, 432.1796875 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-32", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"midpoints" : [ 503.5, 451.78125, 123.0, 451.78125 ],
+									"source" : [ "obj-32", 2 ]
 								}
 
 							}
@@ -431,8 +458,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1505.0, 882.0, 125.0, 22.0 ],
-					"text" : "p getAuditroyDisplays"
+					"patching_rect" : [ 1505.0, 882.0, 151.0, 22.0 ],
+					"text" : "p getSounddesignModules"
 				}
 
 			}
@@ -449,7 +476,7 @@
 					"fontname" : "Ableton Sans Medium",
 					"fontsize" : 13.0,
 					"id" : "obj-24",
-					"items" : [ "AST_V1_AD_Abstract.maxpat", ",", "AST_V1_AD_Ambient.maxpat", ",", "AST_V1_AD_Musical.maxpat" ],
+					"items" : [ "none", ",", "AST_V1_SM_AATest.maxpat", ",", "AST_V1_SM_Abstract.maxpat", ",", "AST_V1_SM_Ambient.maxpat", ",", "AST_V1_SM_Musical.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2389,29 +2416,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-90",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "AST_V1_AD_Musical.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 995.0, 55.0, 450.0, 250.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 995.0, 55.0, 450.0, 250.0 ],
-					"varname" : "auditoryDisplay",
-					"viewvisibility" : 1
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2472,7 +2476,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"midpoints" : [ 1773.5, 1029.4921875, 1621.5, 1029.4921875 ],
+					"midpoints" : [ 1815.5, 1029.4921875, 1621.5, 1029.4921875 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -2870,16 +2874,6 @@
 			"obj-59" : [ "live.button", "live.button", 0 ],
 			"obj-80" : [ "live.text", "live.text", 0 ],
 			"obj-87" : [ "playbakcSpeed[1]", "playbakcSpeed", 0 ],
-			"obj-90::obj-135" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-90::obj-149" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-90::obj-159" : [ "live.dial[4]", "Length", 0 ],
-			"obj-90::obj-171" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-90::obj-172" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-90::obj-69" : [ "live.text[5]", "live.text", 0 ],
-			"obj-90::obj-74" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-90::obj-79" : [ "live.dial[5]", "Tuning", 0 ],
-			"obj-90::obj-80" : [ "live.dial[1]", "Volume", 0 ],
-			"obj-90::obj-81" : [ "live.dial[6]", "Tempo", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -2889,31 +2883,10 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-90::obj-69" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AST_V1_AD_Musical.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AST_V1_ChannelRouting.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "AST_V1_receiveFromChannelDict.maxpat",
 				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
 				"patcherrelativepath" : ".",
@@ -2967,13 +2940,6 @@
 				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
 				"patcherrelativepath" : "../../../UI",
 				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
