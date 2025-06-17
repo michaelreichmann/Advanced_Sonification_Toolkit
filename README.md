@@ -91,8 +91,8 @@ Each input channel includes:
   - Manual control of sound parameters.
 
 - **Mapping Matrix**:
-- Mapping of input data to sound parameter.
-- When input data is mapped to a parameter, manual control is deactivated.
+  - Mapping of input data to sound parameter.
+  - When input data is mapped to a parameter, manual control is deactivated.
 
 ## Sound Design Modules
 
@@ -125,7 +125,7 @@ The toolkit currently includes **4 sound design modules**:
      - `Rain`  
      - `Thunder`
 
-A template is included to allow users to create and integrate custom **sound design modules**.
+A template ('AST_V1_Sounddesign_Module_Template.maxpat') is included to allow users to create and integrate custom **sound design modules**.
 In the template, the Max project automatically recognizes new modules and adds them to the toolkit interface:
 
 1. **Patcher Naming**  
