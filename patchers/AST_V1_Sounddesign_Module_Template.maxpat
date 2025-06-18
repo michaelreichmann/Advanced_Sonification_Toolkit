@@ -14,6 +14,209 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 1.0,
+					"id" : "obj-25",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 93.0, 655.0, 158.0, 24.0 ],
+					"text" : "change description"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.0, 709.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 45.0, 672.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 151.5, 221.0, 44.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Info",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.0, 744.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 7,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 568.0, 266.0, 375.0, 316.0 ],
+						"openinpresentation" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"toolbars_unpinned_last_save" : 15,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 187.5, 130.5, 5.0, 100.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 46.0, 339.0, 7.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 181.0, 164.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 230.0, 330.0, 21.0 ],
+									"text" : "Additional Info"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 13.0,
+									"id" : "obj-6",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 171.0, 166.0, 165.0, 38.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 7.0, 132.0, 365.0, 38.0 ],
+									"text" : "-Param 1\n-Param 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 14.0,
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 156.0, 151.0, 175.0, 23.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 103.0, 178.0, 23.0 ],
+									"text" : "Parameters:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 2,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 141.0, 136.0, 151.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 72.0, 284.0, 21.0 ],
+									"text" : "Short Description"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 16.0,
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 126.0, 121.0, 197.0, 26.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 10.0, 128.0, 26.0 ],
+									"text" : "Module Name"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 227.0, 213.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 45.0, 783.0, 82.0, 22.0 ],
+					"text" : "p Module-Info"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -79,7 +282,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 877.0, 782.0, 121.0, 22.0 ],
+					"patching_rect" : [ 877.0, 765.0, 121.0, 22.0 ],
 					"text" : "mc.*~"
 				}
 
@@ -114,7 +317,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 877.0, 852.0, 125.0, 22.0 ],
+					"patching_rect" : [ 877.0, 798.0, 125.0, 22.0 ],
 					"text" : "mc.send~ ---audioOut"
 				}
 
@@ -127,7 +330,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 90.0, 552.0, 22.0 ],
+					"patching_rect" : [ 29.0, 188.5, 552.0, 22.0 ],
 					"text" : "3. Place parameters/knobs in the \"Manual Controls\" section in Presentation Mode"
 				}
 
@@ -336,7 +539,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 59.0, 884.0, 22.0 ],
+					"patching_rect" : [ 29.0, 157.5, 884.0, 22.0 ],
 					"text" : "2. Create a sound engine and connect parameters/knobs: incomming signals from the data playback are always in the range of 0 - 1"
 				}
 
@@ -349,7 +552,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 27.0, 825.0, 22.0 ],
+					"patching_rect" : [ 29.0, 125.5, 825.0, 22.0 ],
 					"text" : "1. Change patchername to be in the form \"AST_V1_SM_*.maxpat\", so the toolkit will rocognize it as a sounddesign module"
 				}
 
@@ -358,12 +561,12 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-16",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 978.5, 564.0, 145.0, 37.0 ],
-					"text" : "place sound engine here"
+					"patching_rect" : [ 978.5, 564.0, 145.0, 51.0 ],
+					"text" : "place sound engine here and connect params"
 				}
 
 			}
@@ -472,7 +675,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 475.0, 188.0, 112.0, 23.0 ],
+					"patching_rect" : [ 424.0, 267.5, 112.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.0, 218.0, 112.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -721,8 +924,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 170.0, 485.0, 126.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 255.0, 81.0, 30.0, 29.0 ],
+					"presentation_rect" : [ 228.0, 81.0, 57.0, 18.0 ],
 					"text" : "Param 1",
 					"textjustification" : 2
 				}
@@ -914,6 +1116,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -987,6 +1196,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -1094,6 +1317,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-49" : [ "live.text", "live.text", 0 ],
 			"obj-60" : [ "live.dial", "Param 1", 0 ],
 			"obj-66" : [ "live.dial[1]", "Param 2", 0 ],
 			"parameterbanks" : 			{

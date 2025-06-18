@@ -15,6 +15,198 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 338.0, 621.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 338.0, 584.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 154.0, 222.0, 44.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Info",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 338.0, 656.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 7,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 507.0, 187.0, 375.0, 275.0 ],
+						"openinpresentation" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"toolbars_unpinned_last_save" : 15,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 187.5, 130.5, 5.0, 100.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 46.0, 339.0, 7.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 181.0, 164.0, 93.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 7.0, 181.0, 294.0, 64.0 ],
+									"text" : "Useful for basic sonification prototyping and signal testing.\nAll sounds are synthesized in real-time.\nNo samples used."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 13.0,
+									"id" : "obj-6",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 171.0, 166.0, 163.0, 69.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 7.0, 132.0, 280.0, 38.0 ],
+									"text" : " -Pitch: frequency of the sine wave\n -Volume: amplitude control"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 14.0,
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 156.0, 151.0, 175.0, 23.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 103.0, 178.0, 23.0 ],
+									"text" : "Parameters:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 2,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 141.0, 136.0, 151.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 72.0, 154.0, 21.0 ],
+									"text" : "Simple sine tone generator"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 16.0,
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 126.0, 121.0, 197.0, 26.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 10.0, 95.0, 26.0 ],
+									"text" : "Test Module"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 227.0, 213.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 338.0, 695.0, 82.0, 22.0 ],
+					"text" : "p Module-Info"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -274,7 +466,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 122.0, 66.0, 40.0 ],
+					"patching_rect" : [ 287.0, 129.0, 66.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 212.0, 7.0, 107.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -659,6 +851,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -689,6 +888,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -772,6 +985,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 185.5, 292.2421875, 229.5, 292.2421875 ],
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"midpoints" : [ 275.0, 211.5, 229.5, 211.5 ],
 					"source" : [ "obj-50", 1 ]
@@ -783,14 +1004,6 @@
 					"destination" : [ "obj-92", 0 ],
 					"midpoints" : [ 364.5, 515.19140625, 229.5, 515.19140625 ],
 					"source" : [ "obj-50", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
-					"midpoints" : [ 185.5, 512.7578125, 229.5, 512.7578125 ],
-					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -881,6 +1094,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-20" : [ "live.text", "live.text", 0 ],
 			"obj-60" : [ "live.dial", "Pitch", 0 ],
 			"obj-66" : [ "live.dial[1]", "Volume", 0 ],
 			"parameterbanks" : 			{

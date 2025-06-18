@@ -15,6 +15,198 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 297.0, 659.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 297.0, 622.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 153.0, 222.0, 44.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Info",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 297.0, 694.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 7,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 481.0, 234.0, 375.0, 316.0 ],
+						"openinpresentation" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"toolbars_unpinned_last_save" : 15,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 187.5, 130.5, 5.0, 100.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 46.0, 339.0, 7.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 181.0, 164.0, 93.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 7.0, 220.0, 294.0, 64.0 ],
+									"text" : "Designed for nuanced auditory mapping of subtle data features.\nAll sounds are synthesized in real-time.\nNo samples used."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 13.0,
+									"id" : "obj-6",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 171.0, 166.0, 165.0, 131.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 7.0, 132.0, 365.0, 53.0 ],
+									"text" : "-Pitch: fundamental frequency\n-Harmonicity: 0 = harmonic, 1 = disharmonic partials\n-Timbre: controls number and relative amplitude of overtones"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 14.0,
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 156.0, 151.0, 175.0, 23.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 103.0, 178.0, 23.0 ],
+									"text" : "Parameters:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 2,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 141.0, 136.0, 151.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 72.0, 154.0, 21.0 ],
+									"text" : "Additive synthesizer"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Ableton Sans Medium",
+									"fontsize" : 16.0,
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 126.0, 121.0, 197.0, 26.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 10.0, 128.0, 26.0 ],
+									"text" : "Abstract Module"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 227.0, 213.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 297.0, 733.0, 82.0, 22.0 ],
+					"text" : "p Module-Info"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -796,9 +988,9 @@
 										"maxclass" : "comment",
 										"text" : "random offset",
 										"patching_rect" : [ 462.0, 241.0, 82.0, 20.0 ],
-										"numoutlets" : 0,
 										"id" : "obj-18",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 0
 									}
 
 								}
@@ -807,9 +999,9 @@
 										"maxclass" : "comment",
 										"text" : "overtone = root * channel",
 										"patching_rect" : [ 235.0, 110.0, 143.0, 20.0 ],
-										"numoutlets" : 0,
 										"id" : "obj-17",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 0
 									}
 
 								}
@@ -818,10 +1010,10 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 240.0, 248.0, 209.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-16",
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -830,10 +1022,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 430.0, 179.0, 88.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-15",
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -842,10 +1034,10 @@
 										"maxclass" : "newobj",
 										"text" : "latch",
 										"patching_rect" : [ 499.0, 100.0, 82.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-13",
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -854,10 +1046,10 @@
 										"maxclass" : "newobj",
 										"text" : "noise",
 										"patching_rect" : [ 499.0, 16.0, 37.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-12",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -866,10 +1058,10 @@
 										"maxclass" : "newobj",
 										"text" : "== 0",
 										"patching_rect" : [ 562.0, 59.0, 33.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-11",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -878,10 +1070,10 @@
 										"maxclass" : "newobj",
 										"text" : "elapsed",
 										"patching_rect" : [ 562.0, 16.0, 51.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-10",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -890,10 +1082,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2",
 										"patching_rect" : [ 430.0, 140.0, 28.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-7",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -902,10 +1094,10 @@
 										"maxclass" : "newobj",
 										"text" : "mc_channel",
 										"patching_rect" : [ 240.0, 140.0, 73.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-6",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -914,10 +1106,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 61.0, 301.0, 198.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-5",
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -926,10 +1118,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 61.0, 51.0, 28.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-1",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -938,66 +1130,17 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 61.0, 351.0, 35.0, 22.0 ],
-										"numoutlets" : 0,
 										"id" : "obj-4",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 0
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-5", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-13", 0 ],
-										"destination" : [ "obj-15", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-4", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-10", 0 ],
-										"destination" : [ "obj-11", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-11", 0 ],
-										"destination" : [ "obj-13", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-12", 0 ],
-										"destination" : [ "obj-13", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-15", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-6", 0 ],
-										"destination" : [ "obj-16", 0 ]
+										"source" : [ "obj-15", 0 ],
+										"destination" : [ "obj-16", 1 ]
 									}
 
 								}
@@ -1010,8 +1153,57 @@
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-15", 0 ],
-										"destination" : [ "obj-16", 1 ]
+										"source" : [ "obj-6", 0 ],
+										"destination" : [ "obj-16", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-15", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-12", 0 ],
+										"destination" : [ "obj-13", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-11", 0 ],
+										"destination" : [ "obj-13", 1 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-10", 0 ],
+										"destination" : [ "obj-11", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-4", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-13", 0 ],
+										"destination" : [ "obj-15", 1 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-5", 0 ]
 									}
 
 								}
@@ -1027,7 +1219,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 423.0, 885.0, 341.0, 22.0 ],
 					"text" : "mc.gen~ @t overtones",
-					"wrapper_uniquekey" : "u256006065"
+					"wrapper_uniquekey" : "u780002095"
 				}
 
 			}
@@ -1052,10 +1244,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 10.0, 10.0, 28.0, 22.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-5",
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"outlettype" : [ "" ]
 									}
 
 								}
@@ -1063,13 +1255,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 10.0, 47.0, 633.0, 372.0 ],
-										"numoutlets" : 1,
-										"outlettype" : [ "" ],
+										"fontface" : 0,
 										"id" : "obj-3",
 										"fontsize" : 12.0,
-										"fontname" : "<Monospaced>",
 										"numinlets" : 1,
-										"fontface" : 0,
+										"numoutlets" : 1,
+										"fontname" : "<Monospaced>",
+										"outlettype" : [ "" ],
 										"code" : "//max amplitude dpending on overtone number\r\novertoneAmplitude = pow(1 - (mc_channel / mc_channelcount), 0.5);\r\n\r\n//activate channel depending on input\r\nactiveChannel = (in1 * mc_channelcount) >= (mc_channel - 1);\r\n\r\n//get mix for last active channel\r\nmixChannel = floor(in1 * (mc_channelcount)) + 1;\r\nmixVal = 1;\r\n\r\nif(mc_channel == mixChannel)\r\n{\r\n\tmixVal = fract(in1 * mc_channelcount);\r\n}\r\n\r\n\r\n\r\nout1 = activeChannel * mixVal * overtoneAmplitude;"
 									}
 
@@ -1079,24 +1271,24 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 10.0, 452.0, 35.0, 22.0 ],
-										"numoutlets" : 0,
 										"id" : "obj-4",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 0
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-3", 0 ]
+										"source" : [ "obj-3", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-3", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-3", 0 ]
 									}
 
 								}
@@ -1112,7 +1304,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1047.0, 946.0, 154.0, 22.0 ],
 					"text" : "mc.gen~ @t overtoneAmps",
-					"wrapper_uniquekey" : "u517006075"
+					"wrapper_uniquekey" : "u206002105"
 				}
 
 			}
@@ -1390,6 +1582,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"midpoints" : [ 185.5, 290.6796875, 229.5, 290.6796875 ],
 					"source" : [ "obj-50", 0 ]
@@ -1409,6 +1608,20 @@
 					"destination" : [ "obj-92", 0 ],
 					"midpoints" : [ 364.5, 554.921875, 229.5, 554.921875 ],
 					"source" : [ "obj-50", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -1542,6 +1755,7 @@
 		"parameters" : 		{
 			"obj-171" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"obj-26" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-51" : [ "live.text", "live.text", 0 ],
 			"obj-60" : [ "live.dial", "Pitch", 0 ],
 			"obj-66" : [ "live.dial[1]", "Harmonicity", 0 ],
 			"obj-67" : [ "live.dial[2]", "Timbre", 0 ],
