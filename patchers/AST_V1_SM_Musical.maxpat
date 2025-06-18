@@ -15,6 +15,42 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "int", "clear" ],
+					"patching_rect" : [ 176.0, 182.0, 231.0, 22.0 ],
+					"text" : "t b i clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 220.0, 219.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 176.0, 147.0, 102.0, 22.0 ],
+					"text" : "r ---numChannels"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -514,21 +550,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 8,
 					"numoutlets" : 8,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "", "", "", "" ],
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 713.0, 315.0, 348.0, 22.0 ],
 					"text" : "AST_V1_ChannelRouting"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 220.0, 214.0, 29.5, 22.0 ],
-					"text" : "+ 1"
 				}
 
 			}
@@ -608,18 +632,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 220.0, 259.0, 79.0, 22.0 ],
 					"text" : "columns $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-78",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 220.0, 181.0, 102.0, 22.0 ],
-					"text" : "r ---numChannels"
 				}
 
 			}
@@ -750,7 +762,7 @@
 					"patching_rect" : [ 773.0, 1459.0, 93.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.0, 205.0, 47.0, 18.0 ],
-					"text" : "375 ms"
+					"text" : "250 ms"
 				}
 
 			}
@@ -1036,7 +1048,7 @@
 					"patching_rect" : [ 203.0, 1136.0, 93.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.0, 182.0, 51.0, 18.0 ],
-					"text" : "100 BPM"
+					"text" : "80 BPM"
 				}
 
 			}
@@ -2944,7 +2956,7 @@
 									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 566.0, 447.0, 239.0, 22.0 ],
 									"text" : "mc.gen~ @t trigger",
-									"wrapper_uniquekey" : "u157011411"
+									"wrapper_uniquekey" : "u191010158"
 								}
 
 							}
@@ -3655,7 +3667,7 @@
 									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 229.0, 472.0, 211.0, 22.0 ],
 									"text" : "mc.gen~ @t ks",
-									"wrapper_uniquekey" : "u763002167"
+									"wrapper_uniquekey" : "u701010174"
 								}
 
 							}
@@ -5385,6 +5397,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
 					"source" : [ "obj-5", 1 ]
 				}
@@ -5394,6 +5420,30 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"midpoints" : [ 291.5, 211.5, 229.5, 211.5 ],
+					"source" : [ "obj-50", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"midpoints" : [ 397.5, 515.1171875, 229.5, 515.1171875 ],
+					"source" : [ "obj-50", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"midpoints" : [ 185.5, 516.640625, 229.5, 516.640625 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -5506,13 +5556,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-142", 1 ],
 					"source" : [ "obj-62", 0 ]
 				}
@@ -5565,13 +5608,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"source" : [ "obj-78", 0 ]
 				}
 
 			}
@@ -5714,13 +5750,6 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "AST_V1_ChannelRouting.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
 				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

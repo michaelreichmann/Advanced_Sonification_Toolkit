@@ -286,7 +286,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "/*\n\t-load sound design modules by patcher name\n*/\n\n\noutlets = 1;\r\n\n//position and spacing\r\nvar xSize = 470;\nvar ySize = 270;\n\nvar xPos = 995;\nvar yPos = 55;\r\n\r\nvar sounddesignModule;\n\n//load Sounddesign Module\nfunction loadSounddesignModule(patcherName)\n{\t\r\n\t//create object\r\n\t//remove previous\r\n\tif(sounddesignModule && sounddesignModule.valid)\r\n\t{\r\n\t\tthis.patcher.remove(sounddesignModule);\r\n\t\tsounddesignModule = null;\r\n\t}\r\n\t\r\n\tif(patcherName != \"none\")\r\n\t{\r\n\t\tsounddesignModule = this.patcher.newdefault(xPos, yPos, \"bpatcher\",\n\t\tpatcherName, \"presentation\", 1,\n\t\t\"presentation_rect\", xPos, yPos, xSize, ySize);\r\n\t\n\t\n\t\t//set object name\n    \tsounddesignModule.varname = \"sounddesignModule\"; \n\t\t\n\t\t//set presentation mode\n\t\tthis.patcher.message('script', 'sendbox', \"sounddesignModule\", 'presentation', 1);\r\n\t\r\n\t\t//bang when changed\r\n\t\toutlet(0, \"bang\");\r\n\t}\n\t\n}\n\n\nfunction cleanOnClosing()\r\n{\r\n\tif(sounddesignModule != null)\r\n\t{\r\n\t\tthis.patcher.remove(sounddesignModule);\r\n\t}\r\n}",
+					"code" : "/*\n\t-load sound design modules by patcher name\n*/\n\n\noutlets = 1;\r\n\n//position and spacing\r\nvar xSize = 470;\nvar ySize = 270;\n\nvar xPos = 995;\nvar yPos = 55;\r\n\r\nvar sounddesignModule;\n\n//load Sounddesign Module\nfunction loadSounddesignModule(patcherName)\n{\t\r\n\t//create object\r\n\t//remove previous\r\n\tif(sounddesignModule && sounddesignModule.valid)\r\n\t{\r\n\t\tthis.patcher.remove(sounddesignModule);\r\n\t\tsounddesignModule = null;\r\n\t}\r\n\t\r\n\tif(patcherName != \"none\")\r\n\t{\r\n\t\tsounddesignModule = this.patcher.newdefault(xPos, yPos, \"bpatcher\",\n\t\tpatcherName, \"presentation\", 1,\n\t\t\"presentation_rect\", xPos, yPos, xSize, ySize);\r\n\t\n\t\n\t\t//set object name\n    \tsounddesignModule.varname = \"sounddesignModule\"; \n\t\t\n\t\t//set presentation mode\n\t\tthis.patcher.message('script', 'sendbox', \"sounddesignModule\", 'presentation', 1);\r\n\t\r\n\t\t//bang when changed\r\n\t\toutlet(0, \"bang\");\r\n\t}\n\t\n}\n\n\nfunction cleanOnClosing()\r\n{\r\n\tif(sounddesignModule && sounddesignModule.valid) \r\n\t{\n    \tthis.patcher.remove(sounddesignModule);\n\t}\r\n}",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -703,7 +703,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "/*\n    -compare the number of data points of different channels\n*/\r\n\r\nvar dict = new Dict(\"channelDict\");\r\n\r\nfunction msg_int(numChannels)\n{\r\n\tvar initialValue = 0;\r\n\r\n\tif(dict.contains(\"0::numDataPoints\") == 1)\r\n\t{\r\n\t\tinitialValue = dict.get(\"0::numDataPoints\");\r\n\t}\r\n\r\n\tfor(var i = 0; i < numChannels; i++)\r\n\t{\t\r\n\t\tvar valueToCheck = 0;\r\n\t\t//check if key exists\r\n\t\tif(dict.contains(i + \"::numDataPoints\") == 1)\r\n\t\t{\r\n\t\t\tvalueToCheck = dict.get(i + \"::numDataPoints\");\r\n\t\t}\r\n\r\n\t\tif(valueToCheck != initialValue && valueToCheck != 0 && initialValue != 0)\r\n\t\t{\r\n\t\t\tvar channel = i + 1;\r\n\t\t\toutlet(0, \"Unmatching file sizes detected: Channel: \" + channel);\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\toutlet(0, \" \");\r\n\t\t}\r\n\t}\r\n}",
+					"code" : "/*\n    -compare the number of data points of different channels\n*/\n\nvar dict = new Dict(\"channelDict\");\n\nfunction msg_int(numChannels)\n{\n    var initialValue = 0;\n\n    if(dict && dict.contains && dict.get) \r\n\t{\n        if (dict.contains(\"0::numDataPoints\")) \r\n\t\t{\n            initialValue = dict.get(\"0::numDataPoints\");\n        }\n\n        for(var i = 0; i < numChannels; i++) \r\n\t\t{\n            var valueToCheck = 0;\n            var key = i + \"::numDataPoints\";\n\n            if (dict.contains(key)) \r\n\t\t\t{\n                valueToCheck = dict.get(key);\n            }\n\n            if(valueToCheck != initialValue && valueToCheck != 0 && initialValue != 0) \r\n\t\t\t{\n                var channel = i + 1;\n                outlet(0, \"Unmatching file sizes detected: Channel: \" + channel);\n                break;\n            } \r\n\t\t\telse \r\n\t\t\t{\n                outlet(0, \" \");\n            }\n        }\n    }\n}\n",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -713,7 +713,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2522.0, 2717.0, 691.0, 487.0 ],
+					"patching_rect" : [ 2522.340407490730286, 2717.021257162094116, 763.829781770706177, 486.170209288597107 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -915,7 +915,7 @@
 
 					}
 ,
-					"text" : "Selection Duration: 15.68 seconds"
+					"text" : "Selection Duration: 20.91 seconds"
 				}
 
 			}
@@ -1018,7 +1018,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: -"
+					"text" : "Number Of Datapoints: 5995"
 				}
 
 			}
@@ -1051,7 +1051,7 @@
 
 					}
 ,
-					"text" : "Duration: -"
+					"text" : "Duration: 60.00 seconds"
 				}
 
 			}
@@ -1085,7 +1085,7 @@
 
 					}
 ,
-					"text" : "Selection End: 38.54 seconds"
+					"text" : "Selection End: 44.21 seconds"
 				}
 
 			}
@@ -1119,7 +1119,7 @@
 
 					}
 ,
-					"text" : "Selection Start: 22.86 seconds"
+					"text" : "Selection Start: 23.30 seconds"
 				}
 
 			}
@@ -2417,7 +2417,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "/*\n    -create and delete channel / buffer objects\n    -add and remove them from buffers array\r\n\t-remove dict entry from dict\n    -output pos\n*/\n\n\noutlets = 2;\r\n\r\n//dict to store channel info\r\nvar dict = new Dict(\"channelDict\");\n\n//array to store all objects\nvar channels = [];\n\n//position and spacing\nvar ySize = 145;\n\nvar xOffset = 5;\nvar yOffset = 215;\n\nvar ySpacing = 2;\n\n//channel objects\nfunction createChannel(index)\n{\n\t//set position\n\tvar x = xOffset;\n\tvar y = index * (ySize + ySpacing) + yOffset;\n\t\r\n\t//create main channel as first channel\r\n\tif(index == 0)\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_ChannelMain.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_Channel.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\n\n\t\n\t//set object name\n    chan.varname = \"chanObjectName\" + index; \n\t\n\t//set presentation mode\n\tthis.patcher.message('script', 'sendbox', \"chanObjectName\" + index, 'presentation', 1);\n\t\n\t//add to array\n\tchannels.push(chan);\t\n}\n\n\n//gets called whe numBuffers changes\n//adds/removes buffers according to numBuffers\nfunction addRemoveChannels(index)\n{\r\n\t//size output for UI\r\n\toutlet(0, (index + 1) * (ySize + ySpacing) + yOffset);\t\r\n\t\n\t//add when needed\n\tif(index > channels.length - 1)\n\t{\n\t\tfor (var i = channels.length; i <= index; i++)\n\t\t{\n\t\t\tcreateChannel(i);\t\t\n\t\t}\n\t}\n\t//delete when needed\n\telse\n\t{\n\t\tfor(var i = channels.length -1; i > index; i--)\n\t\t{\n\t\t\tthis.patcher.remove(channels[i]);\n\t\t\tchannels.splice(i, 1);\r\n\t\t\t\r\n\t\t\t//remove from dict\r\n\t\t\tif(dict.contains(i) == 1)\r\n\t\t\t{\r\n\t\t\t\tdict.remove(i);\r\n\t\t\t}\n\t\t}\t\t\n\t}\n}\n\nfunction cleanOnClosing()\r\n{\r\n\tfor(var i = 0; i < channels.length; i++)\n\t{\n\t\tthis.patcher.remove(channels[i]);\n\t}\r\n\t\r\n\tchannels = [];\t\t\r\n}",
+					"code" : "/*\n    -create and delete channel / buffer objects\n    -add and remove them from buffers array\r\n\t-remove dict entry from dict\n    -output pos\n*/\n\n\noutlets = 2;\r\n\r\n//dict to store channel info\r\nvar dict = new Dict(\"channelDict\");\n\n//array to store all objects\nvar channels = [];\n\n//position and spacing\nvar ySize = 145;\n\nvar xOffset = 5;\nvar yOffset = 215;\n\nvar ySpacing = 2;\n\n//channel objects\nfunction createChannel(index)\n{\n\t//set position\n\tvar x = xOffset;\n\tvar y = index * (ySize + ySpacing) + yOffset;\n\t\r\n\t//create main channel as first channel\r\n\tif(index == 0)\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_ChannelMain.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_Channel.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\n\n\t\n\t//set object name\n    chan.varname = \"chanObjectName\" + index; \n\t\n\t//set presentation mode\n\tthis.patcher.message('script', 'sendbox', \"chanObjectName\" + index, 'presentation', 1);\n\t\n\t//add to array\n\tchannels.push(chan);\t\n}\n\n\n//gets called whe numBuffers changes\n//adds/removes buffers according to numBuffers\nfunction addRemoveChannels(index)\n{\r\n\t//size output for UI\r\n\toutlet(0, (index + 1) * (ySize + ySpacing) + yOffset);\t\r\n\t\n\t//add when needed\n\tif(index > channels.length - 1)\n\t{\n\t\tfor (var i = channels.length; i <= index; i++)\n\t\t{\n\t\t\tcreateChannel(i);\t\t\n\t\t}\n\t}\n\t//delete when needed\n\telse\n\t{\n\t\tfor(var i = channels.length -1; i > index; i--)\n\t\t{\n\t\t\tthis.patcher.remove(channels[i]);\n\t\t\tchannels.splice(i, 1);\r\n\t\t\t\r\n\t\t\t//remove from dict\r\n\t\t\tif (dict && dict.contains && typeof i !== 'undefined') \r\n\t\t\t{\n    \t\t\tlet key = String(i);\n    \t\t\tif(dict.contains(key)) \r\n\t\t\t\t{\n        \t\t\tdict.remove(key);\n    \t\t\t}\n\t\t\t}\n\t\t}\t\t\n\t}\n}\n\nfunction cleanOnClosing()\r\n{\r\n\tfor(var i = 0; i < channels.length; i++)\n\t{\n\t\tthis.patcher.remove(channels[i]);\n\t}\r\n\t\r\n\tchannels = [];\t\t\r\n}",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
