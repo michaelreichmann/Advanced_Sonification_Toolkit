@@ -915,7 +915,7 @@
 
 					}
 ,
-					"text" : "Selection Duration: 20.91 seconds"
+					"text" : "Selection Duration: 9.37 seconds"
 				}
 
 			}
@@ -1085,7 +1085,7 @@
 
 					}
 ,
-					"text" : "Selection End: 44.21 seconds"
+					"text" : "Selection End: 35.93 seconds"
 				}
 
 			}
@@ -1119,7 +1119,7 @@
 
 					}
 ,
-					"text" : "Selection Start: 23.30 seconds"
+					"text" : "Selection Start: 26.56 seconds"
 				}
 
 			}
@@ -2298,13 +2298,13 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"id" : "obj-88",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2146.0, 31.0, 87.0, 29.0 ],
+					"patching_rect" : [ 2146.0, 31.0, 87.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 142.0, 106.0, 18.0 ],
+					"presentation_rect" : [ 13.0, 142.0, 147.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : "themecolor.live_control_text_selection"
@@ -2312,7 +2312,7 @@
 
 					}
 ,
-					"text" : "Number of Channels"
+					"text" : "Number of Channels (max. 8)"
 				}
 
 			}
@@ -2353,7 +2353,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "playbakcSpeed[1]",
-							"parameter_mmax" : 16.0,
+							"parameter_mmax" : 8.0,
 							"parameter_modmode" : 4,
 							"parameter_shortname" : "playbakcSpeed",
 							"parameter_type" : 1,
