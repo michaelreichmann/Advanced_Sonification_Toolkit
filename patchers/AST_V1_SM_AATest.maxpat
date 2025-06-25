@@ -27,6 +27,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Arial",
 					"id" : "obj-20",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -102,17 +103,17 @@
 , 							{
 								"box" : 								{
 									"fontface" : 0,
-									"fontname" : "Ableton Sans Medium",
+									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 6,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 181.0, 164.0, 93.0 ],
+									"patching_rect" : [ 186.0, 181.0, 169.0, 74.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 7.0, 181.0, 294.0, 64.0 ],
+									"presentation_rect" : [ 7.0, 181.0, 291.0, 60.0 ],
 									"text" : "Useful for basic sonification prototyping and signal testing.\nAll sounds are synthesized in real-time.\nNo samples used."
 								}
 
@@ -120,17 +121,17 @@
 , 							{
 								"box" : 								{
 									"fontface" : 0,
-									"fontname" : "Ableton Sans Medium",
+									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-6",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 171.0, 166.0, 163.0, 69.0 ],
+									"patching_rect" : [ 171.0, 166.0, 160.0, 65.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 7.0, 132.0, 280.0, 38.0 ],
+									"presentation_rect" : [ 7.0, 132.0, 279.0, 36.0 ],
 									"text" : " -Pitch: frequency of the sine wave\n -Volume: amplitude control"
 								}
 
@@ -138,15 +139,15 @@
 , 							{
 								"box" : 								{
 									"fontface" : 1,
-									"fontname" : "Ableton Sans Medium",
+									"fontname" : "Arial",
 									"fontsize" : 14.0,
 									"id" : "obj-5",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 156.0, 151.0, 175.0, 23.0 ],
+									"patching_rect" : [ 156.0, 151.0, 184.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 103.0, 178.0, 23.0 ],
+									"presentation_rect" : [ 7.0, 103.0, 187.0, 22.0 ],
 									"text" : "Parameters:"
 								}
 
@@ -154,15 +155,15 @@
 , 							{
 								"box" : 								{
 									"fontface" : 2,
-									"fontname" : "Ableton Sans Medium",
+									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 141.0, 136.0, 151.0, 21.0 ],
+									"patching_rect" : [ 141.0, 136.0, 152.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 72.0, 154.0, 21.0 ],
+									"presentation_rect" : [ 7.0, 72.0, 156.0, 20.0 ],
 									"text" : "Simple sine tone generator"
 								}
 
@@ -170,15 +171,15 @@
 , 							{
 								"box" : 								{
 									"fontface" : 1,
-									"fontname" : "Ableton Sans Medium",
+									"fontname" : "Arial",
 									"fontsize" : 16.0,
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.0, 121.0, 197.0, 26.0 ],
+									"patching_rect" : [ 126.0, 121.0, 210.0, 24.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 10.0, 95.0, 26.0 ],
+									"presentation_rect" : [ 7.0, 10.0, 101.0, 24.0 ],
 									"text" : "Test Module"
 								}
 
@@ -211,9 +212,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "bang", "int", "clear" ],
-					"patching_rect" : [ 176.0, 182.0, 198.0, 22.0 ],
-					"text" : "t b i clear"
+					"outlettype" : [ "clear", "int", "clear" ],
+					"patching_rect" : [ 176.0, 182.0, 206.0, 22.0 ],
+					"text" : "t clear i clear"
 				}
 
 			}
@@ -398,41 +399,16 @@
 			}
 , 			{
 				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
-					"border" : 2,
-					"bordercolor" : [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
-					"id" : "obj-1",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 389.0, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 292.0, 60.0, 120.0, 180.0 ],
-					"proportion" : 0.5,
-					"saved_attribute_attributes" : 					{
-						"bordercolor" : 						{
-							"expression" : "themecolor.live_dial_needle_zombie"
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 2,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-48",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 366.0, 48.0, 112.0, 23.0 ],
+					"patching_rect" : [ 366.0, 48.0, 109.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 218.0, 112.0, 23.0 ],
+					"presentation_rect" : [ 12.0, 218.0, 109.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : "themecolor.live_control_text_selection"
@@ -459,16 +435,16 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-43",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.0, 129.0, 66.0, 40.0 ],
+					"patching_rect" : [ 287.0, 129.0, 70.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 212.0, 7.0, 107.0, 23.0 ],
+					"presentation_rect" : [ 212.0, 7.0, 111.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : "themecolor.live_focus_frame"
@@ -484,15 +460,15 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1030.0, 101.0, 111.0, 23.0 ],
+					"patching_rect" : [ 1030.0, 101.0, 118.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 7.0, 111.0, 23.0 ],
+					"presentation_rect" : [ 12.0, 7.0, 118.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : "themecolor.live_focus_frame"
@@ -639,15 +615,15 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 9.5,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 232.0, 303.0, 121.0, 18.0 ],
+					"patching_rect" : [ 232.0, 303.0, 130.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 37.0, 72.0, 18.0 ],
+					"presentation_rect" : [ 316.0, 37.0, 77.0, 17.0 ],
 					"text" : "Input Channels"
 				}
 
@@ -655,15 +631,15 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 9.5,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 463.0, 123.0, 18.0 ],
+					"patching_rect" : [ 64.0, 463.0, 130.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 184.0, 60.0, 18.0 ],
+					"presentation_rect" : [ 225.0, 184.0, 63.0, 17.0 ],
 					"text" : "Volume",
 					"textjustification" : 2
 				}
@@ -672,15 +648,15 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Ableton Sans Medium",
+					"fontname" : "Arial",
 					"fontsize" : 9.5,
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.0, 345.0, 126.0, 18.0 ],
+					"patching_rect" : [ 61.0, 345.0, 135.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 255.0, 96.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 255.0, 96.0, 32.0, 17.0 ],
 					"text" : "Pitch",
 					"textjustification" : 2
 				}
@@ -704,6 +680,7 @@
 					"color" : [ 0.594473705410263, 0.720560630419913, 0.928309050695498, 1.0 ],
 					"columns" : 3,
 					"elementcolor" : [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
+					"horizontalmargin" : 0,
 					"id" : "obj-11",
 					"invisiblebkgnd" : 1,
 					"maxclass" : "matrixctrl",
@@ -731,22 +708,24 @@
 
 					}
 ,
-					"varname" : "mixingMatrix"
+					"varname" : "mixingMatrix",
+					"verticalmargin" : 0
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"appearance" : 3,
+					"fontname" : "Arial",
 					"id" : "obj-66",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 824.0, 151.0, 61.0, 63.0 ],
+					"patching_rect" : [ 824.0, 151.0, 58.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 59.0, 61.0, 63.0 ],
+					"presentation_rect" : [ 63.0, 59.0, 58.0, 62.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -768,15 +747,16 @@
 , 			{
 				"box" : 				{
 					"appearance" : 3,
+					"fontname" : "Arial",
 					"id" : "obj-60",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 713.0, 151.0, 61.0, 63.0 ],
+					"patching_rect" : [ 713.0, 151.0, 58.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 59.0, 61.0, 63.0 ],
+					"presentation_rect" : [ 0.0, 59.0, 58.0, 62.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -809,6 +789,31 @@
 					"patching_rect" : [ 430.0, 361.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 450.0, 250.0 ],
+					"proportion" : 0.5,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_dial_needle_zombie"
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+					"border" : 2,
+					"bordercolor" : [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 460.0, 389.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 292.0, 60.0, 120.0, 180.0 ],
 					"proportion" : 0.5,
 					"saved_attribute_attributes" : 					{
 						"bordercolor" : 						{
@@ -994,7 +999,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 275.0, 211.5, 229.5, 211.5 ],
+					"midpoints" : [ 279.0, 211.5, 229.5, 211.5 ],
 					"source" : [ "obj-50", 1 ]
 				}
 
@@ -1002,7 +1007,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
-					"midpoints" : [ 364.5, 515.19140625, 229.5, 515.19140625 ],
+					"midpoints" : [ 372.5, 515.19140625, 229.5, 515.19140625 ],
 					"source" : [ "obj-50", 2 ]
 				}
 

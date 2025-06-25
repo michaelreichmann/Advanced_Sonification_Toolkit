@@ -2,7 +2,7 @@
 	"name" : "AST_V1",
 	"version" : 1,
 	"creationdate" : 3826427134,
-	"modificationdate" : 3833081004,
+	"modificationdate" : 3833420587,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -37,12 +37,22 @@
 ,
 			"AST_V1_Sounddesign_Module_Template.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"AST_V1_Channel.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"AST_V1_receiveFromChannelDict.maxpat" : 			{
@@ -52,13 +62,23 @@
 ,
 			"AST_V1_ChannelMain.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"AST_V1_Main.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
-				"toplevel" : 1
+				"toplevel" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"AST_V1_viewChannelDict.maxpat" : 			{

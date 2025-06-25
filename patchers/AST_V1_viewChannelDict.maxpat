@@ -4,16 +4,32 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1744.0, 195.0, 649.0, 439.0 ],
+		"rect" : [ 134.0, 159.0, 650.0, 473.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
+		"toolbars_unpinned_last_save" : 15,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 6.0, 4.0, 117.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 1.0, 117.0, 27.0 ],
+					"text" : "Channel Info"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "message",
@@ -62,9 +78,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "dictionary", "", "", "", "" ],
-					"patching_rect" : [ 0.0, 0.0, 646.0, 439.0 ],
+					"patching_rect" : [ 0.0, 37.0, 646.0, 439.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 646.0, 439.0 ],
+					"presentation_rect" : [ 0.0, 33.0, 646.0, 439.0 ],
 					"saved_object_attributes" : 					{
 						"legacy" : 0,
 						"name" : "channelDict",
@@ -90,8 +106,7 @@
 				}
 
 			}
- ],
-		"originid" : "pat-9401"
+ ]
 	}
 
 }

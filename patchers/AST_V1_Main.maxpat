@@ -15,6 +15,30 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2479.787216305732727, 154.957447052001953, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2479.787216305732727, 117.723404765129089, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1018,7 +1042,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: 5995"
+					"text" : "Number Of Datapoints: -"
 				}
 
 			}
@@ -1051,7 +1075,7 @@
 
 					}
 ,
-					"text" : "Duration: 60.00 seconds"
+					"text" : "Duration: -"
 				}
 
 			}
@@ -2208,7 +2232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "bang", "int" ],
-					"patching_rect" : [ 2146.0, 133.0, 191.0, 22.0 ],
+					"patching_rect" : [ 2146.0, 111.702126860618591, 191.0, 22.0 ],
 					"text" : "t i b i"
 				}
 
@@ -2298,11 +2322,10 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"id" : "obj-88",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2146.0, 31.0, 87.0, 40.0 ],
+					"patching_rect" : [ 2146.0, 5.319148898124695, 147.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 142.0, 147.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
@@ -2333,7 +2356,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
-					"patching_rect" : [ 2146.0, 57.0, 108.0, 19.0 ],
+					"patching_rect" : [ 2146.0, 31.914893388748169, 108.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 160.0, 108.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
@@ -2369,24 +2392,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-86",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 2462.0, 149.0, 63.0, 22.0 ],
-					"text" : "closebang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 2146.0, 95.0, 29.5, 22.0 ],
+					"patching_rect" : [ 2146.0, 74.468084573745728, 29.5, 22.0 ],
 					"text" : "- 1"
 				}
 
@@ -2398,8 +2409,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2462.0, 189.0, 93.0, 22.0 ],
-					"text" : "cleanOnClosing"
+					"patching_rect" : [ 2479.787216305732727, 189.0, 37.0, 22.0 ],
+					"text" : "clean"
 				}
 
 			}
@@ -2417,7 +2428,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "/*\n    -create and delete channel / buffer objects\n    -add and remove them from buffers array\r\n\t-remove dict entry from dict\n    -output pos\n*/\n\n\noutlets = 2;\r\n\r\n//dict to store channel info\r\nvar dict = new Dict(\"channelDict\");\n\n//array to store all objects\nvar channels = [];\n\n//position and spacing\nvar ySize = 145;\n\nvar xOffset = 5;\nvar yOffset = 215;\n\nvar ySpacing = 2;\n\n//channel objects\nfunction createChannel(index)\n{\n\t//set position\n\tvar x = xOffset;\n\tvar y = index * (ySize + ySpacing) + yOffset;\n\t\r\n\t//create main channel as first channel\r\n\tif(index == 0)\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_ChannelMain.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_Channel.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\n\n\t\n\t//set object name\n    chan.varname = \"chanObjectName\" + index; \n\t\n\t//set presentation mode\n\tthis.patcher.message('script', 'sendbox', \"chanObjectName\" + index, 'presentation', 1);\n\t\n\t//add to array\n\tchannels.push(chan);\t\n}\n\n\n//gets called whe numBuffers changes\n//adds/removes buffers according to numBuffers\nfunction addRemoveChannels(index)\n{\r\n\t//size output for UI\r\n\toutlet(0, (index + 1) * (ySize + ySpacing) + yOffset);\t\r\n\t\n\t//add when needed\n\tif(index > channels.length - 1)\n\t{\n\t\tfor (var i = channels.length; i <= index; i++)\n\t\t{\n\t\t\tcreateChannel(i);\t\t\n\t\t}\n\t}\n\t//delete when needed\n\telse\n\t{\n\t\tfor(var i = channels.length -1; i > index; i--)\n\t\t{\n\t\t\tthis.patcher.remove(channels[i]);\n\t\t\tchannels.splice(i, 1);\r\n\t\t\t\r\n\t\t\t//remove from dict\r\n\t\t\tif (dict && dict.contains && typeof i !== 'undefined') \r\n\t\t\t{\n    \t\t\tlet key = String(i);\n    \t\t\tif(dict.contains(key)) \r\n\t\t\t\t{\n        \t\t\tdict.remove(key);\n    \t\t\t}\n\t\t\t}\n\t\t}\t\t\n\t}\n}\n\nfunction cleanOnClosing()\r\n{\r\n\tfor(var i = 0; i < channels.length; i++)\n\t{\n\t\tthis.patcher.remove(channels[i]);\n\t}\r\n\t\r\n\tchannels = [];\t\t\r\n}",
+					"code" : "/*\n    -create and delete channel / buffer objects\n    -add and remove them from buffers array\r\n\t-remove dict entry from dict\n    -output pos\n*/\n\n\noutlets = 2;\r\n\r\n//dict to store channel info\r\nvar dict = new Dict(\"channelDict\");\n\n//array to store all objects\nvar channels = [];\n\n//position and spacing\nvar ySize = 145;\n\nvar xOffset = 5;\nvar yOffset = 215;\n\nvar ySpacing = 2;\n\n//channel objects\nfunction createChannel(index)\n{\n\t//set position\n\tvar x = xOffset;\n\tvar y = index * (ySize + ySpacing) + yOffset;\n\t\r\n\t//create main channel as first channel\r\n\tif(index == 0)\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_ChannelMain.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t//create object\n\t\tvar chan = this.patcher.newdefault(x, y, \"bpatcher\",\n\t\t\"AST_V1_Channel.maxpat\", \"presentation\", 1,\n\t\t\"presentation_rect\", x, y, 1154, 166, \"@args\", index);\r\n\t}\n\n\t\n\t//set object name\n    chan.varname = \"chanObjectName\" + index; \n\t\n\t//set presentation mode\n\tthis.patcher.message('script', 'sendbox', \"chanObjectName\" + index, 'presentation', 1);\n\t\n\t//add to array\n\tchannels.push(chan);\t\n}\n\n\n//gets called whe numBuffers changes\n//adds/removes buffers according to numBuffers\nfunction addRemoveChannels(index)\n{\r\n\t//size output for UI\r\n\toutlet(0, (index + 1) * (ySize + ySpacing) + yOffset);\t\r\n\t\n\t//add when needed\n\tif(index > channels.length - 1)\n\t{\n\t\tfor (var i = channels.length; i <= index; i++)\n\t\t{\n\t\t\tcreateChannel(i);\t\t\n\t\t}\n\t}\n\t//delete when needed\n\telse\n\t{\n\t\tfor(var i = channels.length -1; i > index; i--)\n\t\t{\n\t\t\tthis.patcher.remove(channels[i]);\n\t\t\tchannels.splice(i, 1);\r\n\t\t\t\r\n\t\t\t//remove from dict\r\n\t\t\tif (dict && dict.contains && typeof i !== 'undefined') \r\n\t\t\t{\n    \t\t\tlet key = String(i);\n    \t\t\tif(dict.contains(key)) \r\n\t\t\t\t{\n        \t\t\tdict.remove(key);\n    \t\t\t}\n\t\t\t}\n\t\t}\t\t\n\t}\n}\n\n\nfunction clean()\r\n{\r\n\tfor(var i = 0; i < channels.length; i++)\n\t{\n\t\tthis.patcher.remove(channels[i]);\n\t}\r\n\t\r\n\tchannels = [];\t\t\r\n}",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -2542,6 +2553,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -2788,7 +2806,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 2471.5, 220.708341240882874, 2327.5, 220.708341240882874 ],
+					"midpoints" : [ 2489.287216305732727, 220.708341240882874, 2327.5, 220.708341240882874 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2902,6 +2920,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
 					"source" : [ "obj-65", 0 ]
 				}
@@ -2939,13 +2964,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-86", 0 ]
 				}
 
 			}
