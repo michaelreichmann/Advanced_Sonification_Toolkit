@@ -15,6 +15,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2406.382961511611938, 248.936168432235718, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1133,7 +1145,7 @@
 
 					}
 ,
-					"text" : "Selection Duration: 22.87 seconds"
+					"text" : "Selection Duration: 0.00 seconds"
 				}
 
 			}
@@ -1236,7 +1248,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: -"
+					"text" : "Number Of Datapoints: 1000"
 				}
 
 			}
@@ -1269,7 +1281,7 @@
 
 					}
 ,
-					"text" : "Duration: -"
+					"text" : "Duration: 9.99 seconds"
 				}
 
 			}
@@ -1303,7 +1315,7 @@
 
 					}
 ,
-					"text" : "Selection End: 49.00 seconds"
+					"text" : "Selection End: 0.36 seconds"
 				}
 
 			}
@@ -1337,7 +1349,7 @@
 
 					}
 ,
-					"text" : "Selection Start: 26.13 seconds"
+					"text" : "Selection Start: 0.36 seconds"
 				}
 
 			}
@@ -2616,6 +2628,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-234", 0 ],
 					"source" : [ "obj-11", 0 ]
