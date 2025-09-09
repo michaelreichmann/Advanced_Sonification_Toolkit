@@ -642,8 +642,8 @@
 					"numinlets" : 8,
 					"numoutlets" : 8,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 713.0, 315.0, 348.0, 22.0 ],
-					"text" : "AST_V1_ChannelRouting"
+					"patching_rect" : [ 713.0, 315.0, 347.999999999999773, 22.0 ],
+					"text" : "AST_V2_ChannelRouting"
 				}
 
 			}
@@ -1023,16 +1023,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AST_V1_ChannelRouting.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+				"name" : "AST_V2_ChannelRouting.maxpat",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MixingMatrix.js",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../../../Desktop",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

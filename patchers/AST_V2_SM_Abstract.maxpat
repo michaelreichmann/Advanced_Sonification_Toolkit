@@ -828,8 +828,8 @@
 					"numinlets" : 8,
 					"numoutlets" : 8,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 713.0, 315.0, 348.0, 22.0 ],
-					"text" : "AST_V1_ChannelRouting"
+					"patching_rect" : [ 713.0, 315.0, 347.999999999999773, 22.0 ],
+					"text" : "AST_V2_ChannelRouting"
 				}
 
 			}
@@ -1026,9 +1026,9 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 240.0, 248.0, 209.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 2,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-16"
 									}
 
@@ -1038,9 +1038,9 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 430.0, 179.0, 88.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 2,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-15"
 									}
 
@@ -1050,9 +1050,9 @@
 										"maxclass" : "newobj",
 										"text" : "latch",
 										"patching_rect" : [ 499.0, 100.0, 82.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 2,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-13"
 									}
 
@@ -1062,9 +1062,9 @@
 										"maxclass" : "newobj",
 										"text" : "noise",
 										"patching_rect" : [ 499.0, 16.0, 37.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-12"
 									}
 
@@ -1074,9 +1074,9 @@
 										"maxclass" : "newobj",
 										"text" : "== 0",
 										"patching_rect" : [ 562.0, 59.0, 33.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 1,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-11"
 									}
 
@@ -1086,9 +1086,9 @@
 										"maxclass" : "newobj",
 										"text" : "elapsed",
 										"patching_rect" : [ 562.0, 16.0, 51.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-10"
 									}
 
@@ -1098,9 +1098,9 @@
 										"maxclass" : "newobj",
 										"text" : "in 2",
 										"patching_rect" : [ 430.0, 140.0, 28.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-7"
 									}
 
@@ -1110,9 +1110,9 @@
 										"maxclass" : "newobj",
 										"text" : "mc_channel",
 										"patching_rect" : [ 240.0, 140.0, 73.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-6"
 									}
 
@@ -1122,9 +1122,9 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 61.0, 301.0, 198.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 2,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-5"
 									}
 
@@ -1134,9 +1134,9 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 61.0, 51.0, 28.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-1"
 									}
 
@@ -1155,57 +1155,8 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-5", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-13", 0 ],
-										"destination" : [ "obj-15", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-4", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-10", 0 ],
-										"destination" : [ "obj-11", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-11", 0 ],
-										"destination" : [ "obj-13", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-12", 0 ],
-										"destination" : [ "obj-13", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-15", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-6", 0 ],
-										"destination" : [ "obj-16", 0 ]
+										"source" : [ "obj-15", 0 ],
+										"destination" : [ "obj-16", 1 ]
 									}
 
 								}
@@ -1218,8 +1169,57 @@
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-15", 0 ],
-										"destination" : [ "obj-16", 1 ]
+										"source" : [ "obj-6", 0 ],
+										"destination" : [ "obj-16", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-15", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-12", 0 ],
+										"destination" : [ "obj-13", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-11", 0 ],
+										"destination" : [ "obj-13", 1 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-10", 0 ],
+										"destination" : [ "obj-11", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-4", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-13", 0 ],
+										"destination" : [ "obj-15", 1 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-5", 0 ]
 									}
 
 								}
@@ -1235,7 +1235,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 423.0, 885.0, 341.0, 22.0 ],
 					"text" : "mc.gen~ @t overtones",
-					"wrapper_uniquekey" : "u899010890"
+					"wrapper_uniquekey" : "u327009390"
 				}
 
 			}
@@ -1260,9 +1260,9 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 10.0, 10.0, 28.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"numoutlets" : 1,
-										"outlettype" : [ "" ],
 										"id" : "obj-5"
 									}
 
@@ -1271,13 +1271,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 10.0, 47.0, 633.0, 372.0 ],
-										"numinlets" : 1,
-										"numoutlets" : 1,
 										"fontsize" : 12.0,
 										"outlettype" : [ "" ],
-										"id" : "obj-3",
 										"fontname" : "<Monospaced>",
+										"numinlets" : 1,
 										"fontface" : 0,
+										"numoutlets" : 1,
+										"id" : "obj-3",
 										"code" : "//max amplitude dpending on overtone number\r\novertoneAmplitude = pow(1 - (mc_channel / mc_channelcount), 0.5);\r\n\r\n//activate channel depending on input\r\nactiveChannel = (in1 * mc_channelcount) >= (mc_channel - 1);\r\n\r\n//get mix for last active channel\r\nmixChannel = floor(in1 * (mc_channelcount)) + 1;\r\nmixVal = 1;\r\n\r\nif(mc_channel == mixChannel)\r\n{\r\n\tmixVal = fract(in1 * mc_channelcount);\r\n}\r\n\r\n\r\n\r\nout1 = activeChannel * mixVal * overtoneAmplitude;"
 									}
 
@@ -1296,15 +1296,15 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-3", 0 ]
+										"source" : [ "obj-3", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-3", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-3", 0 ]
 									}
 
 								}
@@ -1320,7 +1320,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1047.0, 946.0, 154.0, 22.0 ],
 					"text" : "mc.gen~ @t overtoneAmps",
-					"wrapper_uniquekey" : "u633010758"
+					"wrapper_uniquekey" : "u424010438"
 				}
 
 			}
@@ -1678,7 +1678,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 863.5, 719.453125, 754.5, 719.453125 ],
+					"midpoints" : [ 863.499999999999886, 719.453125, 754.5, 719.453125 ],
 					"order" : 1,
 					"source" : [ "obj-55", 3 ]
 				}
@@ -1696,7 +1696,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 816.5, 621.0, 1056.5, 621.0 ],
+					"midpoints" : [ 816.499999999999886, 621.0, 1056.5, 621.0 ],
 					"order" : 0,
 					"source" : [ "obj-55", 2 ]
 				}
@@ -1723,7 +1723,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"midpoints" : [ 816.5, 377.875, 654.0234375, 377.875, 654.0234375, 18.37109375, 944.5, 18.37109375 ],
+					"midpoints" : [ 816.499999999999886, 377.875, 654.0234375, 377.875, 654.0234375, 18.37109375, 944.5, 18.37109375 ],
 					"order" : 1,
 					"source" : [ "obj-55", 2 ]
 				}
@@ -1732,7 +1732,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 863.5, 392.28125, 632.5234375, 392.28125, 632.5234375, 6.18359375, 1056.5, 6.18359375 ],
+					"midpoints" : [ 863.499999999999886, 392.28125, 632.5234375, 392.28125, 632.5234375, 6.18359375, 1056.5, 6.18359375 ],
 					"order" : 0,
 					"source" : [ "obj-55", 3 ]
 				}
@@ -1842,10 +1842,17 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AST_V1_ChannelRouting.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+				"name" : "AST_V2_ChannelRouting.maxpat",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MixingMatrix.js",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

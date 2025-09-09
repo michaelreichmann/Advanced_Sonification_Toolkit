@@ -1,4 +1,4 @@
-# Advanced Sonification Toolkit V_1
+# Advanced Sonification Toolkit V_2
 
 *Max 9.0.7*
 

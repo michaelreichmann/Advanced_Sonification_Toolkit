@@ -1,62 +1,67 @@
 {
-	"name" : "AST_V1",
+	"name" : "AST_V2",
 	"version" : 1,
 	"creationdate" : 3826427134,
-	"modificationdate" : 3839320384,
-	"viewrect" : [ 139.0, 253.0, 300.0, 500.0 ],
+	"modificationdate" : 3840254576,
+	"viewrect" : [ 958.0, 118.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"AST_V1_SM_AATest.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_ChannelRouting.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_SM_Abstract.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_SM_Ambient.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_SM_Musical.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_Sounddesign_Module_Template.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_Channel.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_receiveFromChannelDict.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"AST_V1_Main.maxpat" : 			{
+			"AST_V2_Channel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
 			}
 ,
-			"AST_V1_ChannelContainer.maxpat" : 			{
+			"AST_V2_ChannelContainer.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_ChannelRouting.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_Main.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_receiveFromChannelDict.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_SM_AATest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_SM_Abstract.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_SM_Ambient.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"thru.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_SM_Musical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AST_V2_Sounddesign_Module_Template.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -68,19 +73,10 @@
 				"kind" : "imagefile",
 				"local" : 1
 			}
-,
-			"abstract_module_Screenshot.png" : 			{
-				"kind" : "imagefile",
-				"local" : 1
-			}
 
 		}
 ,
 		"code" : 		{
-			"MixingMatrix.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
 
 		}
 
@@ -100,6 +96,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0,
+	"viewmode" : 1,
 	"includepackages" : 0
 }

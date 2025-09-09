@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
+		"rect" : [ 34.0, 87.0, 1017.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -57,7 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2640.0, 1218.0, 249.0, 22.0 ],
-					"text" : "AST_V1_receiveFromChannelDict 0 duration"
+					"text" : "AST_V2_receiveFromChannelDict 0 duration"
 				}
 
 			}
@@ -69,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2570.0, 1183.0, 287.0, 22.0 ],
-					"text" : "AST_V1_receiveFromChannelDict 0 numDataPoints"
+					"text" : "AST_V2_receiveFromChannelDict 0 numDataPoints"
 				}
 
 			}
@@ -126,7 +126,7 @@
 
 					}
 ,
-					"text" : "Samplerate: 100.33 Hz"
+					"text" : "Samplerate: -"
 				}
 
 			}
@@ -153,7 +153,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -686,7 +686,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -919,7 +919,7 @@
 					"fontname" : "Ableton Sans Medium",
 					"fontsize" : 13.0,
 					"id" : "obj-24",
-					"items" : [ "none", ",", "AST_V1_SM_AATest.maxpat", ",", "AST_V1_SM_Abstract.maxpat", ",", "AST_V1_SM_Ambient.maxpat", ",", "AST_V1_SM_Musical.maxpat" ],
+					"items" : "none",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1088,7 +1088,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2134.085098743438721, 1370.0, 249.0, 22.0 ],
-					"text" : "AST_V1_receiveFromChannelDict 0 duration"
+					"text" : "AST_V2_receiveFromChannelDict 0 duration"
 				}
 
 			}
@@ -1100,7 +1100,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2132.085098743438721, 1190.0, 287.0, 22.0 ],
-					"text" : "AST_V1_receiveFromChannelDict 0 numDataPoints"
+					"text" : "AST_V2_receiveFromChannelDict 0 numDataPoints"
 				}
 
 			}
@@ -1365,7 +1365,7 @@
 
 					}
 ,
-					"text" : "Number Of Datapoints: 30000"
+					"text" : "Number Of Datapoints: -"
 				}
 
 			}
@@ -1398,7 +1398,7 @@
 
 					}
 ,
-					"text" : "Duration: 299.99 seconds"
+					"text" : "Duration: -"
 				}
 
 			}
@@ -1495,7 +1495,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1519,7 +1519,7 @@
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 429.0, 134.0, 249.0, 22.0 ],
@@ -1860,7 +1860,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3303,46 +3303,6 @@
 			"obj-124" : [ "play", "play", 0 ],
 			"obj-136" : [ "stop", "stop", 0 ],
 			"obj-140" : [ "live.tab", "live.tab", 0 ],
-			"obj-19::obj-1::obj-1" : [ "live.drop[9]", "live.drop", 0 ],
-			"obj-19::obj-1::obj-122" : [ "live.menu[9]", "live.menu", 0 ],
-			"obj-19::obj-1::obj-136" : [ "live.text[27]", "live.text", 0 ],
-			"obj-19::obj-1::obj-186" : [ "live.text[26]", "live.text", 0 ],
-			"obj-19::obj-1::obj-40" : [ "live.text[25]", "live.text[1]", 0 ],
-			"obj-19::obj-2::obj-1" : [ "live.drop[2]", "live.drop", 0 ],
-			"obj-19::obj-2::obj-122" : [ "live.menu[2]", "live.menu", 0 ],
-			"obj-19::obj-2::obj-136" : [ "live.text[5]", "live.text", 0 ],
-			"obj-19::obj-2::obj-186" : [ "live.text[6]", "live.text", 0 ],
-			"obj-19::obj-2::obj-40" : [ "live.text[4]", "live.text[1]", 0 ],
-			"obj-19::obj-3::obj-1" : [ "live.drop[3]", "live.drop", 0 ],
-			"obj-19::obj-3::obj-122" : [ "live.menu[3]", "live.menu", 0 ],
-			"obj-19::obj-3::obj-136" : [ "live.text[9]", "live.text", 0 ],
-			"obj-19::obj-3::obj-186" : [ "live.text[7]", "live.text", 0 ],
-			"obj-19::obj-3::obj-40" : [ "live.text[8]", "live.text[1]", 0 ],
-			"obj-19::obj-4::obj-1" : [ "live.drop[4]", "live.drop", 0 ],
-			"obj-19::obj-4::obj-122" : [ "live.menu[4]", "live.menu", 0 ],
-			"obj-19::obj-4::obj-136" : [ "live.text[10]", "live.text", 0 ],
-			"obj-19::obj-4::obj-186" : [ "live.text[11]", "live.text", 0 ],
-			"obj-19::obj-4::obj-40" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-19::obj-5::obj-1" : [ "live.drop[5]", "live.drop", 0 ],
-			"obj-19::obj-5::obj-122" : [ "live.menu[5]", "live.menu", 0 ],
-			"obj-19::obj-5::obj-136" : [ "live.text[13]", "live.text", 0 ],
-			"obj-19::obj-5::obj-186" : [ "live.text[14]", "live.text", 0 ],
-			"obj-19::obj-5::obj-40" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-19::obj-6::obj-1" : [ "live.drop[6]", "live.drop", 0 ],
-			"obj-19::obj-6::obj-122" : [ "live.menu[6]", "live.menu", 0 ],
-			"obj-19::obj-6::obj-136" : [ "live.text[17]", "live.text", 0 ],
-			"obj-19::obj-6::obj-186" : [ "live.text[18]", "live.text", 0 ],
-			"obj-19::obj-6::obj-40" : [ "live.text[16]", "live.text[1]", 0 ],
-			"obj-19::obj-7::obj-1" : [ "live.drop[7]", "live.drop", 0 ],
-			"obj-19::obj-7::obj-122" : [ "live.menu[7]", "live.menu", 0 ],
-			"obj-19::obj-7::obj-136" : [ "live.text[21]", "live.text", 0 ],
-			"obj-19::obj-7::obj-186" : [ "live.text[20]", "live.text", 0 ],
-			"obj-19::obj-7::obj-40" : [ "live.text[19]", "live.text[1]", 0 ],
-			"obj-19::obj-8::obj-1" : [ "live.drop[8]", "live.drop", 0 ],
-			"obj-19::obj-8::obj-122" : [ "live.menu[8]", "live.menu", 0 ],
-			"obj-19::obj-8::obj-136" : [ "live.text[23]", "live.text", 0 ],
-			"obj-19::obj-8::obj-186" : [ "live.text[22]", "live.text", 0 ],
-			"obj-19::obj-8::obj-40" : [ "live.text[24]", "live.text[1]", 0 ],
 			"obj-230" : [ "playbakcSpeed", "playbakcSpeed", 0 ],
 			"obj-53" : [ "live.gain~", "Volume", 0 ],
 			"obj-59" : [ "live.button", "live.button", 0 ],
@@ -3357,212 +3317,55 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-19::obj-2::obj-1" : 				{
-					"parameter_longname" : "live.drop[2]"
-				}
-,
-				"obj-19::obj-2::obj-122" : 				{
-					"parameter_longname" : "live.menu[2]"
-				}
-,
-				"obj-19::obj-2::obj-136" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
-				"obj-19::obj-2::obj-186" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-19::obj-2::obj-40" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-19::obj-3::obj-1" : 				{
-					"parameter_longname" : "live.drop[3]"
-				}
-,
-				"obj-19::obj-3::obj-122" : 				{
-					"parameter_longname" : "live.menu[3]"
-				}
-,
-				"obj-19::obj-3::obj-136" : 				{
-					"parameter_longname" : "live.text[9]"
-				}
-,
-				"obj-19::obj-3::obj-186" : 				{
-					"parameter_longname" : "live.text[7]"
-				}
-,
-				"obj-19::obj-3::obj-40" : 				{
-					"parameter_longname" : "live.text[8]"
-				}
-,
-				"obj-19::obj-4::obj-1" : 				{
-					"parameter_longname" : "live.drop[4]"
-				}
-,
-				"obj-19::obj-4::obj-122" : 				{
-					"parameter_longname" : "live.menu[4]"
-				}
-,
-				"obj-19::obj-4::obj-136" : 				{
-					"parameter_longname" : "live.text[10]"
-				}
-,
-				"obj-19::obj-4::obj-186" : 				{
-					"parameter_longname" : "live.text[11]"
-				}
-,
-				"obj-19::obj-4::obj-40" : 				{
-					"parameter_longname" : "live.text[12]"
-				}
-,
-				"obj-19::obj-5::obj-1" : 				{
-					"parameter_longname" : "live.drop[5]"
-				}
-,
-				"obj-19::obj-5::obj-122" : 				{
-					"parameter_longname" : "live.menu[5]"
-				}
-,
-				"obj-19::obj-5::obj-136" : 				{
-					"parameter_longname" : "live.text[13]"
-				}
-,
-				"obj-19::obj-5::obj-186" : 				{
-					"parameter_longname" : "live.text[14]"
-				}
-,
-				"obj-19::obj-5::obj-40" : 				{
-					"parameter_longname" : "live.text[15]"
-				}
-,
-				"obj-19::obj-6::obj-1" : 				{
-					"parameter_longname" : "live.drop[6]"
-				}
-,
-				"obj-19::obj-6::obj-122" : 				{
-					"parameter_longname" : "live.menu[6]"
-				}
-,
-				"obj-19::obj-6::obj-136" : 				{
-					"parameter_longname" : "live.text[17]"
-				}
-,
-				"obj-19::obj-6::obj-186" : 				{
-					"parameter_longname" : "live.text[18]"
-				}
-,
-				"obj-19::obj-6::obj-40" : 				{
-					"parameter_longname" : "live.text[16]"
-				}
-,
-				"obj-19::obj-7::obj-1" : 				{
-					"parameter_longname" : "live.drop[7]"
-				}
-,
-				"obj-19::obj-7::obj-122" : 				{
-					"parameter_longname" : "live.menu[7]"
-				}
-,
-				"obj-19::obj-7::obj-136" : 				{
-					"parameter_longname" : "live.text[21]"
-				}
-,
-				"obj-19::obj-7::obj-186" : 				{
-					"parameter_longname" : "live.text[20]"
-				}
-,
-				"obj-19::obj-7::obj-40" : 				{
-					"parameter_longname" : "live.text[19]"
-				}
-,
-				"obj-19::obj-8::obj-1" : 				{
-					"parameter_longname" : "live.drop[8]"
-				}
-,
-				"obj-19::obj-8::obj-122" : 				{
-					"parameter_longname" : "live.menu[8]"
-				}
-,
-				"obj-19::obj-8::obj-136" : 				{
-					"parameter_longname" : "live.text[23]"
-				}
-,
-				"obj-19::obj-8::obj-186" : 				{
-					"parameter_longname" : "live.text[22]"
-				}
-,
-				"obj-19::obj-8::obj-40" : 				{
-					"parameter_longname" : "live.text[24]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "AST_V1_Channel.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AST_V1_ChannelContainer.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AST_V1_receiveFromChannelDict.maxpat",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/Patches/AST_V1/patchers",
+				"name" : "AST_V2_receiveFromChannelDict.maxpat",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grab_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mark_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "move_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pause_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "play_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stop_UI.svg",
-				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit_V1/UI",
-				"patcherrelativepath" : "../../../UI",
+				"bootpath" : "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
+				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
