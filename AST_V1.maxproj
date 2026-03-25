@@ -2,18 +2,14 @@
     "name": "AST_V1",
     "version": 1,
     "creationdate": 3826427134,
-    "modificationdate": 3854172671,
-    "viewrect": [ 139.0, 253.0, 300.0, 500.0 ],
+    "modificationdate": 3856250376,
+    "viewrect": [ 16.0, 108.0, 384.0, 500.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 0,
     "showdependencies": 1,
     "autolocalize": 0,
     "contents": {
         "patchers": {
-            "AST_V1_SM_AATest.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
             "AST_V1_ChannelRouting.maxpat": {
                 "kind": "patcher",
                 "local": 1
@@ -24,7 +20,8 @@
             },
             "AST_V1_SM_Ambient.maxpat": {
                 "kind": "patcher",
-                "local": 1
+                "local": 1,
+                "disclosed": 0
             },
             "AST_V1_SM_Musical.maxpat": {
                 "kind": "patcher",
@@ -48,6 +45,26 @@
                 "toplevel": 1
             },
             "AST_V1_ChannelContainer.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V1_DM_Step_Detection.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V1_SM_Test.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V1_Detection_Module_Template.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V1_DM_Breathing_Detection.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V1_DM_Magnitude.maxpat": {
                 "kind": "patcher",
                 "local": 1
             }

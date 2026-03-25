@@ -1,8 +1,8 @@
 # Advanced Sonification Toolkit V_1
 
-*Max 9.0.7*
+*Max 9.1.2*
 
-Max Project for the first Version of the **Advanced Sonification Toolkit**.
+Max Project for the **Advanced Sonification Toolkit**.
 
 
 ![Toolkit UI](./media/toolkit_Screenshot.png)
@@ -30,12 +30,18 @@ The toolkit enables movement-based sonification of recorded sensor data through 
 - **Graphical Interface**:
   - Control over waveform selection, playback, and data shaping.
 
+- **Modular Processing Architecture**:
+  - Supports both **raw data streams** and **derived feature streams** through detection modules.
+  - Flexible routing allows combining raw sensor data and detected events for sound control.
+
+![Schematic Overview](./media/step_detection_module_Screenshot.png)
+
 
 ## User Interface Overview
 
-The UI of the Sonification Toolkit in Max/MSP is designed to access playback control, waveform navigation, channel management and data manipulation7filtering. It is modular and supports flexible integration of different sensor channels.
+The UI of the Sonification Toolkit in Max/MSP is designed to access playback control, waveform navigation, channel management and data manipulation/filtering. It is modular and supports flexible integration of different sensor channels and processing modules.
 
-###  Playback Section
+### Playback Section
 - **Play / Pause / Stop buttons** for controlling the playback of data.
 - **Playback Speed**: Adjustable from 1–1000% .
 - **Data Metrics**:
@@ -80,6 +86,19 @@ Each input channel includes:
   - Adjust non-linear response curves.
   - Real-time feedback of current normalized value.
 
+### Processing and Routing
+- **Raw Data Routing**:
+  - Direct mapping of processed input channels to sound parameters.
+
+- **Detection Modules**:
+  - Extract higher-level features (e.g., events, magnitude) from input data.
+  - Outputs are available alongside raw signals.
+
+- **Mapping Matrix**:
+  - Assigns both raw data and detection outputs to sound parameters.
+  - When input data is mapped to a parameter, manual control is deactivated.
+
+
 ### Sound Design Modules
 
 ![Sound Design Module UI](./media/abstract_module_Screenshot.png)
@@ -106,7 +125,7 @@ The toolkit currently includes **4 sound design modules**:
    - Additive synthesizer  
    - **Parameters**:  
      - `Pitch`  
-     - `Harmonicity` (relationship of overtones: 0 = harmonic", 1 = disharmonic)  
+     - `Harmonicity` (relationship of overtones: 0 = harmonic, 1 = disharmonic)  
      - `Timbre` (Number and volume of overtones)
 
 3. **Musical**  
@@ -126,6 +145,7 @@ The toolkit currently includes **4 sound design modules**:
      - `Thunder`
 
 A template (`AST_V1_Sounddesign_Module_Template.maxpat`) is included to allow users to create and integrate custom **sound design modules**.
+
 In the template, the Max project automatically recognizes new modules and adds them to the toolkit interface:
 
 1. **Patcher Naming**  
@@ -139,6 +159,63 @@ In the template, the Max project automatically recognizes new modules and adds t
    - Place all parameter knobs/sliders inside the `"Manual Controls"` section in **Presentation Mode** for UI consistency.
 
 
+## Detection Modules
+
+Detection modules extract features and events from input data and make them available as control signals for sound parameters. Their outputs appear in the mapping matrix alongside raw data and can be freely assigned.
+
+Detection modules can use one or multiple input channels. These inputs are selected via dropdown menus and can be routed independently of how the same raw channels are used elsewhere.
+
+![Detection Module UI](./media/toolkit_schematic_overview.png)
+
+The toolkit currently includes **3 detection modules**:
+
+### 1. Step Detection
+- Detects sudden changes in direction (impulses/steps) from 3 input channels (e.g., accelerometer x, y, z).
+- Detected impulses trigger an envelope that can be mapped to sound parameters.
+
+**Parameters**:
+- Input channels  
+- Trigger threshold (sensitivity)  
+- Min. Trigger Interval (prevents re-triggering)  
+- Envelope (graphical editor: click/drag points, option + click to change curvature)  
+- Duration of the envelope  
+- Min and Max envelope output  
+
+Based on the Oxford Step Counter:  
+https://oxford-step-counter.github.io
+
+
+### 2. Breathing Detection
+- Extracts breathing events (peaks and troughs) from a single input channel.
+- Peaks and troughs each trigger independent envelopes.
+
+**Parameters**:
+- Input channel  
+- Duration of the envelope  
+- Min and Max envelope output  
+- Curve (graphical editor: click/drag points, option + click to change curvature)  
+
+Based on:  
+Harbour, E., Lasshofer, M., Genitrini, M., & Schwameder, H. (2021). *Enhanced breathing pattern detection during running using wearable sensors*. Sensors, 21(16), 5606.
+
+
+### 3. Magnitude
+- Computes the normalized magnitude from 3 input channels (e.g., accelerometer x, y, z).
+
+
+### Detection Module Template
+
+A template is included to create custom detection modules:
+
+1. **Patcher Naming**  
+   - Use the format: `"AST_V1_DM_*.maxpat"` so the toolkit identifies it as a detection module.
+
+2. **Detection Algorithm**  
+   - Implement a custom detection process and connect parameter outputs.  
+   - Incoming signals from data playback are always in the range of 0–1.
+
+3. **UI Integration**  
+   - Place all parameter controls in **Presentation Mode** for consistent UI integration.
 
 
 <br/>
