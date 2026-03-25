@@ -34,6 +34,7 @@ The toolkit enables movement-based sonification of recorded sensor data through 
   - Supports both **raw data streams** and **derived feature streams** through detection modules.
   - Flexible routing allows combining raw sensor data and detected events for sound control.
 
+
 ![Schematic Overview](./media/toolkit_schematic_overview.png)
 
 
@@ -43,7 +44,7 @@ The UI of the Sonification Toolkit in Max/MSP is designed to access playback con
 
 ### Playback Section
 - **Play / Pause / Stop buttons** for controlling the playback of data.
-- **Playback Speed**: Adjustable from 1–1000% .
+- **Playback Speed**: Adjustable from 1 – 1000% .
 - **Data Metrics**:
   - Number of datapoints.
   - Total duration (in seconds).
