@@ -34,7 +34,7 @@ The toolkit enables movement-based sonification of recorded sensor data through 
   - Supports both **raw data streams** and **derived feature streams** through detection modules.
   - Flexible routing allows combining raw sensor data and detected events for sound control.
 
-![Schematic Overview](./media/step_detection_module_Screenshot.png)
+![Schematic Overview](./media/toolkit_schematic_overview.png)
 
 
 ## User Interface Overview
@@ -165,7 +165,7 @@ Detection modules extract features and events from input data and make them avai
 
 Detection modules can use one or multiple input channels. These inputs are selected via dropdown menus and can be routed independently of how the same raw channels are used elsewhere.
 
-![Detection Module UI](./media/toolkit_schematic_overview.png)
+![Detection Module UI](./media/step_detection_module_Screenshot.png)
 
 The toolkit currently includes **3 detection modules**:
 
