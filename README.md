@@ -1,77 +1,98 @@
 # Advanced Sonification Toolkit V_2
 
-*Max 9.0.7*
+*Max 9.1.2*
 
-Max Project for the first Version of the **Advanced Sonification Toolkit**.
+Max Project for the **Advanced Sonification Toolkit**.
 
 
 ![Toolkit UI](./media/toolkit_Screenshot.png)
 
-The toolkit enables movement-based sonification of recorded sensor data through the following core features:
+The toolkit enables movement-based sonification of real-time sensor data through the following core features:
 
 <br/>
 
 ## Functionality Summary
 - **Input**:
-  - Input data as a 2-channel `.wav` file:
-    - **Channel 1**: Timestamps
-    - **Channel 2**: Signal values
-
-- **Dynamic Playback Engine**:
-  - Respects native time resolution of recorded sensor data by dynamic **sampling rate adaptation**.
-  - Supports **variable playback speed**.
+  - Real-time data input via:
+    - **Serial Communication**
+    - **OSC (Open Sound Control) over WiFi**
 
 - **Multi-Channel Support**:
-  - Multiple channels can be loaded and played back simultaneously.
+  - Multiple channels can be configured and processed simultaneously.
+  - Each channel represents a single data stream.
+
+- **Flexible Data Parsing**:
+  - Filtering of incoming data using address identifiers.
+  - Extraction of specific values from data streams using list indexing.
 
 - **Normalization and Filtering**:
   - Minimum/Maximum values to implement the critical range for sonification.
 
 - **Graphical Interface**:
-  - Control over waveform selection, playback, and data shaping.
+  - Control over input configuration, data monitoring, and data shaping.
+
+- **Modular Processing Architecture**:
+  - Supports both **raw data streams** and **derived feature streams** through detection modules.
+  - Flexible routing allows combining raw sensor data and detected events for sound control.
+
+
+![Schematic Overview](./media/toolkit_schematic_overview.png)
 
 
 ## User Interface Overview
 
-The UI of the Sonification Toolkit in Max/MSP is designed to access playback control, waveform navigation, channel management and data manipulation7filtering. It is modular and supports flexible integration of different sensor channels.
+The UI of the Sonification Toolkit in Max/MSP is designed to access input configuration, channel management, and data manipulation/filtering. It is modular and supports flexible integration of different sensor channels and processing modules.
 
-###  Playback Section
-- **Play / Pause / Stop buttons** for controlling the playback of data.
-- **Playback Speed**: Adjustable from 1–1000% .
-- **Data Metrics**:
-  - Number of datapoints.
-  - Total duration (in seconds).
+### Input Configuration
+- **Input Type Selection**:
+  - Choose between **Serial** and **OSC** per channel.
+
+- **Serial Input**:
+  - Select available serial port.
+  - Set baud rate.
+
+- **OSC Input**:
+  - Define OSC address for incoming data.
+
+- **Address Filtering**:
+  - Filter incoming messages using a string identifier (e.g., `X:` or `xyz:`).
+
+- **List Item Selection**:
+  - Extract specific values from grouped data streams.
+  - Example:
+    - Input: `xyz: 0.0012 0.134 1.233`
+    - Address: `xyz:`
+    - List Item:
+      - `1` → X  
+      - `2` → Y  
+      - `3` → Z  
+
+- **Data Monitor**:
+  - Displays incoming data in real time to assist with configuration and filtering.
 
 
 ### Input Channels
 - **Channel Selector**: 
   - Indicates the number of available channels.
+  - Each channel processes one data stream.
+  - Multiple channels are required for multi-dimensional data (e.g., X, Y, Z).
 
-### Waveform Navigation
-- **Navigation Controls**:
-  - Zooming and selection functionality for precise waveform inspection.
-
-- **Time Selection Panel**:
-  - Displays selection start, end, and duration.
 
 ### Channel View
 Each input channel includes:
 
-#### File Loader
-- Drag-and-drop or file picker to load a `.wav` file.
-- Displays file path and metadata.
+#### Input Settings
+- Selection of input type (Serial / OSC).
+- Configuration of port, baud rate, or OSC address.
+- Address filter and list item selection.
 
-#### File Info
-- Minimum, maximum, and average value of the loaded signal data.
+#### Data Monitor
+- Real-time display of incoming data.
 
-#### Waveform Display
-- Interactive waveform with indication of selected range.
-- Responds to zoom and navigation inputs.
-- Cursor displaying the playback position.
+#### Data Info
+- Minimum, maximum, and current value of the incoming signal.
 
 ### Data Processing Controls
-- **Interpolation Options**:
-  - Shows latency estimate.
 - **Clamp Data**:
   - Minimum and maximum values to constrain the signal range.
 - **Low Pass Filter**:
@@ -79,6 +100,19 @@ Each input channel includes:
 - **Exponent Shaping**:
   - Adjust non-linear response curves.
   - Real-time feedback of current normalized value.
+
+### Processing and Routing
+- **Raw Data Routing**:
+  - Direct mapping of processed input channels to sound parameters.
+
+- **Detection Modules**:
+  - Extract higher-level features (e.g., events, magnitude) from input data.
+  - Outputs are available alongside raw signals.
+
+- **Mapping Matrix**:
+  - Assigns both raw data and detection outputs to sound parameters.
+  - When input data is mapped to a parameter, manual control is deactivated.
+
 
 ### Sound Design Modules
 
@@ -106,7 +140,7 @@ The toolkit currently includes **4 sound design modules**:
    - Additive synthesizer  
    - **Parameters**:  
      - `Pitch`  
-     - `Harmonicity` (relationship of overtones: 0 = harmonic", 1 = disharmonic)  
+     - `Harmonicity` (relationship of overtones: 0 = harmonic, 1 = disharmonic)  
      - `Timbre` (Number and volume of overtones)
 
 3. **Musical**  
@@ -126,6 +160,7 @@ The toolkit currently includes **4 sound design modules**:
      - `Thunder`
 
 A template (`AST_V1_Sounddesign_Module_Template.maxpat`) is included to allow users to create and integrate custom **sound design modules**.
+
 In the template, the Max project automatically recognizes new modules and adds them to the toolkit interface:
 
 1. **Patcher Naming**  
@@ -139,6 +174,63 @@ In the template, the Max project automatically recognizes new modules and adds t
    - Place all parameter knobs/sliders inside the `"Manual Controls"` section in **Presentation Mode** for UI consistency.
 
 
+## Detection Modules
+
+Detection modules extract features and events from input data and make them available as control signals for sound parameters. Their outputs appear in the mapping matrix alongside raw data and can be freely assigned.
+
+Detection modules can use one or multiple input channels. These inputs are selected via dropdown menus and can be routed independently of how the same raw channels are used elsewhere.
+
+![Detection Module UI](./media/step_detection_module_Screenshot.png)
+
+The toolkit currently includes **3 detection modules**:
+
+### 1. Step Detection
+- Detects sudden changes in direction (impulses/steps) from 3 input channels (e.g., accelerometer x, y, z).
+- Detected impulses trigger an envelope that can be mapped to sound parameters.
+
+**Parameters**:
+- Input channels  
+- Trigger threshold (sensitivity)  
+- Min. Trigger Interval (prevents re-triggering)  
+- Envelope (graphical editor: click/drag points, option + click to change curvature)  
+- Duration of the envelope  
+- Min and Max envelope output  
+
+Based on the Oxford Step Counter:  
+https://oxford-step-counter.github.io
+
+
+### 2. Breathing Detection
+- Extracts breathing events (peaks and troughs) from a single input channel.
+- Peaks and troughs each trigger independent envelopes.
+
+**Parameters**:
+- Input channel  
+- Duration of the envelope  
+- Min and Max envelope output  
+- Curve (graphical editor: click/drag points, option + click to change curvature)  
+
+Based on:  
+Harbour, E., Lasshofer, M., Genitrini, M., & Schwameder, H. (2021). *Enhanced breathing pattern detection during running using wearable sensors*. Sensors, 21(16), 5606.
+
+
+### 3. Magnitude
+- Computes the normalized magnitude from 3 input channels (e.g., accelerometer x, y, z).
+
+
+### Detection Module Template
+
+A template is included to create custom detection modules:
+
+1. **Patcher Naming**  
+   - Use the format: `"AST_V1_DM_*.maxpat"` so the toolkit identifies it as a detection module.
+
+2. **Detection Algorithm**  
+   - Implement a custom detection process and connect parameter outputs.  
+   - Incoming signals from data input are always in the range of 0–1.
+
+3. **UI Integration**  
+   - Place all parameter controls in **Presentation Mode** for consistent UI integration.
 
 
 <br/>

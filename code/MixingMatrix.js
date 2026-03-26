@@ -8,8 +8,8 @@ let columns = 5;
 
 let maxNumChans = 8;
 
-let upperMargin = 0.1;
-let leftMargin = 0.06;
+let upperMargin = 0.075;
+let leftMargin = 0.075;
 
 let buttons = [];
 
@@ -23,7 +23,14 @@ let height = box.rect[3] - box.rect[1];
 
 let aspect = width / height;
 
-let circleRadius = 0.1;
+let circleRadius = 0.075;
+
+let detectionDict = new Dict("detectionDict");
+
+let detectKeys = [];
+let numDetectChannels = 0;
+let normalRows = rows;
+
 
 class CircleButton 
 {
@@ -61,6 +68,34 @@ class CircleButton
     }
 }
 
+function updateDetectionChannels()
+{
+    detectKeys = [];
+    numDetectChannels = 0;
+
+    let keys = detectionDict.getkeys();
+
+    if(keys != null)
+    {
+        detectKeys = Array.isArray(keys) ? keys : [keys];
+        numDetectChannels = detectKeys.length;
+    }
+
+    rows = normalRows + numDetectChannels;
+}
+
+function UpdateDetectionChannels()
+{
+    updateDetectionChannels();
+
+    createButtons();
+
+    outlet(1, "clear");
+
+    drawAll();
+}
+
+
 function createButtons() 
 {
     buttons = []; 
@@ -77,11 +112,26 @@ function createButtons()
             x += leftMargin * 2;
             x *= aspect;
 
+            let isDetect = row < numDetectChannels;
+
             let rowIndex = rows - 1 - row;
             let hue = 1 / maxNumChans * rowIndex;
 
-            buttons.push(new CircleButton(  row, column, x, y, hsl2rgb(hue, 0.75, 0.5), 
-                                            hsl2rgb(hue, 0.25, 0.25)));
+            let active;
+            let inactive;
+
+            if(isDetect)
+            {
+                active = [0.6,0.6,0.6,1];
+                inactive = [0.3,0.3,0.3,1];
+            }
+            else
+            {
+                active = hsl2rgb(hue, 0.75, 0.5);
+                inactive = hsl2rgb(hue, 0.25, 0.25);
+            }
+
+            buttons.push(new CircleButton(row, column, x, y, active, inactive));
         }
     }
 }
@@ -129,7 +179,16 @@ function outputState(x, y)
             {
                 //clicked an active button -> deactivate it only
                 b.state = 0;
-                outlet(0, [(rows - 1) - b.row, b.col, b.state]);
+
+                if(b.row >= numDetectChannels)
+                {
+                    let outRow = (normalRows - 1) - (b.row - numDetectChannels);
+                    outlet(0, [outRow, b.col, b.state]);
+                }
+                else
+                {
+                    outlet(1, [b.row + 8, b.col, b.state]);
+                }
 
             } 
             else 
@@ -140,11 +199,30 @@ function outputState(x, y)
                     if(other.col === b.col && other.state !== 0) 
                     {
                         other.state = 0;
-                        outlet(0, [(rows - 1) - other.row, other.col, other.state]);
+
+                        if(other.row >= numDetectChannels)
+                        {
+                            let outRow = (normalRows - 1) - (other.row - numDetectChannels);
+                            outlet(0, [outRow, other.col, other.state]);
+                        }
+                        else
+                        {
+                            outlet(1, [other.row + 8, other.col, other.state]);
+                        }
                     }
                 }
+
                 b.state = 1;
-                outlet(0, [(rows - 1) - b.row, b.col, b.state]);
+
+                if(b.row >= numDetectChannels)
+                {
+                    let outRow = (normalRows - 1) - (b.row - numDetectChannels);
+                    outlet(0, [outRow, b.col, b.state]);
+                }
+                else
+                {
+                    outlet(1, [b.row + 8, b.col, b.state]);
+                }
             }
             break;
         }
@@ -158,7 +236,14 @@ function outputAllStates()
 {
     for(let b of buttons) 
     {
-        outlet(0, [b.col, (rows - 1) - b.row, b.state]);
+        if(b.row >= numDetectChannels)
+        {
+            outlet(0, [b.col, (normalRows - 1) - (b.row - numDetectChannels), b.state]);
+        }
+        else
+        {
+            outlet(1, [b.col + 8, b.row, b.state]);
+        }
     } 
 } 
 
@@ -193,22 +278,38 @@ function rowText()
         let y = (row / rows) * (1 - upperMargin) * 2 - 1;
         y += 1 / rows * (1 - upperMargin);
 
-        let rowIndex = rows - 1 - row;
-        let hue = 1 / maxNumChans * rowIndex;
+        if(row >= numDetectChannels)
+        {
+            let rowIndex = normalRows - 1 - (row - numDetectChannels);
+            let hue = 1 / maxNumChans * rowIndex;
 
-        drawText("Ch. " + (rowIndex + 1), (leftMargin * 2 - 1) * aspect, y, hsl2rgb(hue, 0.5, 0.5), "center");
+            drawText("Ch. " + (rowIndex + 1), (leftMargin * 2 - 1) * aspect, y, hsl2rgb(hue, 0.5, 0.5), "center");
+        }
+        else
+        {
+            drawText(detectKeys[numDetectChannels - 1 - row], (leftMargin * 2 - 1) * aspect, y, [0.7,0.7,0.7,1], "center");
+        }
     }
 }
 
 
+function drawSeparator()
+{
+    if(numDetectChannels <= 0) return;
+
+    let y = (numDetectChannels / rows) * (1 - upperMargin) * 2 - 1;
+
+    sketch.glcolor(0.6,0.6,0.6,0.6);
+    sketch.moveto(-aspect, y);
+    sketch.lineto(aspect, y);
+}
+
 function hsl2rgb(h, s, l, a=1.0) 
 {
-    // h,s,l ∈ [0,1], a = alpha
     let r, g, b;
 
     if (s === 0) 
     {
-        // achromatic (gray)
         r = g = b = l;
     } 
     else 
@@ -241,7 +342,8 @@ function drawAll()
 
     drawBG();
 
-    //drawButtons
+    drawSeparator();
+
     buttons.forEach(b => b.draw());
 
     columnText();
@@ -260,11 +362,14 @@ function drawBG()
 
 function SetChannels(numChans)
 {
-    rows = numChans;
+    normalRows = numChans;
+
+    updateDetectionChannels();
 
     createButtons();
 
-    outlet(1, "clear");
+    outlet(0, "clear");
+
     drawAll();
 }
 
@@ -275,10 +380,13 @@ function SetParams()
 
     createButtons();
 
+    outlet(0, "clear");
     outlet(1, "clear");
+
     drawAll();
 }
 
 //init
+updateDetectionChannels();
 createButtons();
 drawAll();
