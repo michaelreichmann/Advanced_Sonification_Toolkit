@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>README</title>
+
+  <!-- Local Markdown parser -->
+  <script src="marked.min.js"></script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    h1, h2, h3 {
+      color: #1a3a7a; /* dark blue */
+      margin-top: 1.4em;
+    }
+
+    h1 {
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+   img {
+    max-width: 600px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+  }
+
+    a {
+      color: #1a3a7a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">Loading README...</div>
+
+  <script>
+  fetch("../README.md")
+    .then(response => response.text())
+    .then(md => {
+
+      // Convert markdown to HTML
+      let html = marked.parse(md);
+
+      // Fix relative image paths (./media/... → ../media/...)
+      html = html.replace(
+        /src="\.\/media\//g,
+        'src="../media/'
+      );
+
+      document.getElementById("content").innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById("content").innerText = "Failed to load README.md";
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>

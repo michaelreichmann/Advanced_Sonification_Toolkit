@@ -521,7 +521,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_DataInput.maxpat",
+                    "name": "AST_V2_R_DataInput.maxpat",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "offset": [ -500.0, 2.0 ],
@@ -556,7 +556,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "midpoints": [ 46.5, 395.7890625, 526.375, 395.7890625, 526.375, 264.0, 542.5, 264.0 ],
                     "source": [ "obj-1", 0 ]
                 }
             },
@@ -655,14 +654,6 @@
             "obj-3::obj-122": [ "live.menu[9]", "live.menu", 0 ],
             "obj-3::obj-17": [ "live.text", "live.text", 0 ],
             "obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 33.0, 93.0, 1372.0, 773.0 ],
+        "rect": [ 34.0, 93.0, 1372.0, 773.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -24,7 +24,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -354,7 +354,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -376,7 +376,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -398,7 +398,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -420,7 +420,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -442,7 +442,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -464,7 +464,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -486,7 +486,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_Channel.maxpat",
+                    "name": "AST_V2_R_Channel.maxpat",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 5.0, 5.0 ],
@@ -668,76 +668,84 @@
             }
         ],
         "parameters": {
-            "obj-1::obj-19": [ "live.menu[17]", "live.menu", 0 ],
-            "obj-1::obj-1::obj-25": [ "umenu[28]", "umenu", 0 ],
+            "obj-1::obj-19": [ "live.menu[19]", "live.menu", 0 ],
             "obj-1::obj-1::obj-54": [ "umenu[31]", "umenu", 0 ],
-            "obj-1::obj-1::obj-62": [ "umenu[29]", "umenu", 0 ],
             "obj-1::obj-1::obj-75": [ "umenu[30]", "umenu", 0 ],
-            "obj-1::obj-3::obj-122": [ "live.menu[16]", "live.menu", 0 ],
+            "obj-1::obj-1::obj-80": [ "umenu[28]", "umenu", 0 ],
+            "obj-1::obj-1::obj-81": [ "umenu[29]", "umenu", 0 ],
+            "obj-1::obj-3::obj-122": [ "live.menu[18]", "live.menu", 0 ],
             "obj-1::obj-3::obj-17": [ "live.text[13]", "live.text", 0 ],
             "obj-1::obj-3::obj-40": [ "live.text[14]", "live.text[1]", 0 ],
-            "obj-2::obj-19": [ "live.menu[1]", "live.menu", 0 ],
-            "obj-2::obj-1::obj-25": [ "umenu", "umenu", 0 ],
-            "obj-2::obj-1::obj-54": [ "umenu[2]", "umenu", 0 ],
-            "obj-2::obj-1::obj-62": [ "umenu[1]", "umenu", 0 ],
-            "obj-2::obj-1::obj-75": [ "umenu[3]", "umenu", 0 ],
-            "obj-2::obj-3::obj-122": [ "live.menu[9]", "live.menu", 0 ],
-            "obj-2::obj-3::obj-17": [ "live.text", "live.text", 0 ],
-            "obj-2::obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
-            "obj-3::obj-19": [ "live.menu[10]", "live.menu", 0 ],
-            "obj-3::obj-1::obj-25": [ "umenu[5]", "umenu", 0 ],
-            "obj-3::obj-1::obj-54": [ "umenu[4]", "umenu", 0 ],
-            "obj-3::obj-1::obj-62": [ "umenu[7]", "umenu", 0 ],
-            "obj-3::obj-1::obj-75": [ "umenu[6]", "umenu", 0 ],
-            "obj-3::obj-3::obj-122": [ "live.menu[2]", "live.menu", 0 ],
-            "obj-3::obj-3::obj-17": [ "live.text[2]", "live.text", 0 ],
-            "obj-3::obj-3::obj-40": [ "live.text[1]", "live.text[1]", 0 ],
-            "obj-4::obj-19": [ "live.menu[4]", "live.menu", 0 ],
-            "obj-4::obj-1::obj-25": [ "umenu[10]", "umenu", 0 ],
-            "obj-4::obj-1::obj-54": [ "umenu[8]", "umenu", 0 ],
-            "obj-4::obj-1::obj-62": [ "umenu[11]", "umenu", 0 ],
-            "obj-4::obj-1::obj-75": [ "umenu[9]", "umenu", 0 ],
-            "obj-4::obj-3::obj-122": [ "live.menu[3]", "live.menu", 0 ],
-            "obj-4::obj-3::obj-17": [ "live.text[4]", "live.text", 0 ],
-            "obj-4::obj-3::obj-40": [ "live.text[3]", "live.text[1]", 0 ],
-            "obj-5::obj-19": [ "live.menu[11]", "live.menu", 0 ],
-            "obj-5::obj-1::obj-25": [ "umenu[14]", "umenu", 0 ],
-            "obj-5::obj-1::obj-54": [ "umenu[12]", "umenu", 0 ],
-            "obj-5::obj-1::obj-62": [ "umenu[13]", "umenu", 0 ],
-            "obj-5::obj-1::obj-75": [ "umenu[15]", "umenu", 0 ],
-            "obj-5::obj-3::obj-122": [ "live.menu[5]", "live.menu", 0 ],
-            "obj-5::obj-3::obj-17": [ "live.text[5]", "live.text", 0 ],
-            "obj-5::obj-3::obj-40": [ "live.text[6]", "live.text[1]", 0 ],
-            "obj-6::obj-19": [ "live.menu[7]", "live.menu", 0 ],
-            "obj-6::obj-1::obj-25": [ "umenu[18]", "umenu", 0 ],
-            "obj-6::obj-1::obj-54": [ "umenu[17]", "umenu", 0 ],
-            "obj-6::obj-1::obj-62": [ "umenu[16]", "umenu", 0 ],
-            "obj-6::obj-1::obj-75": [ "umenu[19]", "umenu", 0 ],
-            "obj-6::obj-3::obj-122": [ "live.menu[12]", "live.menu", 0 ],
-            "obj-6::obj-3::obj-17": [ "live.text[7]", "live.text", 0 ],
-            "obj-6::obj-3::obj-40": [ "live.text[8]", "live.text[1]", 0 ],
-            "obj-7::obj-19": [ "live.menu[8]", "live.menu", 0 ],
-            "obj-7::obj-1::obj-25": [ "umenu[22]", "umenu", 0 ],
-            "obj-7::obj-1::obj-54": [ "umenu[21]", "umenu", 0 ],
-            "obj-7::obj-1::obj-62": [ "umenu[23]", "umenu", 0 ],
-            "obj-7::obj-1::obj-75": [ "umenu[20]", "umenu", 0 ],
-            "obj-7::obj-3::obj-122": [ "live.menu[13]", "live.menu", 0 ],
-            "obj-7::obj-3::obj-17": [ "live.text[9]", "live.text", 0 ],
-            "obj-7::obj-3::obj-40": [ "live.text[10]", "live.text[1]", 0 ],
-            "obj-8::obj-19": [ "live.menu[15]", "live.menu", 0 ],
-            "obj-8::obj-1::obj-25": [ "umenu[24]", "umenu", 0 ],
-            "obj-8::obj-1::obj-54": [ "umenu[26]", "umenu", 0 ],
-            "obj-8::obj-1::obj-62": [ "umenu[25]", "umenu", 0 ],
-            "obj-8::obj-1::obj-75": [ "umenu[27]", "umenu", 0 ],
-            "obj-8::obj-3::obj-122": [ "live.menu[14]", "live.menu", 0 ],
-            "obj-8::obj-3::obj-17": [ "live.text[11]", "live.text", 0 ],
-            "obj-8::obj-3::obj-40": [ "live.text[12]", "live.text[1]", 0 ],
+            "obj-2::obj-19": [ "live.menu[17]", "live.menu", 0 ],
+            "obj-2::obj-1::obj-54": [ "umenu[26]", "umenu", 0 ],
+            "obj-2::obj-1::obj-75": [ "umenu[25]", "umenu", 0 ],
+            "obj-2::obj-1::obj-80": [ "umenu[27]", "umenu", 0 ],
+            "obj-2::obj-1::obj-81": [ "umenu[24]", "umenu", 0 ],
+            "obj-2::obj-3::obj-122": [ "live.menu[16]", "live.menu", 0 ],
+            "obj-2::obj-3::obj-17": [ "live.text[11]", "live.text", 0 ],
+            "obj-2::obj-3::obj-40": [ "live.text[12]", "live.text[1]", 0 ],
+            "obj-3::obj-19": [ "live.menu[15]", "live.menu", 0 ],
+            "obj-3::obj-1::obj-54": [ "umenu[21]", "umenu", 0 ],
+            "obj-3::obj-1::obj-75": [ "umenu[22]", "umenu", 0 ],
+            "obj-3::obj-1::obj-80": [ "umenu[20]", "umenu", 0 ],
+            "obj-3::obj-1::obj-81": [ "umenu[23]", "umenu", 0 ],
+            "obj-3::obj-3::obj-122": [ "live.menu[14]", "live.menu", 0 ],
+            "obj-3::obj-3::obj-17": [ "live.text[10]", "live.text", 0 ],
+            "obj-3::obj-3::obj-40": [ "live.text[9]", "live.text[1]", 0 ],
+            "obj-4::obj-19": [ "live.menu[13]", "live.menu", 0 ],
+            "obj-4::obj-1::obj-54": [ "umenu[19]", "umenu", 0 ],
+            "obj-4::obj-1::obj-75": [ "umenu[17]", "umenu", 0 ],
+            "obj-4::obj-1::obj-80": [ "umenu[16]", "umenu", 0 ],
+            "obj-4::obj-1::obj-81": [ "umenu[18]", "umenu", 0 ],
+            "obj-4::obj-3::obj-122": [ "live.menu[12]", "live.menu", 0 ],
+            "obj-4::obj-3::obj-17": [ "live.text[7]", "live.text", 0 ],
+            "obj-4::obj-3::obj-40": [ "live.text[8]", "live.text[1]", 0 ],
+            "obj-5::obj-19": [ "live.menu[1]", "live.menu", 0 ],
+            "obj-5::obj-1::obj-54": [ "umenu[2]", "umenu", 0 ],
+            "obj-5::obj-1::obj-75": [ "umenu[3]", "umenu", 0 ],
+            "obj-5::obj-1::obj-80": [ "umenu[1]", "umenu", 0 ],
+            "obj-5::obj-1::obj-81": [ "umenu", "umenu", 0 ],
+            "obj-5::obj-3::obj-122": [ "live.menu[9]", "live.menu", 0 ],
+            "obj-5::obj-3::obj-17": [ "live.text", "live.text", 0 ],
+            "obj-5::obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
+            "obj-6::obj-19": [ "live.menu[10]", "live.menu", 0 ],
+            "obj-6::obj-1::obj-54": [ "umenu[5]", "umenu", 0 ],
+            "obj-6::obj-1::obj-75": [ "umenu[6]", "umenu", 0 ],
+            "obj-6::obj-1::obj-80": [ "umenu[4]", "umenu", 0 ],
+            "obj-6::obj-1::obj-81": [ "umenu[7]", "umenu", 0 ],
+            "obj-6::obj-3::obj-122": [ "live.menu[2]", "live.menu", 0 ],
+            "obj-6::obj-3::obj-17": [ "live.text[1]", "live.text", 0 ],
+            "obj-6::obj-3::obj-40": [ "live.text[2]", "live.text[1]", 0 ],
+            "obj-7::obj-19": [ "live.menu[4]", "live.menu", 0 ],
+            "obj-7::obj-1::obj-54": [ "umenu[8]", "umenu", 0 ],
+            "obj-7::obj-1::obj-75": [ "umenu[9]", "umenu", 0 ],
+            "obj-7::obj-1::obj-80": [ "umenu[11]", "umenu", 0 ],
+            "obj-7::obj-1::obj-81": [ "umenu[10]", "umenu", 0 ],
+            "obj-7::obj-3::obj-122": [ "live.menu[3]", "live.menu", 0 ],
+            "obj-7::obj-3::obj-17": [ "live.text[4]", "live.text", 0 ],
+            "obj-7::obj-3::obj-40": [ "live.text[3]", "live.text[1]", 0 ],
+            "obj-8::obj-19": [ "live.menu[11]", "live.menu", 0 ],
+            "obj-8::obj-1::obj-54": [ "umenu[12]", "umenu", 0 ],
+            "obj-8::obj-1::obj-75": [ "umenu[13]", "umenu", 0 ],
+            "obj-8::obj-1::obj-80": [ "umenu[15]", "umenu", 0 ],
+            "obj-8::obj-1::obj-81": [ "umenu[14]", "umenu", 0 ],
+            "obj-8::obj-3::obj-122": [ "live.menu[5]", "live.menu", 0 ],
+            "obj-8::obj-3::obj-17": [ "live.text[6]", "live.text", 0 ],
+            "obj-8::obj-3::obj-40": [ "live.text[5]", "live.text[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1::obj-19": {
-                    "parameter_longname": "live.menu[17]"
+                    "parameter_longname": "live.menu[19]"
                 },
                 "obj-1::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[16]"
+                    "parameter_longname": "live.menu[18]"
                 },
                 "obj-1::obj-3::obj-17": {
                     "parameter_longname": "live.text[13]"
@@ -745,77 +753,77 @@
                 "obj-1::obj-3::obj-40": {
                     "parameter_longname": "live.text[14]"
                 },
-                "obj-3::obj-19": {
-                    "parameter_longname": "live.menu[10]"
+                "obj-2::obj-19": {
+                    "parameter_longname": "live.menu[17]"
                 },
-                "obj-3::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[2]"
+                "obj-2::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[16]"
                 },
-                "obj-3::obj-3::obj-17": {
-                    "parameter_longname": "live.text[2]"
-                },
-                "obj-3::obj-3::obj-40": {
-                    "parameter_longname": "live.text[1]"
-                },
-                "obj-4::obj-19": {
-                    "parameter_longname": "live.menu[4]"
-                },
-                "obj-4::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[3]"
-                },
-                "obj-4::obj-3::obj-17": {
-                    "parameter_longname": "live.text[4]"
-                },
-                "obj-4::obj-3::obj-40": {
-                    "parameter_longname": "live.text[3]"
-                },
-                "obj-5::obj-19": {
-                    "parameter_longname": "live.menu[11]"
-                },
-                "obj-5::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[5]"
-                },
-                "obj-5::obj-3::obj-17": {
-                    "parameter_longname": "live.text[5]"
-                },
-                "obj-5::obj-3::obj-40": {
-                    "parameter_longname": "live.text[6]"
-                },
-                "obj-6::obj-19": {
-                    "parameter_longname": "live.menu[7]"
-                },
-                "obj-6::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[12]"
-                },
-                "obj-6::obj-3::obj-17": {
-                    "parameter_longname": "live.text[7]"
-                },
-                "obj-6::obj-3::obj-40": {
-                    "parameter_longname": "live.text[8]"
-                },
-                "obj-7::obj-19": {
-                    "parameter_longname": "live.menu[8]"
-                },
-                "obj-7::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[13]"
-                },
-                "obj-7::obj-3::obj-17": {
-                    "parameter_longname": "live.text[9]"
-                },
-                "obj-7::obj-3::obj-40": {
-                    "parameter_longname": "live.text[10]"
-                },
-                "obj-8::obj-19": {
-                    "parameter_longname": "live.menu[15]"
-                },
-                "obj-8::obj-3::obj-122": {
-                    "parameter_longname": "live.menu[14]"
-                },
-                "obj-8::obj-3::obj-17": {
+                "obj-2::obj-3::obj-17": {
                     "parameter_longname": "live.text[11]"
                 },
-                "obj-8::obj-3::obj-40": {
+                "obj-2::obj-3::obj-40": {
                     "parameter_longname": "live.text[12]"
+                },
+                "obj-3::obj-19": {
+                    "parameter_longname": "live.menu[15]"
+                },
+                "obj-3::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[14]"
+                },
+                "obj-3::obj-3::obj-17": {
+                    "parameter_longname": "live.text[10]"
+                },
+                "obj-3::obj-3::obj-40": {
+                    "parameter_longname": "live.text[9]"
+                },
+                "obj-4::obj-19": {
+                    "parameter_longname": "live.menu[13]"
+                },
+                "obj-4::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[12]"
+                },
+                "obj-4::obj-3::obj-17": {
+                    "parameter_longname": "live.text[7]"
+                },
+                "obj-4::obj-3::obj-40": {
+                    "parameter_longname": "live.text[8]"
+                },
+                "obj-6::obj-19": {
+                    "parameter_longname": "live.menu[10]"
+                },
+                "obj-6::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[2]"
+                },
+                "obj-6::obj-3::obj-17": {
+                    "parameter_longname": "live.text[1]"
+                },
+                "obj-6::obj-3::obj-40": {
+                    "parameter_longname": "live.text[2]"
+                },
+                "obj-7::obj-19": {
+                    "parameter_longname": "live.menu[4]"
+                },
+                "obj-7::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[3]"
+                },
+                "obj-7::obj-3::obj-17": {
+                    "parameter_longname": "live.text[4]"
+                },
+                "obj-7::obj-3::obj-40": {
+                    "parameter_longname": "live.text[3]"
+                },
+                "obj-8::obj-19": {
+                    "parameter_longname": "live.menu[11]"
+                },
+                "obj-8::obj-3::obj-122": {
+                    "parameter_longname": "live.menu[5]"
+                },
+                "obj-8::obj-3::obj-17": {
+                    "parameter_longname": "live.text[6]"
+                },
+                "obj-8::obj-3::obj-40": {
+                    "parameter_longname": "live.text[5]"
                 }
             },
             "inherited_shortname": 1
