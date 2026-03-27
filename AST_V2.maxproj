@@ -252,7 +252,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857472231,
+    "modificationdate": 3857475242,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
@@ -260,9 +260,8 @@
     "sortmode": 0,
     "version": 1,
     "viewmode": 1,
-    "viewrect": [ 25.0, 108.0, 273.0, 461.0 ],
+    "viewrect": [ 25.0, 108.0, 286.0, 354.0 ],
     "category_disclosure": {
-        "patchers": 0,
         "other": 0,
         "media": 0,
         "code": 0

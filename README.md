@@ -14,11 +14,6 @@ Max Project for the **Advanced Sonification Toolkit**.
 - [Funding & Research Context](#funding--research-context)
 - [Functionality Summary](#functionality-summary)
 - [User Interface Overview](#user-interface-overview)
-  - [Recorded Data Mode](#recorded-data-mode)
-  - [Real-Time Input Mode](#real-time-input-mode)
-  - [Input Channels](#input-channels)
-  - [Data Processing Controls](#data-processing-controls)
-  - [Processing and Routing](#processing-and-routing)
 - [Sound Design Modules](#sound-design-modules)
 - [Detection Modules](#detection-modules)
 
@@ -32,10 +27,12 @@ The toolkit addresses a common limitation in sonification practice: systems are 
 
 It supports both recorded datasets and live sensor input (via Serial or OSC), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
 
-The toolkit follows a modular architecture, separating input handling, processing, detection, mapping, and sound synthesis. This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
+The toolkit follows a modular architecture, separating input handling, processing, detection, mapping, and sound synthesis. 
+This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
 AST_v2 is intended both as a practical tool for building movement sonification systems and as a platform for exploring and comparing different sonification approaches.
 
-The toolkit enables movement-based sonification of sensor data through two input modes:
+
+**The toolkit enables movement-based sonification of sensor data through two input modes:**
 
 - **Recorded Data Mode**: for playback and analysis of pre-recorded datasets  
 - **Real-Time Input Mode**: for live sonification of incoming sensor streams  
