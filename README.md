@@ -19,7 +19,7 @@ Max Project for the **Advanced Sonification Toolkit**.
   - [Input Channels](#input-channels)
   - [Data Processing Controls](#data-processing-controls)
   - [Processing and Routing](#processing-and-routing)
-- [Sound Design Modules](#sound-design-modules-1)
+- [Sound Design Modules](#sound-design-modules)
 - [Detection Modules](#detection-modules)
 
 
