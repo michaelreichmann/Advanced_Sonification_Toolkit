@@ -1,21 +1,93 @@
 # Advanced Sonification Toolkit V_2
 
-*Max 9.1.2*
 
 Max Project for the **Advanced Sonification Toolkit**.
 
+![Toolkit Logo](./media/Toolkit_Logo.png)
+
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [License](#license)
+- [Funding & Research Context](#funding--research-context)
+- [Functionality Summary](#functionality-summary)
+- [User Interface Overview](#user-interface-overview)
+  - [Recorded Data Mode](#recorded-data-mode)
+  - [Real-Time Input Mode](#real-time-input-mode)
+  - [Input Channels](#input-channels)
+  - [Data Processing Controls](#data-processing-controls)
+  - [Processing and Routing](#processing-and-routing)
+- [Sound Design Modules](#sound-design-modules-1)
+- [Detection Modules](#detection-modules)
+
+
+
+## Introduction
+
+The Advanced Sonification Toolkit (AST_v2) is a modular, UI-driven system for creating and exploring movement-based sonification. It is designed to support real-time, embodied use in contexts such as sports, rehabilitation, and interactive performance.
+
+The toolkit addresses a common limitation in sonification practice: systems are often built as custom, case-specific implementations, making them difficult to reuse, compare, or adapt—especially for non–sound experts. AST_v2 provides a flexible environment that allows users to configure, test, and iterate on sonification strategies without low-level audio programming.
+
+It supports both recorded datasets and live sensor input (via Serial or OSC), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
+
+The toolkit follows a modular architecture, separating input handling, processing, detection, mapping, and sound synthesis. This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
+AST_v2 is intended both as a practical tool for building movement sonification systems and as a platform for exploring and comparing different sonification approaches.
 
 The toolkit enables movement-based sonification of sensor data through two input modes:
 
 - **Recorded Data Mode**: for playback and analysis of pre-recorded datasets  
 - **Real-Time Input Mode**: for live sonification of incoming sensor streams  
 
+<br/>
+
+**Author & Contact**
+
+Michael Reichmann
+
+*`michael.reichmann@plus.ac.at`*
+
+University of Salzburg
+
+
+## Requirements
+
+This project requires a valid **Max** license to run.  
+Max is a proprietary programming environment developed by Cycling ’74 and is required to run this project.
+
+A free trial version of Max is available for 30 days:
+
+[Cycling '74 Website](https://cycling74.com/downloads)  
+
+After the trial period, Max continues to run but does not allow saving or modifying patches. 
+The toolkit itself remains fully functional in this restricted mode. 
+A full license is only required if you want to modify the project or develop custom modules.
+
+Max Version: *Max 9.1.2*
 
 ## License
-This project is licensed under the PolyForm Noncommercial License 1.0.0.
-Free to use, modify, and share for non-commercial purposes.
-Commercial use requires a separate agreement. 
+
+This project is licensed under the PolyForm Noncommercial License 1.0.0.  
+Free to use, modify, and share for non-commercial purposes.  
+Commercial use requires a separate agreement.  
+
+[PolyForm Noncommercial Licence Website](https://polyformproject.org/licenses/noncommercial/1.0.0/)
+
 See the LICENSE file for details.
+
+The license applies only to the toolkit code provided in this repository.  
+Max itself requires a separate license.  
+Third-party components and referenced projects (e.g., step detection or breathing detection algorithms) are subject to their own respective licenses.
+
+## Funding & Research Context
+
+This project was developed within the **Digital Motion (DiMo / DiMo-NEXT)** research initiative, a transdisciplinary program exploring the use of sensor data and movement analysis in areas such as sports, health, and human-centered design.
+Conducted as a collaboration between academic and industry partners.
+
+![DiMo-Next Missio Statement](./media/Dimo_Next_Info.png)
+
+[DiMo-NEXT Website](https://www.digital-motion.at)
 
 <br/>
 
@@ -50,9 +122,11 @@ See the LICENSE file for details.
   - Supports both **raw data streams** and **derived feature streams** through detection modules  
   - Flexible routing allows combining raw sensor data and detected events for sound control  
 
+<br/>
 
 ![Schematic Overview](./media/toolkit_schematic_overview.png)
 
+<br/>
 
 ## User Interface Overview
 
@@ -146,8 +220,8 @@ The UI provides configuration and monitoring of incoming data streams.
   - Outputs are available alongside raw signals  
 
 - **Mapping Matrix**:
+  - *Part of the Sound Desing Modules*
   - Assigns both raw data and detection outputs to sound parameters  
-  - When input data is mapped to a parameter, manual control is deactivated  
 
 
 ### Sound Design Modules
@@ -163,9 +237,6 @@ The UI provides configuration and monitoring of incoming data streams.
 - **Mapping Matrix**:
   - Mapping of input data to sound parameter  
   - When input data is mapped to a parameter, manual control is deactivated  
-
-
-## Sound Design Modules
 
 The toolkit currently includes **4 sound design modules**:
 
@@ -196,6 +267,7 @@ The toolkit currently includes **4 sound design modules**:
      - `Rain`  
      - `Thunder`  
 
+### Sound Design Module Template
 
 A template (`AST_V2_Sounddesign_Module_Template.maxpat`) is included to create custom modules.
 
@@ -217,17 +289,19 @@ Detection modules extract features and events from input data and make them avai
 
 The toolkit includes:
 
-### 1. Step Detection
+1. **Step Detection**
 - Detects impulses from 3 input channels  
 
-### 2. Breathing Detection
+2. **Breathing Detection**
 - Detects peaks and troughs from 1 channel  
 
-### 3. Magnitude
+3. **Magnitude**
 - Computes normalized magnitude from 3 channels  
 
 
 ### Detection Module Template
+
+A template (`AST_V2_Detection_Module_Template.maxpat`) is included to create custom modules.
 
 1. **Patcher Naming**  
    - `"AST_V2_DM_*.maxpat"`  
