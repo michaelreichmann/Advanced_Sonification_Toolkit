@@ -31,6 +31,8 @@ The toolkit follows a modular architecture, separating input handling, processin
 This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
 AST_v2 is intended both as a practical tool for building movement sonification systems and as a platform for exploring and comparing different sonification approaches.
 
+Additionally, the toolkit allows recording of the final sonified audio output, enabling users to capture, analyze, and share the resulting sound in both recorded and real-time workflows.
+
 
 **The toolkit enables movement-based sonification of sensor data through two input modes:**
 
@@ -90,6 +92,10 @@ Conducted as a collaboration between academic and industry partners.
 
 ## Functionality Summary
 
+![Schematic Overview](./media/toolkit_schematic_overview.png)
+
+<br/>
+
 - **Input Modes**:
 
   **Recorded Data Mode**:
@@ -122,11 +128,14 @@ Conducted as a collaboration between academic and industry partners.
   - Supports both **raw data streams** and **derived feature streams** through detection modules  
   - Flexible routing allows combining raw sensor data and detected events for sound control  
 
+- **Audio Output Recording**:
+  - The final synthesized audio output can be recorded in both Recorded Data Mode and Real-Time Input Mode.
+  - Enables saving the resulting sonification as a standard audio file for further analysis, sharing, or documentation.
+
+![Audio Output Recording](./media/audio_REC_Screenshot.png)
+
 <br/>
 
-![Schematic Overview](./media/toolkit_schematic_overview.png)
-
-<br/>
 
 ## User Interface Overview
 

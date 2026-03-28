@@ -976,8 +976,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 438.0, 685.0, 201.0, 35.0 ],
-                    "text": "buffer~ rec 60000 2 @filetype wave @format float32"
+                    "patching_rect": [ 438.0, 685.0, 199.0, 35.0 ],
+                    "text": "buffer~ rec 1 2 @filetype wave @format float32 @samps 120000"
                 }
             },
             {
@@ -1843,6 +1843,14 @@
             "obj-3::obj-122": [ "live.menu[9]", "live.menu", 0 ],
             "obj-3::obj-17": [ "live.text", "live.text", 0 ],
             "obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
