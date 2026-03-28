@@ -23,9 +23,9 @@ Max Project for the **Advanced Sonification Toolkit**.
 
 The Advanced Sonification Toolkit (AST_v2) is a modular, UI-driven system for creating and exploring movement-based sonification. It is designed to support real-time, embodied use in contexts such as sports, rehabilitation, and interactive performance.
 
-The toolkit addresses a common limitation in sonification practice: systems are often built as custom, case-specific implementations, making them difficult to reuse, compare, or adapt—especially for non–sound experts. AST_v2 provides a flexible environment that allows users to configure, test, and iterate on sonification strategies without low-level audio programming.
+The toolkit addresses a common limitation in sonification practice: systems are often built as custom, case-specific implementations, making them difficult to reuse, compare, or adapt, especially for non–sound experts. AST_v2 provides a flexible environment that allows users to configure, test, and iterate on sonification strategies without low-level audio programming.
 
-It supports both recorded datasets and live sensor input (via Serial or OSC), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
+It supports both recorded datasets and live sensor input (via Serial or OSC), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. Real-time input can also be recorded and reused in the recorded data mode. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
 
 The toolkit follows a modular architecture, separating input handling, processing, detection, mapping, and sound synthesis. 
 This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
@@ -35,7 +35,7 @@ AST_v2 is intended both as a practical tool for building movement sonification s
 **The toolkit enables movement-based sonification of sensor data through two input modes:**
 
 - **Recorded Data Mode**: for playback and analysis of pre-recorded datasets  
-- **Real-Time Input Mode**: for live sonification of incoming sensor streams  
+- **Real-Time Input Mode**: for live sonification of incoming sensor streams and recording of incoming data  
 
 <br/>
 
@@ -102,8 +102,11 @@ Conducted as a collaboration between academic and industry partners.
   **Real-Time Input Mode**:
   - Real-time data input via:
     - **Serial Communication**
-    - **OSC (Open Sound Control) over WiFi**
+    - **OSC (Open Sound Control)**
   - Flexible data parsing using address filtering and list item selection  
+  - Recording of incoming data streams to `.wav` files compatible with Recorded Data Mode  
+  - Recording sample rate: **200 Hz**  
+  - Raw data is recorded without normalization  
 
 - **Multi-Channel Support**:
   - Multiple channels can be configured and processed simultaneously  
@@ -189,6 +192,23 @@ The UI provides configuration and monitoring of incoming data streams.
 
 - **Data Monitor**:
   - Displays incoming data in real time  
+
+#### Recording
+- Each channel includes a **Rec Enable toggle**  
+- A **Recording Section** in the main panel controls recording  
+- When recording is active:
+  - All channels with recording enabled are written to a separate file  
+  - Output format matches the Recorded Data Mode (`2-channel .wav`)  
+  - Data is stored as:
+    - Channel 1: timestamps  
+    - Channel 2: raw signal values  
+  - No normalization is applied during recording  
+  - Sampling rate: **200 Hz**  
+
+#### Normalization (Real-Time Mode)
+- A **Normalize** button calibrates incoming data  
+- Over **5 seconds**, minimum and maximum values are measured  
+- The input is then scaled to a **0–1 range** based on this calibration  
 
 
 ### Input Channels
@@ -308,6 +328,3 @@ A template (`AST_V2_Detection_Module_Template.maxpat`) is included to create cus
 
 3. **UI Integration**  
    - Use Presentation Mode  
-
-
-<br/>

@@ -171,11 +171,15 @@
             }
         },
         "media": {
-            "Dimo_Next_Info.png": {
+            "Toolkit_Logo.png": {
                 "kind": "imagefile",
                 "local": 1
             },
             "pause_UI.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "play_UI.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -197,18 +201,14 @@
             },
             "arrowBack_UI.svg": {
                 "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
-            },
-            "play_UI.svg": {
-                "kind": "vectorimagefile",
                 "local": 1
             },
-            "Toolkit_Logo.png": {
+            "Dimo_Next_Info.png": {
                 "kind": "imagefile",
+                "local": 1
+            },
+            "record_UI.svg": {
+                "kind": "vectorimagefile",
                 "local": 1,
                 "singleton": {
                     "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
@@ -252,7 +252,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857475242,
+    "modificationdate": 3857531686,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
@@ -263,7 +263,6 @@
     "viewrect": [ 25.0, 108.0, 286.0, 354.0 ],
     "category_disclosure": {
         "other": 0,
-        "media": 0,
         "code": 0
     }
 }

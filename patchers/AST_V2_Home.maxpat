@@ -113,7 +113,7 @@
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "bordercolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "fontsize": 14.0,
-                    "hint": "Open Website",
+                    "hint": "Open Read Me",
                     "id": "obj-19",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -164,20 +164,20 @@
                 "box": {
                     "fontsize": 12.0,
                     "id": "obj-10",
-                    "linecount": 4,
+                    "linecount": 5,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 461.0, 368.0, 227.0, 60.0 ],
+                    "patching_rect": [ 461.0, 368.0, 227.0, 74.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 4,
-                    "presentation_rect": [ 341.0, 551.0, 227.0, 60.0 ],
+                    "presentation_linecount": 5,
+                    "presentation_rect": [ 341.0, 551.0, 227.0, 74.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
                         }
                     },
-                    "text": "Interactive systems and live performance\n\n• Live sensor data via Serial or OSC\n• Real-time monitoring and processing",
+                    "text": "Interactive systems and live performance\n\n• Live sensor data via Serial or OSC\n• Real-time monitoring and processing\n• Recording of raw data input",
                     "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
                 }
             },
