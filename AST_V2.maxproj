@@ -4,23 +4,7 @@
     "autoorganize": 0,
     "contents": {
         "patchers": {
-            "AST_V2_TextInput.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_DataProcessing.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
             "AST_V2_ChannelRouting.maxpat": {
-                "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "AST_V2_receiveFromChannelDict.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
@@ -133,9 +117,33 @@
                 "kind": "patcher",
                 "local": 1
             },
+            "AST_V2_R_TextInput.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_R_DataProcessing.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_TextInput.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
+            },
             "AST_V2_R_ChannelContainer.maxpat": {
                 "kind": "patcher",
                 "local": 1
+            },
+            "AST_V2_DataProcessing.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
             },
             "AST_V2_D_Channel.maxpat": {
                 "kind": "patcher",
@@ -144,6 +152,10 @@
                     "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
                     "projectrelativepath": "./patchers"
                 }
+            },
+            "AST_V2_D_receiveFromChannelDict.maxpat": {
+                "kind": "patcher",
+                "local": 1
             },
             "AST_V2_D_ChannelContainer.maxpat": {
                 "kind": "patcher",
@@ -160,6 +172,10 @@
                     "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
                     "projectrelativepath": "./patchers"
                 }
+            },
+            "AST_V2_receiveFromChannelDict.maxpat": {
+                "kind": "patcher",
+                "local": 1
             },
             "AST_V2_ReadMe.maxpat": {
                 "kind": "patcher",
@@ -180,6 +196,10 @@
                 "local": 1
             },
             "play_UI.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "record_UI.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -206,14 +226,6 @@
             "Dimo_Next_Info.png": {
                 "kind": "imagefile",
                 "local": 1
-            },
-            "record_UI.svg": {
-                "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
             }
         },
         "code": {
@@ -252,7 +264,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857531686,
+    "modificationdate": 3857732412,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
@@ -260,9 +272,9 @@
     "sortmode": 0,
     "version": 1,
     "viewmode": 1,
-    "viewrect": [ 25.0, 108.0, 286.0, 354.0 ],
+    "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
     "category_disclosure": {
-        "other": 0,
-        "code": 0
+        "code": 0,
+        "other": 0
     }
 }

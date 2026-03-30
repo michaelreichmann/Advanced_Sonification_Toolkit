@@ -16,6 +16,8 @@ Max Project for the **Advanced Sonification Toolkit**.
 - [User Interface Overview](#user-interface-overview)
 - [Sound Design Modules](#sound-design-modules)
 - [Detection Modules](#detection-modules)
+- [Max Project Structure and Patch Overview](#max-project-structure-and-patch-overview)
+
 
 
 
@@ -63,7 +65,7 @@ After the trial period, Max continues to run but does not allow saving or modify
 The toolkit itself remains fully functional in this restricted mode. 
 A full license is only required if you want to modify the project or develop custom modules.
 
-Max Version: *Max 9.1.2*
+Max Version: *Max 9.1.3*
 
 ## License
 
@@ -337,3 +339,126 @@ A template (`AST_V2_Detection_Module_Template.maxpat`) is included to create cus
 
 3. **UI Integration**  
    - Use Presentation Mode  
+
+
+
+   ## Max Project Structure and Patch Overview
+
+This section provides a detailed overview of the internal Max patch structure of AST_v2.  
+The project is organized as a hierarchical, modular system where functionality is distributed across dedicated patches for input handling, processing, routing, detection, and sound synthesis.
+
+---
+
+### Naming Convention
+
+The naming scheme reflects both functionality and context:
+
+- **`AST_V2_*`** → Core system patches  
+- **`AST_V2_R_*`** → Real-Time Mode specific  
+- **`AST_V2_D_*`** → Recorded Data Mode specific  
+- **`AST_V2_SM_*`** → Sound Design Modules  
+- **`AST_V2_DM_*`** → Detection Modules  
+
+---
+
+### Top-Level Patches
+
+- **`AST_V2_Home.maxpat`**  
+  Entry point of the toolkit. Handles mode selection and navigation.
+
+- **`AST_V2_ReadMe.maxpat`**  
+  Embedded documentation accessible within Max.
+
+- **`AST_V2_Main_RecordedData.maxpat`**  
+  Main patch for Recorded Data Mode. Manages playback, channel handling, and processing.
+
+- **`AST_V2_Main_RealTime.maxpat`**  
+  Main patch for Real-Time Input Mode. Handles live input, processing, detection, and routing.
+
+- **`AST_V2_ChannelRouting.maxpat`**  
+  Central routing system connecting processed data (raw and detected) to sound design parameters via a matrix-based approach.
+
+- **`thru.maxpat`**  
+  Utility patch used for signal/data pass-through.
+
+---
+
+### Recorded Data Mode Patches
+
+- **`AST_V2_D_ChannelContainer.maxpat`**  
+  Manages multiple recorded data channels.
+
+- **`AST_V2_D_Channel.maxpat`**  
+  Handles a single recorded data stream, including playback and waveform interaction.
+
+- **`AST_V2_D_receiveFromChannelDict.maxpat`**  
+  Retrieves and distributes channel-specific data using a dictionary-based structure.
+
+---
+
+### Real-Time Mode Patches
+
+- **`AST_V2_R_ChannelContainer.maxpat`**  
+  Manages multiple real-time input channels.
+
+- **`AST_V2_R_Channel.maxpat`**  
+  Core patch for a single real-time channel. Coordinates input, processing, and output.
+
+- **`AST_V2_R_DataInput.maxpat`**  
+  Handles incoming data from Serial and OSC sources, including parsing and filtering.
+
+- **`AST_V2_R_TextInput.maxpat`**  
+  Processes structured text-based input (e.g., prefixed sensor data streams).
+
+- **`AST_V2_R_DataProcessing.maxpat`**  
+  Performs normalization, filtering, clamping, and shaping of incoming signals.
+
+---
+
+### Detection Modules
+
+- **`AST_V2_DM_Breathing_Detection.maxpat`**  
+
+- **`AST_V2_DM_Magnitude.maxpat`**  
+
+- **`AST_V2_DM_Step_Detection.maxpat`**  
+
+---
+
+### Sound Design Modules
+
+- **`AST_V2_SM_Abstract.maxpat`**  
+
+- **`AST_V2_SM_Ambient.maxpat`**  
+
+- **`AST_V2_SM_Musical.maxpat`**  
+
+- **`AST_V2_SM_Test.maxpat`**  
+
+---
+
+### Module Templates
+
+- **`AST_V2_Detection_Module_Template.maxpat`**  
+
+- **`AST_V2_Sounddesign_Module_Template.maxpat`**  
+
+---
+
+### Structural Overview
+
+The project follows a hierarchical patch structure:
+
+![Max Project Structure](./media/MaxProject_Structure.png)
+
+
+---
+
+### Design Rationale
+
+The separation into small, specialized patches is intentional:
+
+- **Encapsulation**: Each patch handles a clearly defined task  
+- **Reusability**: Modules can be reused or replaced independently  
+- **Extensibility**: New input methods, detection algorithms, or sound modules can be added without modifying the core system  
+- **Clarity**: The structure mirrors the conceptual pipeline (Input → Processing → Detection → Mapping → Sound)

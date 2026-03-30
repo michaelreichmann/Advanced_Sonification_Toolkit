@@ -294,10 +294,10 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Arial",
+                    "fontname": "Ableton Sans Medium",
                     "fontsize": 10.0,
                     "id": "obj-80",
-                    "items": [ "wlan-debug", ",", "debug-console", ",", "Bluetooth-Incoming-Port", ",", "TAOTRONICSSoundSurge46", ",", "TaoTronicsSoundSurge85", ",", "OnePlusBudsPro2" ],
+                    "items": [ "debug-console", ",", "wlan-debug", ",", "Bluetooth-Incoming-Port", ",", "TAOTRONICSSoundSurge46", ",", "TaoTronicsSoundSurge85", ",", "OnePlusBudsPro2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -316,7 +316,7 @@
                             "parameter_initial_enable": 1,
                             "parameter_invisible": 1,
                             "parameter_longname": "umenu[1]",
-                            "parameter_mmax": 6.0,
+                            "parameter_mmax": 5.0,
                             "parameter_modmode": 0,
                             "parameter_shortname": "umenu",
                             "parameter_type": 3
@@ -337,7 +337,7 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Arial",
+                    "fontname": "Ableton Sans Medium",
                     "fontsize": 10.0,
                     "id": "obj-81",
                     "items": [ 1200, ",", 2400, ",", 4800, ",", 9600, ",", 19200, ",", 38400 ],
@@ -935,7 +935,7 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Arial",
+                    "fontname": "Ableton Sans Medium",
                     "fontsize": 11.0,
                     "id": "obj-75",
                     "items": [ 1, ",", 2, ",", 3, ",", 4, ",", 5, ",", 6, ",", 7, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12, ",", 13, ",", 14, ",", 15, ",", 16 ],
@@ -945,9 +945,9 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 508.0, 2246.0, 35.0, 21.0 ],
+                    "patching_rect": [ 508.0, 2246.0, 35.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 750.0, 26.0, 35.0, 21.0 ],
+                    "presentation_rect": [ 750.0, 26.0, 35.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg_off"
@@ -1047,7 +1047,7 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Arial",
+                    "fontname": "Ableton Sans Medium",
                     "fontsize": 11.0,
                     "id": "obj-54",
                     "items": [ 1, ",", 2, ",", 3, ",", 4, ",", 5, ",", 6, ",", 7, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12, ",", 13, ",", 14, ",", 15, ",", 16 ],
@@ -1056,23 +1056,13 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 74.0, 1083.0, 35.0, 21.0 ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 74.0, 1083.0, 35.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 252.0, 26.0, 35.0, 21.0 ],
+                    "presentation_rect": [ 252.0, 26.0, 35.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg_off"
-                        },
-                        "valueof": {
-                            "parameter_initial": [ 1 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_invisible": 1,
-                            "parameter_longname": "umenu[2]",
-                            "parameter_mmax": 15.0,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "umenu",
-                            "parameter_type": 3
                         }
                     },
                     "textcolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -1297,7 +1287,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_TextInput.maxpat",
+                    "name": "AST_V2_R_TextInput.maxpat",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
@@ -1612,7 +1602,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_TextInput.maxpat",
+                    "name": "AST_V2_R_TextInput.maxpat",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
@@ -1635,7 +1625,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_TextInput.maxpat",
+                    "name": "AST_V2_R_TextInput.maxpat",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
@@ -1905,12 +1895,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-11", 0 ],
-                    "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "midpoints": [ 1141.5, 904.10546875, 970.5, 904.10546875 ],
                     "source": [ "obj-30", 0 ]
@@ -1945,12 +1929,6 @@
                 "patchline": {
                     "destination": [ "obj-42", 0 ],
                     "source": [ "obj-35", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-104", 0 ],
-                    "source": [ "obj-36", 0 ]
                 }
             },
             {
@@ -2035,12 +2013,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-53", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-55", 0 ],
                     "source": [ "obj-54", 0 ]
                 }
@@ -2049,18 +2021,6 @@
                 "patchline": {
                     "destination": [ "obj-34", 0 ],
                     "source": [ "obj-55", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-9", 0 ],
-                    "source": [ "obj-56", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-36", 0 ],
-                    "source": [ "obj-57", 0 ]
                 }
             },
             {
@@ -2458,12 +2418,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-12", 1 ],
-                    "source": [ "obj-9", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-89", 0 ],
                     "source": [ "obj-90", 0 ]
                 }
@@ -2526,7 +2480,6 @@
             }
         ],
         "parameters": {
-            "obj-54": [ "umenu[2]", "umenu", 0 ],
             "obj-75": [ "umenu[3]", "umenu", 0 ],
             "obj-80": [ "umenu[1]", "umenu", 0 ],
             "obj-81": [ "umenu", "umenu", 0 ],

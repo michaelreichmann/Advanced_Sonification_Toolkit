@@ -1407,7 +1407,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "AST_V2_DataProcessing.maxpat",
+                    "name": "AST_V2_R_DataProcessing.maxpat",
                     "numinlets": 2,
                     "numoutlets": 0,
                     "offset": [ -510.0, -15.0 ],
@@ -1816,7 +1816,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-20", 0 ],
-                    "midpoints": [ 46.5, 904.6484375, 547.5, 904.6484375 ],
+                    "midpoints": [ 46.5, 885.6953125, 547.5, 885.6953125 ],
                     "source": [ "obj-89", 0 ]
                 }
             },
@@ -1836,11 +1836,9 @@
         "parameters": {
             "obj-17": [ "live.text[1]", "live.text", 0 ],
             "obj-19": [ "live.menu[1]", "live.menu", 0 ],
-            "obj-1::obj-54": [ "umenu[2]", "umenu", 0 ],
             "obj-1::obj-75": [ "umenu[3]", "umenu", 0 ],
             "obj-1::obj-80": [ "umenu[1]", "umenu", 0 ],
             "obj-1::obj-81": [ "umenu", "umenu", 0 ],
-            "obj-3::obj-122": [ "live.menu[9]", "live.menu", 0 ],
             "obj-3::obj-17": [ "live.text", "live.text", 0 ],
             "obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
             "parameterbanks": {

@@ -19,8 +19,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1643.0, 199.0, 274.0, 22.0 ],
-                    "text": "AST_V2_receiveFromChannelDict 0 samplingrate"
+                    "patching_rect": [ 1643.0, 199.0, 289.0, 22.0 ],
+                    "text": "AST_V2_D_receiveFromChannelDict 0 samplingrate"
                 }
             },
             {
@@ -30,8 +30,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1462.0, 117.0, 287.0, 22.0 ],
-                    "text": "AST_V2_receiveFromChannelDict 0 numDataPoints"
+                    "patching_rect": [ 1462.0, 117.0, 303.0, 22.0 ],
+                    "text": "AST_V2_D_receiveFromChannelDict 0 numDataPoints"
                 }
             },
             {
@@ -102,8 +102,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 1370.0, 432.0, 81.0, 22.0 ],
-                    "text": "snapshot~ 20",
+                    "patching_rect": [ 1370.0, 432.0, 88.0, 22.0 ],
+                    "text": "snapshot~ 100",
                     "varname": "indexSnapshot"
                 }
             },
@@ -535,7 +535,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "dsp.gen",
-                        "rect": [ 134.0, 87.0, 953.0, 779.0 ],
+                        "rect": [ 134.0, 92.0, 953.0, 774.0 ],
                         "boxes": [
                             {
                                 "box": {
