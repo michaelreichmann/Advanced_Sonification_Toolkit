@@ -5,7 +5,7 @@
   <title>README</title>
 
   <!-- Local Markdown parser -->
-  <script src="marked.min.js"></script>
+  <script src="../code/marked.min.js"></script>
 
   <style>
     body {
@@ -71,27 +71,26 @@
 <body>
   <div id="content">Loading README...</div>
 
-  <script>
-  fetch("../README.md")
-    .then(response => response.text())
-    .then(md => {
+<script>
+fetch("../README.md")
+  .then(r => r.text())
+  .then(md => {
+    let html = marked.parse(md);
 
-      // Convert markdown to HTML
-      let html = marked.parse(md);
+    html = html.replace(
+      /src="\.\/media\//g,
+      'src="../media/'
+    );
 
-      // Fix relative image paths (./media/... → ../media/...)
-      html = html.replace(
-        /src="\.\/media\//g,
-        'src="../media/'
-      );
-
-      document.getElementById("content").innerHTML = html;
-    })
-    .catch(err => {
-      document.getElementById("content").innerText = "Failed to load README.md";
-      console.error(err);
-    });
+    document.getElementById("content").innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById("content").innerText =
+      "FAILED: " + err;
+  });
 </script>
+
+
 
 </body>
 </html>

@@ -4,55 +4,6 @@
     "autoorganize": 0,
     "contents": {
         "patchers": {
-            "AST_V2_ChannelRouting.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "thru.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_DM_Breathing_Detection.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_Detection_Module_Template.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_DM_Magnitude.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_DM_Step_Detection.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_SM_Abstract.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_SM_Ambient.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_SM_Musical.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_SM_Test.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_Sounddesign_Module_Template.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "AST_V2_Home.maxpat": {
-                "kind": "patcher",
-                "local": 1,
-                "toplevel": 1
-            },
             "AST_V2_Main_RealTime.maxpat": {
                 "kind": "patcher",
                 "local": 1
@@ -77,11 +28,23 @@
                 "kind": "patcher",
                 "local": 1
             },
+            "AST_V2_DataProcessing.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
             "AST_V2_TextInput.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
-            "AST_V2_DataProcessing.maxpat": {
+            "AST_V2_SM_PolySynth.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_ChannelRouting.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_Main_RecordedData.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
@@ -97,32 +60,57 @@
                 "kind": "patcher",
                 "local": 1
             },
-            "AST_V2_Main_RecordedData.maxpat": {
+            "AST_V2_Home.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "toplevel": 1
+            },
+            "AST_V2_Sounddesign_Module_Template.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
-            "AST_V2_receiveFromChannelDict.maxpat": {
+            "AST_V2_SM_Test.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
-            "AST_V2_ReadMe.maxpat": {
+            "AST_V2_SM_Musical.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_SM_Ambient.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "thru.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_SM_Abstract.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_Detection_Module_Template.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_DM_Breathing_Detection.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_DM_Magnitude.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "AST_V2_DM_Step_Detection.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
             "AST_V2_Documentation.maxpat": {
                 "kind": "patcher",
                 "local": 1
-            },
-            "AST_V2_SM_PolySynth.maxpat": {
-                "kind": "patcher",
-                "local": 1
             }
         },
         "media": {
-            "Toolkit_Logo.png": {
-                "kind": "imagefile",
-                "local": 1
-            },
             "pause_UI.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
@@ -133,6 +121,10 @@
             },
             "record_UI.svg": {
                 "kind": "vectorimagefile",
+                "local": 1
+            },
+            "Toolkit_Logo.png": {
+                "kind": "imagefile",
                 "local": 1
             },
             "arrowBack_UI.svg": {
@@ -171,13 +163,17 @@
             }
         },
         "other": {
-            "readme_viewer.html": {
-                "kind": "webpage",
-                "local": 1
-            },
             "README.md": {
                 "kind": "file",
                 "local": 1
+            },
+            "readme_viewer.html": {
+                "kind": "webpage",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/other",
+                    "projectrelativepath": "./other"
+                }
             }
         }
     },
@@ -188,7 +184,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857813841,
+    "modificationdate": 3857822153,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
@@ -198,7 +194,6 @@
     "viewmode": 1,
     "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
     "category_disclosure": {
-        "media": 0,
-        "code": 0
+        "media": 0
     }
 }
