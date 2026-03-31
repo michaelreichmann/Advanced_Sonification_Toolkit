@@ -2082,7 +2082,7 @@
                     "fontsize": 13.0,
                     "hint": "Select Sound Design Module",
                     "id": "obj-24",
-                    "items": [ "none", ",", "Abstract", ",", "Ambient", ",", "Musical", ",", "Test" ],
+                    "items": [ "none", ",", "Abstract", ",", "Ambient", ",", "Musical", ",", "PolySynth", ",", "Test" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -2212,7 +2212,7 @@
             },
             {
                 "box": {
-                    "code": "/*\n    -compare the number of data points of different channels\n*/\n\nlet dict = new Dict(\"channelDict\");\n\nfunction msg_int(numChannels)\n{\n    let initialValue = 0;\n\n    if(dict && dict.contains && dict.get) \r\n\t{\n        if (dict.contains(\"0::numDataPoints\")) \r\n\t\t{\n            initialValue = dict.get(\"0::numDataPoints\");\n        }\n\n        for(let i = 0; i < numChannels; i++) \r\n\t\t{\n            let valueToCheck = 0;\n            let key = i + \"::numDataPoints\";\n\n            if (dict.contains(key)) \r\n\t\t\t{\n                valueToCheck = dict.get(key);\n            }\n\n            if(valueToCheck != initialValue && valueToCheck != 0 && initialValue != 0) \r\n\t\t\t{\n                let channel = i + 1;\n                outlet(0, \"Unmatching file sizes detected: Channel: \" + channel);\n                break;\n            } \r\n\t\t\telse \r\n\t\t\t{\n                outlet(0, \" \");\n            }\n        }\n    }\n}\n",
+                    "code": "/*\n    -compare the number of data points of different channels\n*/\n\nlet dict = new Dict(\"channelDict\");\n\nfunction msg_int(numChannels)\n{\n    let initialValue = 0;\n\n    if(dict && dict.contains && dict.get) \r\n\t{\n        if (dict.contains(\"0::numDataPoints\")) \r\n\t\t{\n            initialValue = dict.get(\"0::numDataPoints\");\n        }\n\n        for(let i = 0; i < numChannels; i++) \r\n\t\t{\n            let valueToCheck = 0;\n            let key = i + \"::numDataPoints\";\n\n            if (dict.contains(key)) \r\n\t\t\t{\n                valueToCheck = dict.get(key);\n            }\n\n            if (Math.abs(valueToCheck - initialValue) > 10 && valueToCheck != 0 && initialValue != 0)\r\n\t\t\t{\n                let channel = i + 1;\n                outlet(0, \"Unmatching file sizes detected: Channel: \" + channel);\n                break;\n            } \r\n\t\t\telse \r\n\t\t\t{\n                outlet(0, \" \");\n            }\n        }\n    }\n}\n",
                     "filename": "none",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
@@ -2222,7 +2222,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1819.1489231586456, 1863.829773902893, 763.8297817707062, 486.1702092885971 ],
+                    "patching_rect": [ 1819.1489231586456, 1863.829773902893, 834.0425472259521, 486.1702092885971 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0
                     }

@@ -14,6 +14,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 720.0, 1358.0, 29.5, 22.0 ],
+                    "text": "+ 1"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-89",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -52,7 +63,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 291.0, 546.0, 77.0, 22.0 ],
+                    "patching_rect": [ 291.0, 515.0, 77.0, 22.0 ],
                     "text": "loadmess #1"
                 }
             },
@@ -223,7 +234,7 @@
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [ "" ],
+                                    "outlettype": [ "int" ],
                                     "patching_rect": [ 150.0, 411.0, 30.0, 30.0 ]
                                 }
                             },
@@ -447,7 +458,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 635.0, 1367.0, 104.0, 22.0 ],
+                    "patching_rect": [ 635.0, 1387.0, 104.0, 22.0 ],
                     "text": "p formatFileName"
                 }
             },
@@ -458,7 +469,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 538.0, 1412.0, 116.0, 22.0 ],
+                    "patching_rect": [ 538.0, 1421.0, 116.0, 22.0 ],
                     "text": "zl.reg"
                 }
             },
@@ -1560,6 +1571,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-66", 1 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-29", 0 ],
                     "source": [ "obj-13", 0 ]
                 }
@@ -1819,7 +1836,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-66", 1 ],
+                    "destination": [ "obj-12", 0 ],
                     "source": [ "obj-88", 0 ]
                 }
             },
