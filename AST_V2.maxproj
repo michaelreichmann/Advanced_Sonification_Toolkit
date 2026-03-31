@@ -125,6 +125,10 @@
                 "kind": "patcher",
                 "local": 1
             },
+            "AST_V2_R_ChannelContainer.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
             "AST_V2_TextInput.maxpat": {
                 "kind": "patcher",
                 "local": 1,
@@ -132,10 +136,6 @@
                     "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
                     "projectrelativepath": "./patchers"
                 }
-            },
-            "AST_V2_R_ChannelContainer.maxpat": {
-                "kind": "patcher",
-                "local": 1
             },
             "AST_V2_DataProcessing.maxpat": {
                 "kind": "patcher",
@@ -175,9 +175,21 @@
             },
             "AST_V2_receiveFromChannelDict.maxpat": {
                 "kind": "patcher",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
             },
             "AST_V2_ReadMe.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
+            },
+            "AST_V2_Documentation.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
@@ -187,6 +199,10 @@
             }
         },
         "media": {
+            "arrowBack_UI.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
             "Toolkit_Logo.png": {
                 "kind": "imagefile",
                 "local": 1
@@ -216,10 +232,6 @@
                 "local": 1
             },
             "move_UI.svg": {
-                "kind": "vectorimagefile",
-                "local": 1
-            },
-            "arrowBack_UI.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -264,7 +276,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857732412,
+    "modificationdate": 3857787341,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },

@@ -92,8 +92,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 248.0, 604.0, 175.0, 22.0 ],
-                    "text": "load AST_V2_ReadME.maxpat"
+                    "patching_rect": [ 248.0, 604.0, 209.0, 22.0 ],
+                    "text": "load AST_V2_Documentation.maxpat"
                 }
             },
             {
@@ -113,7 +113,7 @@
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "fontname": "Arial",
                     "fontsize": 14.0,
-                    "hint": "Open Read Me",
+                    "hint": "Open Documentation",
                     "id": "obj-19",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -123,7 +123,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 248.0, 534.0, 127.0, 32.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 259.5, 689.0, 108.0, 34.0 ],
+                    "presentation_rect": [ 238.5, 687.0, 150.0, 34.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_control_zombie"
@@ -140,7 +140,7 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "Open Read Me",
+                    "text": "Open Documentation",
                     "valuepopuplabel": 1,
                     "varname": "live.text[4]"
                 }

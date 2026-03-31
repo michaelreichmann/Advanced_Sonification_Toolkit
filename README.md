@@ -5,6 +5,7 @@ Max Project for the **Advanced Sonification Toolkit**.
 
 ![Toolkit Logo](./media/Toolkit_Logo.png)
 
+---
 
 ## Table of Contents
 
@@ -19,7 +20,7 @@ Max Project for the **Advanced Sonification Toolkit**.
 - [Max Project Structure and Patch Overview](#max-project-structure-and-patch-overview)
 
 
-
+---
 
 ## Introduction
 
@@ -51,6 +52,7 @@ Michael Reichmann
 
 University of Salzburg
 
+---
 
 ## Requirements
 
@@ -67,6 +69,8 @@ A full license is only required if you want to modify the project or develop cus
 
 Max Version: *Max 9.1.3*
 
+---
+
 ## License
 
 This project is licensed under the PolyForm Noncommercial License 1.0.0.  
@@ -81,6 +85,8 @@ The license applies only to the toolkit code provided in this repository.
 Max itself requires a separate license.  
 Third-party components and referenced projects (e.g., step detection or breathing detection algorithms) are subject to their own respective licenses.
 
+---
+
 ## Funding & Research Context
 
 This project was developed within the **Digital Motion (DiMo / DiMo-NEXT)** research initiative, a transdisciplinary program exploring the use of sensor data and movement analysis in areas such as sports, health, and human-centered design.
@@ -91,6 +97,8 @@ Conducted as a collaboration between academic and industry partners.
 [DiMo-NEXT Website](https://www.digital-motion.at)
 
 <br/>
+
+---
 
 ## Functionality Summary
 
@@ -138,6 +146,7 @@ Conducted as a collaboration between academic and industry partners.
 
 <br/>
 
+---
 
 ## User Interface Overview
 
@@ -252,7 +261,9 @@ The UI provides configuration and monitoring of incoming data streams.
   - Assigns both raw data and detection outputs to sound parameters  
 
 
-### Sound Design Modules
+---
+
+## Sound Design Modules
 
 ![Sound Design Module UI](./media/abstract_module_Screenshot.png)
 
@@ -308,6 +319,7 @@ A template (`AST_V2_Sounddesign_Module_Template.maxpat`) is included to create c
 3. **UI Integration**  
    - Use Presentation Mode  
 
+---
 
 ## Detection Modules
 
@@ -341,13 +353,15 @@ A template (`AST_V2_Detection_Module_Template.maxpat`) is included to create cus
    - Use Presentation Mode  
 
 
+<br/>
 
-   ## Max Project Structure and Patch Overview
+---
+
+## Max Project Structure and Patch Overview
 
 This section provides a detailed overview of the internal Max patch structure of AST_v2.  
 The project is organized as a hierarchical, modular system where functionality is distributed across dedicated patches for input handling, processing, routing, detection, and sound synthesis.
 
----
 
 ### Naming Convention
 
@@ -359,14 +373,13 @@ The naming scheme reflects both functionality and context:
 - **`AST_V2_SM_*`** → Sound Design Modules  
 - **`AST_V2_DM_*`** → Detection Modules  
 
----
 
 ### Top-Level Patches
 
 - **`AST_V2_Home.maxpat`**  
   Entry point of the toolkit. Handles mode selection and navigation.
 
-- **`AST_V2_ReadMe.maxpat`**  
+- **`AST_V2_Documentation.maxpat`**  
   Embedded documentation accessible within Max.
 
 - **`AST_V2_Main_RecordedData.maxpat`**  
@@ -381,7 +394,6 @@ The naming scheme reflects both functionality and context:
 - **`thru.maxpat`**  
   Utility patch used for signal/data pass-through.
 
----
 
 ### Recorded Data Mode Patches
 
@@ -394,7 +406,6 @@ The naming scheme reflects both functionality and context:
 - **`AST_V2_D_receiveFromChannelDict.maxpat`**  
   Retrieves and distributes channel-specific data using a dictionary-based structure.
 
----
 
 ### Real-Time Mode Patches
 
@@ -413,7 +424,6 @@ The naming scheme reflects both functionality and context:
 - **`AST_V2_R_DataProcessing.maxpat`**  
   Performs normalization, filtering, clamping, and shaping of incoming signals.
 
----
 
 ### Detection Modules
 
@@ -423,7 +433,6 @@ The naming scheme reflects both functionality and context:
 
 - **`AST_V2_DM_Step_Detection.maxpat`**  
 
----
 
 ### Sound Design Modules
 
@@ -435,7 +444,6 @@ The naming scheme reflects both functionality and context:
 
 - **`AST_V2_SM_Test.maxpat`**  
 
----
 
 ### Module Templates
 
@@ -443,7 +451,6 @@ The naming scheme reflects both functionality and context:
 
 - **`AST_V2_Sounddesign_Module_Template.maxpat`**  
 
----
 
 ### Structural Overview
 
@@ -451,8 +458,6 @@ The project follows a hierarchical patch structure:
 
 ![Max Project Structure](./media/MaxProject_Structure.png)
 
-
----
 
 ### Design Rationale
 
@@ -462,3 +467,7 @@ The separation into small, specialized patches is intentional:
 - **Reusability**: Modules can be reused or replaced independently  
 - **Extensibility**: New input methods, detection algorithms, or sound modules can be added without modifying the core system  
 - **Clarity**: The structure mirrors the conceptual pipeline (Input → Processing → Detection → Mapping → Sound)
+
+---
+---
+---
