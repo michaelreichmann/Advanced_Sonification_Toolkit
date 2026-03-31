@@ -14,6 +14,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-9",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 902.0, 496.0, 74.0, 22.0 ],
+                    "text": "slide~ 44 44"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-114",
                     "maxclass": "newobj",
                     "numinlets": 0,
@@ -834,14 +845,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-12", 1 ],
-                    "midpoints": [ 769.4999999999999, 391.09765625, 911.5, 391.09765625 ],
-                    "order": 0,
-                    "source": [ "obj-55", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "order": 0,
                     "source": [ "obj-55", 0 ]
@@ -860,6 +863,14 @@
                     "destination": [ "obj-39", 0 ],
                     "midpoints": [ 769.4999999999999, 361.4609375, 677.375, 361.4609375, 677.375, 33.71484375, 833.5, 33.71484375 ],
                     "order": 1,
+                    "source": [ "obj-55", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "midpoints": [ 769.4999999999999, 391.09765625, 911.5, 391.09765625 ],
+                    "order": 0,
                     "source": [ "obj-55", 1 ]
                 }
             },
@@ -906,6 +917,12 @@
                     "destination": [ "obj-59", 0 ],
                     "midpoints": [ 392.5, 287.390625, 80.5, 287.390625 ],
                     "source": [ "obj-89", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 1 ],
+                    "source": [ "obj-9", 0 ]
                 }
             },
             {
