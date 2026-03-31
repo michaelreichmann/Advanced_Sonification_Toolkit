@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -138,8 +138,8 @@
                     "id": "obj-59",
                     "maxclass": "v8ui",
                     "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 71.0, 298.0, 220.0, 190.0 ],
                     "presentation": 1,
@@ -166,6 +166,8 @@
             },
             {
                 "box": {
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "id": "obj-20",
                     "maxclass": "live.text",
@@ -174,10 +176,17 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 315.0, 878.0, 44.0, 15.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 154.0, 222.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_longname": "live.text",
@@ -213,7 +222,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -612,6 +621,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 824.0, 151.0, 58.0, 62.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 63.0, 59.0, 58.0, 62.0 ],
@@ -640,6 +650,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 713.0, 151.0, 58.0, 62.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 0.0, 59.0, 58.0, 62.0 ],
@@ -861,13 +872,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-92", 0 ],
-                    "midpoints": [ 281.5, 624.859375, 80.5, 624.859375 ],
-                    "source": [ "obj-59", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-92", 0 ],
                     "source": [ "obj-59", 0 ]
                 }
             },
@@ -921,6 +925,14 @@
             "obj-20": [ "live.text", "live.text", 0 ],
             "obj-60": [ "live.dial", "Pitch", 0 ],
             "obj-66": [ "live.dial[1]", "Volume", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

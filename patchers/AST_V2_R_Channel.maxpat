@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -59,19 +59,30 @@
             {
                 "box": {
                     "activebgoncolor": [ 1.0, 0.349019607843137, 0.372549019607843, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
+                    "hint": "Enable/Disable Channel Data Recording",
                     "id": "obj-17",
                     "maxclass": "live.text",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 489.0, 774.0, 44.0, 15.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 890.0, 2.0, 75.0, 17.0 ],
                     "saved_attribute_attributes": {
                         "activebgoncolor": {
                             "expression": "themecolor.live_record"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -132,7 +143,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -673,7 +684,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1070,7 +1081,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1111,7 +1122,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 3,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1442,25 +1453,27 @@
             {
                 "box": {
                     "activebgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
-                    "bordercolor": [ 0.098039215686275, 0.098039215686275, 0.098039215686275, 0.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
-                    "hint": "Choose Input Channel",
+                    "hint": "Choose Input",
                     "id": "obj-19",
                     "maxclass": "live.menu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 37.0, 252.0, 45.0, 17.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 37.0, 252.0, 45.0, 16.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 448.0, 3.0, 48.0, 17.0 ],
+                    "presentation_rect": [ 448.0, 3.0, 48.0, 16.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
                         },
                         "bordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "tricolor": {
                             "expression": "themecolor.live_control_zombie"
@@ -1503,6 +1516,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 14.0,
                     "id": "obj-245",
                     "maxclass": "comment",

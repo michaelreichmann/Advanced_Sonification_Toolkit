@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -258,6 +258,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-88",
                     "maxclass": "comment",
@@ -272,6 +273,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-87",
                     "maxclass": "comment",
@@ -294,8 +296,9 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Select input port",
                     "id": "obj-80",
                     "items": [ "debug-console", ",", "wlan-debug", ",", "Bluetooth-Incoming-Port", ",", "TAOTRONICSSoundSurge46", ",", "TaoTronicsSoundSurge85", ",", "OnePlusBudsPro2" ],
                     "labelclick": 1,
@@ -337,8 +340,9 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Select baudrate",
                     "id": "obj-81",
                     "items": [ 1200, ",", 2400, ",", 4800, ",", 9600, ",", 19200, ",", 38400 ],
                     "labelclick": 1,
@@ -346,23 +350,13 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 1,
+                    "parameter_enable": 0,
                     "patching_rect": [ 1179.0, 245.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 651.5, 29.0, 68.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg_off"
-                        },
-                        "valueof": {
-                            "parameter_initial": [ 1 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_invisible": 1,
-                            "parameter_longname": "umenu",
-                            "parameter_mmax": 5.0,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "umenu",
-                            "parameter_type": 3
                         }
                     },
                     "textcolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -513,7 +507,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -554,7 +548,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 3,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -864,6 +858,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 14.0,
                     "id": "obj-50",
                     "maxclass": "comment",
@@ -880,6 +875,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-68",
                     "maxclass": "comment",
@@ -935,8 +931,9 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 11.0,
+                    "hint": "Select item from list input",
                     "id": "obj-75",
                     "items": [ 1, ",", 2, ",", 3, ",", 4, ",", 5, ",", 6, ",", 7, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12, ",", 13, ",", 14, ",", 15, ",", 16 ],
                     "labelclick": 1,
@@ -944,23 +941,13 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 508.0, 2246.0, 35.0, 22.0 ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 508.0, 2246.0, 35.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 750.0, 26.0, 35.0, 22.0 ],
+                    "presentation_rect": [ 750.0, 26.0, 35.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg_off"
-                        },
-                        "valueof": {
-                            "parameter_initial": [ 1 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_invisible": 1,
-                            "parameter_longname": "umenu[3]",
-                            "parameter_mmax": 15.0,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "umenu",
-                            "parameter_type": 3
                         }
                     },
                     "textcolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -992,6 +979,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-63",
                     "maxclass": "comment",
@@ -1047,8 +1035,9 @@
                     "bgfillcolor_type": "color",
                     "elementcolor": [ 0.625, 0.375, 0.375000059604645, 1.0 ],
                     "fontface": 0,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 11.0,
+                    "hint": "Select item from list input",
                     "id": "obj-54",
                     "items": [ 1, ",", 2, ",", 3, ",", 4, ",", 5, ",", 6, ",", 7, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12, ",", 13, ",", 14, ",", 15, ",", 16 ],
                     "labelclick": 1,
@@ -1057,9 +1046,9 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 74.0, 1083.0, 35.0, 22.0 ],
+                    "patching_rect": [ 74.0, 1083.0, 35.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 252.0, 26.0, 35.0, 22.0 ],
+                    "presentation_rect": [ 252.0, 26.0, 35.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg_off"
@@ -1159,6 +1148,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-47",
                     "maxclass": "comment",
@@ -1283,6 +1273,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
+                    "hint": "Type in Adress",
                     "id": "obj-36",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
@@ -1313,6 +1304,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-33",
                     "maxclass": "comment",
@@ -1376,8 +1368,10 @@
                     "bgfillcolor_color2": [ 0.290196078431373, 0.309803921568627, 0.301960784313725, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 8.0,
                     "gradient": 1,
+                    "hint": "Refresh list of available ports",
                     "id": "obj-85",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -1598,6 +1592,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
+                    "hint": "Type in Adress",
                     "id": "obj-9",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
@@ -1621,6 +1616,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
+                    "hint": "Type in Input",
                     "id": "obj-3",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
@@ -1639,6 +1635,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 14.0,
                     "id": "obj-148",
                     "maxclass": "comment",
@@ -2480,9 +2477,15 @@
             }
         ],
         "parameters": {
-            "obj-75": [ "umenu[3]", "umenu", 0 ],
             "obj-80": [ "umenu[1]", "umenu", 0 ],
-            "obj-81": [ "umenu", "umenu", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

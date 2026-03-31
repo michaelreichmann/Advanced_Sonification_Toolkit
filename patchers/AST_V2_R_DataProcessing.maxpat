@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -69,8 +69,11 @@
             {
                 "box": {
                     "activebgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "fontsize": 11.0,
+                    "hint": "Normalize Data: Produce minima and maxima for 5 seconds",
                     "id": "obj-17",
                     "maxclass": "live.text",
                     "mode": 0,
@@ -85,6 +88,12 @@
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -439,6 +448,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "format": 6,
                     "hint": "Set Output Range: Maximum",
@@ -455,7 +465,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 1052.0, 1554.0, 71.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 925.0, 98.0, 44.000001311302185, 21.0 ],
+                    "presentation_rect": [ 925.0, 98.0, 45.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg"
@@ -471,6 +481,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "format": 6,
                     "hint": "Set Output Range: Minimum",
@@ -487,7 +498,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 954.0, 1554.0, 71.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 925.0, 64.0, 44.000001311302185, 21.0 ],
+                    "presentation_rect": [ 925.0, 64.0, 45.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg"
@@ -503,6 +514,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-28",
                     "maxclass": "comment",
@@ -522,6 +534,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-84",
                     "maxclass": "comment",
@@ -541,6 +554,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-83",
                     "maxclass": "comment",
@@ -616,6 +630,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-187",
                     "maxclass": "comment",
@@ -686,6 +701,7 @@
                     "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "fontsize": 11.0,
+                    "hint": "Invert Range: 0 - 1 or 1 - 0",
                     "id": "obj-40",
                     "maxclass": "live.text",
                     "numinlets": 1,
@@ -749,7 +765,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -790,7 +806,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 3,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -1331,6 +1347,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-128",
                     "linecount": 2,
@@ -1374,6 +1391,7 @@
             {
                 "box": {
                     "fontface": 0,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-126",
                     "maxclass": "comment",
@@ -1456,6 +1474,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "format": 6,
                     "hint": "Exponent applied to normalized Values",
@@ -1497,6 +1516,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-113",
                     "maxclass": "comment",
@@ -1527,6 +1547,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "hint": "Low Pass Filter Cutoff Frequency",
                     "htricolor": [ 0.92156862745098, 0.709803921568627, 0.329411764705882, 0.0 ],
@@ -1567,6 +1588,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-103",
                     "maxclass": "comment",
@@ -1661,6 +1683,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "id": "obj-82",
                     "maxclass": "comment",
@@ -1680,6 +1703,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "format": 6,
                     "hint": "Clamp Data: Clamp Maximum",
@@ -1696,7 +1720,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 1356.0, 1208.0, 71.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 639.0, 97.0, 48.000001430511475, 21.0 ],
+                    "presentation_rect": [ 639.0, 97.0, 49.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg"
@@ -1756,6 +1780,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.625, 0.375, 0.3750000596046448, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 11.0,
                     "format": 6,
                     "hint": "Clamp Data: Clamp Minimum",
@@ -1772,7 +1797,7 @@
                     "parameter_mappable": 0,
                     "patching_rect": [ 936.0, 1208.0, 71.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 639.0, 64.0, 48.000001430511475, 21.0 ],
+                    "presentation_rect": [ 639.0, 64.0, 49.0, 21.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_fg"
@@ -1797,7 +1822,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2018,6 +2043,7 @@
             {
                 "box": {
                     "fontface": 1,
+                    "fontname": "Arial",
                     "fontsize": 14.0,
                     "id": "obj-148",
                     "maxclass": "comment",

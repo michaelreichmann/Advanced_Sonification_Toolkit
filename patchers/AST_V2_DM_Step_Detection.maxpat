@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 92.0, 1372.0, 774.0 ],
+        "rect": [ 34.0, 92.0, 967.0, 774.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -48,15 +48,15 @@
             {
                 "box": {
                     "fontface": 2,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-1",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 976.0, 593.5, 104.0, 21.0 ],
+                    "patching_rect": [ 976.0, 593.5, 112.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 5.0, 104.0, 21.0 ],
+                    "presentation_rect": [ 9.0, 5.0, 112.0, 20.0 ],
                     "text": "STEP DETECTION"
                 }
             },
@@ -84,6 +84,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-164",
                     "maxclass": "comment",
@@ -97,6 +98,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-163",
                     "maxclass": "comment",
@@ -110,6 +112,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-162",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -123,15 +126,15 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-161",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 53.0, 83.0, 96.0, 21.0 ],
+                    "patching_rect": [ 53.0, 83.0, 102.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 39.0, 73.0, 21.0 ],
+                    "presentation_rect": [ 9.0, 39.0, 78.0, 20.0 ],
                     "text": "INPUTS"
                 }
             },
@@ -211,14 +214,17 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-158",
-                    "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
+                    "items": "none",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 797.0, 290.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 131.0, 73.0, 20.0 ],
@@ -331,7 +337,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-148",
                     "items": [ "none", ",", "Channel_1", ",", "Channel_2" ],
                     "maxclass": "umenu",
@@ -339,6 +347,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 481.0, 290.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 70.0, 73.0, 20.0 ],
@@ -392,6 +401,7 @@
                     "activelinecolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "id": "obj-93",
+                    "interval": 100.0,
                     "line_width": 2.0,
                     "maxclass": "live.scope~",
                     "numinlets": 2,
@@ -417,40 +427,41 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-89",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1039.0, 690.0, 96.0, 21.0 ],
+                    "patching_rect": [ 1039.0, 690.0, 102.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 278.0, 39.0, 67.0, 21.0 ],
+                    "presentation_rect": [ 278.0, 39.0, 71.0, 20.0 ],
                     "text": "OUTPUT"
                 }
             },
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-118",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 439.0, 708.0, 96.0, 21.0 ],
+                    "patching_rect": [ 439.0, 708.0, 103.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 107.0, 39.0, 73.0, 21.0 ],
+                    "presentation_rect": [ 107.0, 39.0, 78.0, 20.0 ],
                     "text": "DETECTION"
                 }
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-87",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 585.0, 616.0, 127.0, 20.0 ],
+                    "patching_rect": [ 585.0, 616.0, 128.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 107.0, 70.0, 99.0, 20.0 ],
                     "text": "Trigger threshold"
@@ -458,11 +469,12 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-86",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 505.0, 594.0, 127.0, 20.0 ],
+                    "patching_rect": [ 505.0, 594.0, 128.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 107.0, 134.0, 115.0, 20.0 ],
                     "text": "Min. Trigger Interval"
@@ -470,6 +482,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-85",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -494,18 +507,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set trigger treshold",
                     "id": "obj-84",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 584.0, 649.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 584.0, 649.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 107.0, 92.0, 46.0, 15.0 ],
+                    "presentation_rect": [ 107.0, 92.0, 45.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -542,18 +562,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set min. trigger interval: prevent fast false re-triggering",
                     "id": "obj-82",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 501.0, 649.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 501.0, 649.0, 44.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 107.0, 156.0, 46.0, 15.0 ],
+                    "presentation_rect": [ 107.0, 156.0, 46.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -621,7 +648,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -743,18 +770,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Envelope duration",
                     "id": "obj-72",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 453.0, 875.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 453.0, 875.0, 46.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 278.0, 199.0, 46.0, 15.0 ],
+                    "presentation_rect": [ 278.0, 199.0, 48.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -800,7 +834,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1054,6 +1088,7 @@
                     "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "classic_curve": 1,
                     "clickadd": 0,
+                    "hint": "Set output envelope curve: \n-click and drag to move points\n-option + click to change curvature",
                     "id": "obj-15",
                     "legend": 0,
                     "linecolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -1099,6 +1134,9 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Envelope max. value\n",
                     "id": "obj-126",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -1106,12 +1144,15 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 527.0, 1027.0, 44.0, 15.0 ],
+                    "patching_rect": [ 527.0, 1027.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 399.0, 199.0, 35.0, 15.0 ],
+                    "presentation_rect": [ 399.0, 199.0, 34.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -1135,18 +1176,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Envelope min. value",
                     "id": "obj-127",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 488.0, 1027.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 488.0, 1027.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 346.0, 199.0, 35.0, 15.0 ],
+                    "presentation_rect": [ 346.0, 199.0, 34.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -1173,6 +1221,7 @@
                     "activelinecolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "id": "obj-30",
+                    "interval": 100.0,
                     "line_width": 2.0,
                     "maxclass": "live.scope~",
                     "numinlets": 2,
@@ -1664,7 +1713,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-2",
                     "items": "none",
                     "maxclass": "umenu",
@@ -1672,6 +1723,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 165.0, 290.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 101.0, 73.0, 20.0 ],
@@ -1721,6 +1773,7 @@
             },
             {
                 "box": {
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "id": "obj-49",
                     "maxclass": "live.text",
@@ -1733,6 +1786,9 @@
                     "presentation": 1,
                     "presentation_rect": [ 399.0, 280.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_longname": "live.text",
@@ -1768,7 +1824,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1833,7 +1889,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 156.0, 151.0, 184.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 7.0, 152.0, 187.0, 22.0 ],
+                                    "presentation_rect": [ 7.0, 167.0, 187.0, 22.0 ],
                                     "text": "Parameters:"
                                 }
                             },

@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -228,6 +228,8 @@
             },
             {
                 "box": {
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "id": "obj-49",
                     "maxclass": "live.text",
@@ -236,10 +238,17 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 255.0, 1118.0, 44.0, 15.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 151.5, 221.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_longname": "live.text",
@@ -275,7 +284,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -491,7 +500,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -559,7 +568,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -615,7 +624,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -680,7 +689,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 17.0, 128.0, 825.0, 22.0 ],
-                    "text": "1. Change patchername to be in the form \"AST_V1_SM_*.maxpat\", so the toolkit will rocognize it as a sounddesign module"
+                    "text": "1. Change patchername to be in the form \"AST_V2_SM_*.maxpat\", so the toolkit will rocognize it as a sounddesign module"
                 }
             },
             {
@@ -917,6 +926,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 988.0, 297.0, 58.0, 62.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 90.0, 64.0, 58.0, 62.0 ],
@@ -945,6 +955,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 877.0, 297.0, 58.0, 62.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 27.0, 64.0, 58.0, 62.0 ],
@@ -970,8 +981,8 @@
                     "id": "obj-59",
                     "maxclass": "v8ui",
                     "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 174.0, 521.0, 220.0, 190.0 ],
                     "presentation": 1,
@@ -1204,13 +1215,6 @@
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
                     "source": [ "obj-58", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-92", 0 ],
-                    "midpoints": [ 384.5, 847.859375, 183.5, 847.859375 ],
-                    "source": [ "obj-59", 1 ]
                 }
             },
             {

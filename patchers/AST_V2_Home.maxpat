@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -111,7 +111,7 @@
                 "box": {
                     "activebgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
-                    "bordercolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 14.0,
                     "hint": "Open Read Me",
                     "id": "obj-19",
@@ -130,9 +130,6 @@
                         },
                         "activetextcolor": {
                             "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": "themecolor.live_focus_frame"
                         },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -290,7 +287,7 @@
                 "box": {
                     "activebgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
-                    "bordercolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 16.0,
                     "hint": "Start Real-Time Mode",
                     "id": "obj-1",
@@ -309,9 +306,6 @@
                         },
                         "activetextcolor": {
                             "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": "themecolor.live_focus_frame"
                         },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -421,7 +415,7 @@
                 "box": {
                     "activebgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "activetextcolor": [ 1.0, 1.0, 1.0, 1.0 ],
-                    "bordercolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "fontname": "Arial",
                     "fontsize": 16.0,
                     "hint": "Start Recorded Data Mode",
                     "id": "obj-11",
@@ -440,9 +434,6 @@
                         },
                         "activetextcolor": {
                             "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": "themecolor.live_focus_frame"
                         },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -545,6 +536,14 @@
             "obj-1": [ "live.text[1]", "live.text", 0 ],
             "obj-11": [ "live.text", "live.text", 0 ],
             "obj-19": [ "live.text[4]", "live.text", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,

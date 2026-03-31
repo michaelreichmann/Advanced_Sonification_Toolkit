@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 92.0, 1372.0, 774.0 ],
+        "rect": [ 34.0, 92.0, 967.0, 774.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -26,15 +26,15 @@
             {
                 "box": {
                     "fontface": 2,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-1",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 976.0, 593.5, 140.0, 21.0 ],
+                    "patching_rect": [ 976.0, 593.5, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 5.0, 140.0, 21.0 ],
+                    "presentation_rect": [ 9.0, 5.0, 150.0, 20.0 ],
                     "text": "BREATHING DETECTION"
                 }
             },
@@ -73,6 +73,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-115",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -85,6 +86,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-113",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -98,6 +100,9 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set peak output envelope max value",
                     "id": "obj-108",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -105,12 +110,15 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 1052.4, 818.0, 44.0, 15.0 ],
+                    "patching_rect": [ 1052.4, 818.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 250.0, 232.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 250.0, 232.0, 43.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -161,6 +169,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-91",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -185,18 +194,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set trough output envelope duration",
                     "id": "obj-95",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1024.0, 666.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 1024.0, 666.0, 46.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 183.0, 197.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 183.0, 197.0, 46.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -242,7 +258,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -439,18 +455,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set trough output envelope min value",
                     "id": "obj-101",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1013.0, 818.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 1013.0, 818.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 250.0, 197.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 250.0, 197.0, 43.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -593,6 +616,7 @@
                     "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "classic_curve": 1,
                     "clickadd": 0,
+                    "hint": "Set trough output envelope curve: \n-click and drag to move points\n-option + click to change curvature",
                     "id": "obj-86",
                     "legend": 0,
                     "linecolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -602,7 +626,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "float", "", "", "bang" ],
-                    "parameter_enable": 1,
+                    "parameter_enable": 0,
                     "patching_rect": [ 1770.0, 568.0, 200.0, 100.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 324.0, 198.0, 97.0, 49.0 ],
@@ -612,16 +636,8 @@
                         },
                         "linecolor": {
                             "expression": "themecolor.live_control_text_selection"
-                        },
-                        "valueof": {
-                            "parameter_invisible": 1,
-                            "parameter_longname": "M5_Input_Onset_Function[1]",
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "M5_Input_Onset_Function",
-                            "parameter_type": 3
                         }
-                    },
-                    "varname": "M5_Input_Onset_Function[1]"
+                    }
                 }
             },
             {
@@ -648,6 +664,7 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-163",
                     "maxclass": "comment",
@@ -661,11 +678,12 @@
             },
             {
                 "box": {
+                    "fontname": "Arial",
                     "id": "obj-162",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1470.0, 497.0, 127.0, 20.0 ],
+                    "patching_rect": [ 1470.0, 497.0, 128.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 324.0, 63.0, 62.0, 20.0 ],
                     "text": "Curve"
@@ -713,15 +731,15 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-89",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1470.0, 361.0, 96.0, 21.0 ],
+                    "patching_rect": [ 1470.0, 361.0, 103.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 111.0, 35.0, 62.0, 21.0 ],
+                    "presentation_rect": [ 111.0, 35.0, 66.0, 20.0 ],
                     "text": "OUTPUTS"
                 }
             },
@@ -739,18 +757,25 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set peak output envelope duration",
                     "id": "obj-72",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 499.0, 710.0, 44.0, 15.0 ],
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 499.0, 710.0, 46.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 182.0, 95.0, 46.0, 15.0 ],
+                    "presentation_rect": [ 182.0, 95.0, 48.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -796,7 +821,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1046,10 +1071,11 @@
             },
             {
                 "box": {
-                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 176.47058823529412, 0.964285714285714, 0, 0.4, 389.70588235294116, 1.0, 0, 0.0, 999.0, 0.0, 0, 0.15500000000000008 ],
+                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 176.47058823529412, 0.964285714285714, 0, 0.4, 389.70588235294116, 1.0, 0, 0.0, 1000.0, 0.0, 0, 0.15500000000000008 ],
                     "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
                     "classic_curve": 1,
                     "clickadd": 0,
+                    "hint": "Set peak output envelope curve: \n-click and drag to move points\n-option + click to change curvature",
                     "id": "obj-15",
                     "legend": 0,
                     "linecolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -1059,7 +1085,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "float", "", "", "bang" ],
-                    "parameter_enable": 1,
+                    "parameter_enable": 0,
                     "patching_rect": [ 1403.0, 568.0, 200.0, 100.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 324.0, 95.0, 97.0, 49.0 ],
@@ -1069,16 +1095,8 @@
                         },
                         "linecolor": {
                             "expression": "themecolor.live_control_text_selection"
-                        },
-                        "valueof": {
-                            "parameter_invisible": 1,
-                            "parameter_longname": "M5_Input_Onset_Function",
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "M5_Input_Onset_Function",
-                            "parameter_type": 3
                         }
-                    },
-                    "varname": "M5_Input_Onset_Function"
+                    }
                 }
             },
             {
@@ -1095,6 +1113,9 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set peak output envelope max value",
                     "id": "obj-126",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
@@ -1102,12 +1123,15 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 527.0, 862.0, 44.0, 15.0 ],
+                    "patching_rect": [ 527.0, 862.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 252.0, 132.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 252.0, 132.0, 43.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -1131,18 +1155,24 @@
             {
                 "box": {
                     "activebgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "fontname": "Arial",
+                    "hint": "Set peak output envelope min value",
                     "id": "obj-127",
                     "maxclass": "live.numbox",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 488.0, 862.0, 44.0, 15.0 ],
+                    "patching_rect": [ 488.0, 862.0, 43.0, 14.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 252.0, 95.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 252.0, 95.0, 43.0, 14.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_focus_frame"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
                         },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -1332,7 +1362,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1454,15 +1484,15 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-161",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 53.0, 83.0, 96.0, 21.0 ],
+                    "patching_rect": [ 53.0, 83.0, 102.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 35.0, 73.0, 21.0 ],
+                    "presentation_rect": [ 9.0, 35.0, 78.0, 20.0 ],
                     "text": "INPUTS"
                 }
             },
@@ -1913,7 +1943,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set Input Channel",
                     "id": "obj-2",
                     "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
                     "maxclass": "umenu",
@@ -1921,6 +1953,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 165.0, 290.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 63.0, 73.0, 20.0 ],
@@ -1970,6 +2003,7 @@
             },
             {
                 "box": {
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "id": "obj-49",
                     "maxclass": "live.text",
@@ -1982,6 +2016,9 @@
                     "presentation": 1,
                     "presentation_rect": [ 399.0, 280.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_longname": "live.text",
@@ -2017,7 +2054,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2082,7 +2119,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 156.0, 151.0, 184.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 7.0, 152.0, 187.0, 22.0 ],
+                                    "presentation_rect": [ 7.0, 167.0, 187.0, 22.0 ],
                                     "text": "Parameters:"
                                 }
                             },
@@ -2760,11 +2797,17 @@
             "obj-108": [ "maxOut[1]", "maxOut", 0 ],
             "obj-126": [ "maxOut", "maxOut", 0 ],
             "obj-127": [ "minOut", "minOut", 0 ],
-            "obj-15": [ "M5_Input_Onset_Function", "M5_Input_Onset_Function", 0 ],
             "obj-49": [ "live.text", "live.text", 0 ],
             "obj-72": [ "duration", "duration", 0 ],
-            "obj-86": [ "M5_Input_Onset_Function[1]", "M5_Input_Onset_Function", 0 ],
             "obj-95": [ "duration[1]", "duration", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

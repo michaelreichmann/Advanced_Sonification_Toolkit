@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 92.0, 1372.0, 774.0 ],
+        "rect": [ 34.0, 92.0, 967.0, 774.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -59,15 +59,15 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-11",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 445.0, 655.0, 96.0, 21.0 ],
+                    "patching_rect": [ 445.0, 655.0, 102.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 188.5, 28.0, 73.0, 21.0 ],
+                    "presentation_rect": [ 188.5, 28.0, 77.0, 20.0 ],
                     "text": "OUTPUT"
                 }
             },
@@ -111,7 +111,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -389,7 +389,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-45",
                     "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
                     "maxclass": "umenu",
@@ -397,6 +399,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 930.0, 270.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 181.0, 73.0, 20.0 ],
@@ -509,7 +512,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-26",
                     "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
                     "maxclass": "umenu",
@@ -517,6 +522,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 599.0, 270.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 135.0, 73.0, 20.0 ],
@@ -566,15 +572,15 @@
             {
                 "box": {
                     "fontface": 1,
-                    "fontname": "Ableton Sans Medium",
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-161",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 159.0, 76.0, 96.0, 21.0 ],
+                    "patching_rect": [ 159.0, 76.0, 102.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 28.0, 73.0, 21.0 ],
+                    "presentation_rect": [ 9.0, 28.0, 78.0, 20.0 ],
                     "text": "INPUTS"
                 }
             },
@@ -1047,7 +1053,9 @@
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
                     "bgfillcolor_type": "color",
+                    "fontname": "Arial",
                     "fontsize": 10.0,
+                    "hint": "Set input channel",
                     "id": "obj-2",
                     "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
                     "maxclass": "umenu",
@@ -1055,6 +1063,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 268.0, 270.0, 100.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 90.0, 73.0, 20.0 ],
@@ -1104,6 +1113,7 @@
             },
             {
                 "box": {
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontname": "Arial",
                     "id": "obj-49",
                     "maxclass": "live.text",
@@ -1116,6 +1126,9 @@
                     "presentation": 1,
                     "presentation_rect": [ 399.0, 280.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_control_fg"
+                        },
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
                             "parameter_longname": "live.text",
@@ -1151,15 +1164,14 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 846.0, 286.0, 364.0, 175.0 ],
+                        "rect": [ 550.0, 276.0, 364.0, 175.0 ],
                         "openinpresentation": 1,
                         "toolbars_unpinned_last_save": 15,
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
