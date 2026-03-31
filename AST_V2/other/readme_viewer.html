@@ -72,7 +72,7 @@
   <div id="content">Loading README...</div>
 
 <script>
-fetch("../README.md")
+fetch("Documentation.md")
   .then(r => r.text())
   .then(md => {
     let html = marked.parse(md);
