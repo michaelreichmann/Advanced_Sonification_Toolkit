@@ -196,6 +196,14 @@
                     "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
                     "projectrelativepath": "./patchers"
                 }
+            },
+            "AST_V2_SM_PolySynth.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
             }
         },
         "media": {
@@ -276,7 +284,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857794320,
+    "modificationdate": 3857799025,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },

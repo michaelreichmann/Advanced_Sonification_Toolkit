@@ -314,6 +314,15 @@ The toolkit currently includes **4 sound design modules**:
      - `Wind`  
      - `Rain`  
      - `Thunder`  
+  
+5. **PolySynth**  
+   - Polyphonic Synthesizer   
+   - 3 Voices
+   - **Parameters** (for each voice):
+     - `Pitch`  
+     - `Volume`  
+     - `Oscillator`  
+     - `Pitch min. and max.`  
 
 ### Sound Design Module Template
 
@@ -452,6 +461,8 @@ The naming scheme reflects both functionality and context:
 - **`AST_V2_SM_Musical.maxpat`**  
 
 - **`AST_V2_SM_Test.maxpat`**  
+
+- **`AST_V2_SM_PolySynth.maxpat`**
 
 
 ### Module Templates
