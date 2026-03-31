@@ -28,7 +28,7 @@ The Advanced Sonification Toolkit (AST_v2) is a modular, UI-driven system for cr
 
 The toolkit addresses a common limitation in sonification practice: systems are often built as custom, case-specific implementations, making them difficult to reuse, compare, or adapt, especially for non–sound experts. AST_v2 provides a flexible environment that allows users to configure, test, and iterate on sonification strategies without low-level audio programming.
 
-It supports both recorded datasets and live sensor input (via Serial or OSC), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. Real-time input can also be recorded and reused in the recorded data mode. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
+It supports both recorded datasets and live sensor input (via Serial, OSC, MIDI or Game Controller), which are processed through a shared architecture for data shaping, feature extraction, mapping, and sound generation. Real-time input can also be recorded and reused in the recorded data mode. A matrix-based routing system enables the assignment of raw or derived data streams to sound parameters across multiple sound design modules.
 
 The toolkit follows a modular architecture, separating input handling, processing, detection, mapping, and sound synthesis. 
 This allows users to reconfigure sonification setups and extend the system with custom modules without modifying the core structure.
@@ -119,6 +119,8 @@ Conducted as a collaboration between academic and industry partners.
   - Real-time data input via:
     - **Serial Communication**
     - **OSC (Open Sound Control)**
+    - **MIDI**
+    - **Game Controller**
   - Flexible data parsing using address filtering and list item selection  
   - Recording of incoming data streams to `.wav` files compatible with Recorded Data Mode  
   - Recording sample rate: **200 Hz**  
@@ -188,7 +190,7 @@ The UI provides configuration and monitoring of incoming data streams.
 
 #### Input Configuration
 - **Input Type Selection**:
-  - Choose between **Serial** and **OSC** per channel  
+  - Choose between **Serial**, **OSC**, **MIDI** or **Game Controller** per channel  
 
 - **Serial Input**:
   - Select available serial port  
@@ -196,6 +198,13 @@ The UI provides configuration and monitoring of incoming data streams.
 
 - **OSC Input**:
   - Define OSC address for incoming data  
+
+- **MIDI Input**:
+  - Select available MIDI Controller
+  -Set Controller Number
+
+- **Game Controller**:
+  - Set button or joystick
 
 - **Address Filtering**:
   - Filter incoming messages using a string identifier (e.g., `X:` or `xyz:`)  
@@ -416,7 +425,7 @@ The naming scheme reflects both functionality and context:
   Core patch for a single real-time channel. Coordinates input, processing, and output.
 
 - **`AST_V2_R_DataInput.maxpat`**  
-  Handles incoming data from Serial and OSC sources, including parsing and filtering.
+  Handles incoming data from Serial, OSC, MIDI or GAME CONTROLLER sources, including parsing and filtering.
 
 - **`AST_V2_R_TextInput.maxpat`**  
   Processes structured text-based input (e.g., prefixed sensor data streams).

@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 106.0, 81.0, 621.0, 773.0 ],
+        "rect": [ 53.0, 87.0, 621.0, 773.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 15,
         "boxes": [

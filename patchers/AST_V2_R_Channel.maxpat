@@ -1465,9 +1465,9 @@
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 37.0, 252.0, 45.0, 16.0 ],
+                    "patching_rect": [ 37.0, 252.0, 127.0, 16.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 448.0, 3.0, 48.0, 16.0 ],
+                    "presentation_rect": [ 367.0, 3.0, 129.0, 16.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -1475,19 +1475,15 @@
                         "bordercolor": {
                             "expression": "themecolor.live_control_fg"
                         },
-                        "tricolor": {
-                            "expression": "themecolor.live_control_zombie"
-                        },
                         "valueof": {
-                            "parameter_enum": [ "OSC", "Serial" ],
+                            "parameter_enum": [ "OSC", "SERIAL", "MIDI", "GAME CONTROLLER" ],
                             "parameter_longname": "live.menu[1]",
-                            "parameter_mmax": 1,
+                            "parameter_mmax": 3,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
                         }
                     },
-                    "tricolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "varname": "live.menu[1]"
                 }
             },
@@ -1850,9 +1846,7 @@
         "parameters": {
             "obj-17": [ "live.text[1]", "live.text", 0 ],
             "obj-19": [ "live.menu[1]", "live.menu", 0 ],
-            "obj-1::obj-75": [ "umenu[3]", "umenu", 0 ],
             "obj-1::obj-80": [ "umenu[1]", "umenu", 0 ],
-            "obj-1::obj-81": [ "umenu", "umenu", 0 ],
             "obj-3::obj-17": [ "live.text", "live.text", 0 ],
             "obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
             "parameterbanks": {

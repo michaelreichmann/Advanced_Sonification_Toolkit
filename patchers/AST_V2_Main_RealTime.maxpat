@@ -2309,28 +2309,6 @@
             },
             {
                 "box": {
-                    "id": "obj-30",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "patching_rect": [ 2761.7021079063416, 804.2553133964539, 22.0, 22.0 ],
-                    "text": "t b"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-29",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 2761.7021079063416, 770.2127604484558, 102.0, 22.0 ],
-                    "text": "r ---numChannels"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-129",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -2338,16 +2316,6 @@
                     "outlettype": [ "int" ],
                     "patching_rect": [ 2671.2765766382217, 1028.723396897316, 29.5, 22.0 ],
                     "text": "i"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-92",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 2761.7021079063416, 961.7021207809448, 53.0, 22.0 ],
-                    "text": "s ---stop"
                 }
             },
             {
@@ -2379,71 +2347,6 @@
                     },
                     "text": "PLAYBACK",
                     "textcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ]
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.262745098039216, 0.262745098039216, 0.262745098039216, 0.0 ],
-                    "activebgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
-                    "activetextcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
-                    "activetextoncolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
-                    "bgcolor": [ 0.262745098039216, 0.262745098039216, 0.262745098039216, 0.0 ],
-                    "bgoncolor": [ 0.576470588235294, 0.576470588235294, 0.576470588235294, 0.0 ],
-                    "bordercolor": [ 0.576470588235294, 0.576470588235294, 0.576470588235294, 0.0 ],
-                    "hint": "Stop Audio",
-                    "id": "obj-136",
-                    "lcdbgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
-                    "maxclass": "live.text",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "parameter_mappable": 0,
-                    "patching_rect": [ 2761.7021079063416, 834.0425472259521, 66.0, 53.0 ],
-                    "pictures": [ "stop_UI.svg", "stop_UI.svg" ],
-                    "presentation": 1,
-                    "presentation_rect": [ 81.0, 49.0, 66.0, 53.0 ],
-                    "remapsvgcolors": 1,
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": "themecolor.live_dial_needle"
-                        },
-                        "activetextcolor": {
-                            "expression": "themecolor.live_control_zombie"
-                        },
-                        "activetextoncolor": {
-                            "expression": "themecolor.live_control_zombie"
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "lcdbgcolor": {
-                            "expression": "themecolor.live_control_zombie"
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_longname": "stop",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "stop",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "Play",
-                    "texton": "Pause",
-                    "usepicture": 1,
-                    "usesvgviewbox": 1,
-                    "varname": "stop"
                 }
             },
             {
@@ -2512,17 +2415,6 @@
                     "usepicture": 1,
                     "usesvgviewbox": 1,
                     "varname": "play"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-55",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "int" ],
-                    "patching_rect": [ 2761.7021079063416, 899.9999935626984, 53.958343386650085, 22.0 ],
-                    "text": "t b 0"
                 }
             },
             {
@@ -3132,12 +3024,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-55", 0 ],
-                    "source": [ "obj-136", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-17", 0 ],
                     "source": [ "obj-138", 0 ]
                 }
@@ -3237,20 +3123,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-30", 0 ],
-                    "source": [ "obj-29", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-14", 0 ],
                     "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-136", 0 ],
-                    "source": [ "obj-30", 0 ]
                 }
             },
             {
@@ -3390,19 +3264,6 @@
                 "patchline": {
                     "destination": [ "obj-53", 0 ],
                     "source": [ "obj-54", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-124", 0 ],
-                    "midpoints": [ 2806.1604512929916, 935.1786205172539, 2680.7765766382217, 935.1786205172539 ],
-                    "source": [ "obj-55", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-92", 0 ],
-                    "source": [ "obj-55", 0 ]
                 }
             },
             {
@@ -3641,61 +3502,44 @@
         "parameters": {
             "obj-112": [ "stop[3]", "stop", 0 ],
             "obj-124": [ "play", "play", 0 ],
-            "obj-136": [ "stop", "stop", 0 ],
             "obj-19::obj-1::obj-17": [ "live.text[22]", "live.text", 0 ],
             "obj-19::obj-1::obj-19": [ "live.menu[19]", "live.menu", 0 ],
-            "obj-19::obj-1::obj-1::obj-75": [ "umenu[28]", "umenu", 0 ],
             "obj-19::obj-1::obj-1::obj-80": [ "umenu[30]", "umenu", 0 ],
-            "obj-19::obj-1::obj-1::obj-81": [ "umenu[31]", "umenu", 0 ],
             "obj-19::obj-1::obj-3::obj-17": [ "live.text[21]", "live.text", 0 ],
             "obj-19::obj-1::obj-3::obj-40": [ "live.text[20]", "live.text[1]", 0 ],
             "obj-19::obj-2::obj-17": [ "live.text[1]", "live.text", 0 ],
             "obj-19::obj-2::obj-19": [ "live.menu[1]", "live.menu", 0 ],
-            "obj-19::obj-2::obj-1::obj-75": [ "umenu[3]", "umenu", 0 ],
             "obj-19::obj-2::obj-1::obj-80": [ "umenu[1]", "umenu", 0 ],
-            "obj-19::obj-2::obj-1::obj-81": [ "umenu", "umenu", 0 ],
             "obj-19::obj-2::obj-3::obj-17": [ "live.text", "live.text", 0 ],
             "obj-19::obj-2::obj-3::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
             "obj-19::obj-3::obj-17": [ "live.text[4]", "live.text", 0 ],
             "obj-19::obj-3::obj-19": [ "live.menu[10]", "live.menu", 0 ],
-            "obj-19::obj-3::obj-1::obj-75": [ "umenu[7]", "umenu", 0 ],
             "obj-19::obj-3::obj-1::obj-80": [ "umenu[5]", "umenu", 0 ],
-            "obj-19::obj-3::obj-1::obj-81": [ "umenu[4]", "umenu", 0 ],
             "obj-19::obj-3::obj-3::obj-17": [ "live.text[2]", "live.text", 0 ],
             "obj-19::obj-3::obj-3::obj-40": [ "live.text[3]", "live.text[1]", 0 ],
             "obj-19::obj-4::obj-17": [ "live.text[7]", "live.text", 0 ],
             "obj-19::obj-4::obj-19": [ "live.menu[4]", "live.menu", 0 ],
-            "obj-19::obj-4::obj-1::obj-75": [ "umenu[10]", "umenu", 0 ],
             "obj-19::obj-4::obj-1::obj-80": [ "umenu[8]", "umenu", 0 ],
-            "obj-19::obj-4::obj-1::obj-81": [ "umenu[11]", "umenu", 0 ],
             "obj-19::obj-4::obj-3::obj-17": [ "live.text[6]", "live.text", 0 ],
             "obj-19::obj-4::obj-3::obj-40": [ "live.text[5]", "live.text[1]", 0 ],
             "obj-19::obj-5::obj-17": [ "live.text[10]", "live.text", 0 ],
             "obj-19::obj-5::obj-19": [ "live.menu[11]", "live.menu", 0 ],
-            "obj-19::obj-5::obj-1::obj-75": [ "umenu[15]", "umenu", 0 ],
             "obj-19::obj-5::obj-1::obj-80": [ "umenu[13]", "umenu", 0 ],
-            "obj-19::obj-5::obj-1::obj-81": [ "umenu[12]", "umenu", 0 ],
             "obj-19::obj-5::obj-3::obj-17": [ "live.text[9]", "live.text", 0 ],
             "obj-19::obj-5::obj-3::obj-40": [ "live.text[8]", "live.text[1]", 0 ],
             "obj-19::obj-6::obj-17": [ "live.text[13]", "live.text", 0 ],
             "obj-19::obj-6::obj-19": [ "live.menu[13]", "live.menu", 0 ],
-            "obj-19::obj-6::obj-1::obj-75": [ "umenu[18]", "umenu", 0 ],
             "obj-19::obj-6::obj-1::obj-80": [ "umenu[17]", "umenu", 0 ],
-            "obj-19::obj-6::obj-1::obj-81": [ "umenu[19]", "umenu", 0 ],
             "obj-19::obj-6::obj-3::obj-17": [ "live.text[11]", "live.text", 0 ],
             "obj-19::obj-6::obj-3::obj-40": [ "live.text[12]", "live.text[1]", 0 ],
             "obj-19::obj-7::obj-17": [ "live.text[16]", "live.text", 0 ],
             "obj-19::obj-7::obj-19": [ "live.menu[15]", "live.menu", 0 ],
-            "obj-19::obj-7::obj-1::obj-75": [ "umenu[23]", "umenu", 0 ],
             "obj-19::obj-7::obj-1::obj-80": [ "umenu[21]", "umenu", 0 ],
-            "obj-19::obj-7::obj-1::obj-81": [ "umenu[20]", "umenu", 0 ],
             "obj-19::obj-7::obj-3::obj-17": [ "live.text[15]", "live.text", 0 ],
             "obj-19::obj-7::obj-3::obj-40": [ "live.text[14]", "live.text[1]", 0 ],
             "obj-19::obj-8::obj-17": [ "live.text[19]", "live.text", 0 ],
             "obj-19::obj-8::obj-19": [ "live.menu[17]", "live.menu", 0 ],
-            "obj-19::obj-8::obj-1::obj-75": [ "umenu[27]", "umenu", 0 ],
             "obj-19::obj-8::obj-1::obj-80": [ "umenu[26]", "umenu", 0 ],
-            "obj-19::obj-8::obj-1::obj-81": [ "umenu[24]", "umenu", 0 ],
             "obj-19::obj-8::obj-3::obj-17": [ "live.text[18]", "live.text", 0 ],
             "obj-19::obj-8::obj-3::obj-40": [ "live.text[17]", "live.text[1]", 0 ],
             "obj-53": [ "live.gain~", "Volume", 0 ],

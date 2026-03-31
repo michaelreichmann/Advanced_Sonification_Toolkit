@@ -3037,7 +3037,7 @@
                     "activetextcolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "activetextoncolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "bgcolor": [ 0.262745098039216, 0.262745098039216, 0.262745098039216, 0.0 ],
-                    "bordercolor": [ 0.098039215686275, 0.098039215686275, 0.098039215686275, 0.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial",
@@ -3050,6 +3050,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
+                    "parameter_mappable": 0,
                     "patching_rect": [ 2807.446788430214, 1482.978712797165, 53.0, 25.45831573009491 ],
                     "presentation": 1,
                     "presentation_rect": [ 544.0, 160.0, 58.0, 18.0 ],
@@ -3070,7 +3071,7 @@
                             "expression": ""
                         },
                         "bordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "focusbordercolor": {
                             "expression": "themecolor.live_control_fg"
@@ -3224,7 +3225,7 @@
             {
                 "box": {
                     "activebgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
-                    "bordercolor": [ 0.098039215686275, 0.098039215686275, 0.098039215686275, 0.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial",
@@ -3244,7 +3245,7 @@
                             "expression": "themecolor.live_control_zombie"
                         },
                         "bordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "focusbordercolor": {
                             "expression": "themecolor.live_control_fg"
@@ -3252,16 +3253,16 @@
                         "valueof": {
                             "parameter_initial": [ 100 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "playbakcSpeed",
+                            "parameter_longname": "playbackSpeed",
                             "parameter_mmax": 1000.0,
                             "parameter_mmin": 1.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "playbakcSpeed",
+                            "parameter_shortname": "playbackSpeed",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
                     },
-                    "varname": "playbakcSpeed"
+                    "varname": "playbackSpeed"
                 }
             },
             {
@@ -3270,8 +3271,8 @@
                     "activebgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "bgcolor": [ 0.262745098039216, 0.262745098039216, 0.262745098039216, 0.0 ],
                     "bgoncolor": [ 0.576470588235294, 0.576470588235294, 0.576470588235294, 0.0 ],
-                    "bordercolor": [ 0.098039215686275, 0.098039215686275, 0.098039215686275, 0.0 ],
-                    "focusbordercolor": [ 0.447058823529412, 0.447058823529412, 0.447058823529412, 0.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "hint": "Waveform Navigation Modes: select, move and loop",
                     "id": "obj-140",
                     "inactivetextoffcolor": [ 0.85, 0.85, 0.85, 1.0 ],
@@ -3303,10 +3304,10 @@
                             "expression": ""
                         },
                         "bordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "focusbordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "inactivetextoffcolor": {
                             "expression": "themecolor.live_control_text_selection"
@@ -3632,7 +3633,7 @@
                 "box": {
                     "activebgcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "annotation": "",
-                    "bordercolor": [ 0.098039215686275, 0.098039215686275, 0.098039215686275, 0.0 ],
+                    "bordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "focusbordercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontname": "Arial",
@@ -3653,7 +3654,7 @@
                             "expression": "themecolor.live_control_zombie"
                         },
                         "bordercolor": {
-                            "expression": ""
+                            "expression": "themecolor.live_control_fg"
                         },
                         "focusbordercolor": {
                             "expression": "themecolor.live_control_fg"
@@ -4632,7 +4633,7 @@
             "obj-19::obj-8::obj-136": [ "live.text[23]", "live.text", 0 ],
             "obj-19::obj-8::obj-186": [ "live.text[22]", "live.text", 0 ],
             "obj-19::obj-8::obj-40": [ "live.text[24]", "live.text[1]", 0 ],
-            "obj-230": [ "playbakcSpeed", "playbakcSpeed", 0 ],
+            "obj-230": [ "playbackSpeed", "playbackSpeed", 0 ],
             "obj-59": [ "live.button", "live.button", 0 ],
             "obj-80": [ "live.text", "live.text", 0 ],
             "obj-87": [ "playbakcSpeed[1]", "playbakcSpeed", 0 ],
