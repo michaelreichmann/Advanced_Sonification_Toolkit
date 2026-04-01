@@ -173,7 +173,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "bang", "int", "int" ],
-                    "patching_rect": [ 268.0, 303.0, 109.0, 22.0 ],
+                    "patching_rect": [ 268.0, 328.0, 109.0, 22.0 ],
                     "text": "t b i i"
                 }
             },
@@ -217,8 +217,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1042.0, 222.0, 111.0, 22.0 ],
-                    "text": "clear, append none"
+                    "patching_rect": [ 1042.0, 222.0, 124.0, 22.0 ],
+                    "text": "clear, append none, 0"
                 }
             },
             {
@@ -228,8 +228,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 711.0, 222.0, 111.0, 22.0 ],
-                    "text": "clear, append none"
+                    "patching_rect": [ 711.0, 222.0, 124.0, 22.0 ],
+                    "text": "clear, append none, 0"
                 }
             },
             {
@@ -239,8 +239,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 380.0, 222.0, 111.0, 22.0 ],
-                    "text": "clear, append none"
+                    "patching_rect": [ 380.0, 222.0, 124.0, 22.0 ],
+                    "text": "clear, append none, 0"
                 }
             },
             {
@@ -249,7 +249,7 @@
                     "maxclass": "live.line",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 159.0, 333.0, 5.0, 100.0 ],
+                    "patching_rect": [ 157.0, 522.0, 5.0, 100.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 132.0, 28.0, 6.0, 216.0 ]
                 }
@@ -558,7 +558,7 @@
                     "fontsize": 10.0,
                     "hint": "Set input channel",
                     "id": "obj-45",
-                    "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
+                    "items": "none",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -637,7 +637,7 @@
                     "fontsize": 10.0,
                     "hint": "Set input channel",
                     "id": "obj-26",
-                    "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
+                    "items": "none",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1123,9 +1123,10 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bgcolor": [ 0.447059, 0.447059, 0.447059, 1.0 ],
                     "bgfillcolor_angle": 270.0,
-                    "bgfillcolor_color": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 1.0 ],
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.447059, 0.447059, 0.447059, 1.0 ],
                     "bgfillcolor_color1": [ 0.3764705882352941, 0.3843137254901961, 0.4, 1.0 ],
                     "bgfillcolor_color2": [ 0.2901960784313726, 0.30980392156862746, 0.30196078431372547, 1.0 ],
                     "bgfillcolor_proportion": 0.39,
@@ -1134,7 +1135,7 @@
                     "fontsize": 10.0,
                     "hint": "Set input channel",
                     "id": "obj-2",
-                    "items": [ "Channel_1", ",", "Channel_2", ",", "Channel_3" ],
+                    "items": "none",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1145,9 +1146,6 @@
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 90.0, 73.0, 20.0 ],
                     "saved_attribute_attributes": {
-                        "bgfillcolor": {
-                            "expression": "themecolor.live_focus_frame"
-                        },
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
                         }
@@ -1312,7 +1310,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 54.0, 336.0, 80.0, 65.0 ],
+                    "patching_rect": [ 52.0, 525.0, 80.0, 65.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 0.0, 0.0, 450.0, 305.0 ],
                     "proportion": 0.5,

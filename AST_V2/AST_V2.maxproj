@@ -1,13 +1,7 @@
 {
-    "name": "AST_V2",
-    "version": 1,
-    "creationdate": 3826427134,
-    "modificationdate": 3857891104,
-    "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
-    "autoorganize": 0,
-    "hideprojectwindow": 0,
-    "showdependencies": 1,
+    "amxdtype": 0,
     "autolocalize": 0,
+    "autoorganize": 0,
     "contents": {
         "patchers": {
             "AST_V2_Main_RealTime.maxpat": {
@@ -117,6 +111,10 @@
             }
         },
         "media": {
+            "DOC_logo.png": {
+                "kind": "imagefile",
+                "local": 1
+            },
             "UI_pause.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
@@ -143,10 +141,6 @@
             },
             "UI_stop.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
-            },
-            "DOC_logo.png": {
-                "kind": "imagefile",
                 "local": 1
             },
             "UI_back.svg": {
@@ -183,14 +177,25 @@
             }
         }
     },
-    "layout": {    },
-    "searchpath": {    },
+    "creationdate": 3826427134,
     "detailsvisible": 0,
-    "amxdtype": 0,
-    "readonly": 0,
-    "devpathtype": 0,
     "devpath": ".",
+    "devpathtype": 0,
+    "hideprojectwindow": 0,
+    "includepackages": 0,
+    "layout": {    },
+    "modificationdate": 3857895728,
+    "name": "AST_V2",
+    "readonly": 0,
+    "searchpath": {    },
+    "showdependencies": 1,
     "sortmode": 0,
+    "version": 1,
     "viewmode": 1,
-    "includepackages": 0
+    "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
+    "category_disclosure": {
+        "media": 0,
+        "code": 0,
+        "other": 0
+    }
 }

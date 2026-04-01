@@ -85,8 +85,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 581.0, 423.0, 111.0, 22.0 ],
-                    "text": "clear, append none"
+                    "patching_rect": [ 581.0, 423.0, 124.0, 22.0 ],
+                    "text": "clear, append none, 0"
                 }
             },
             {
