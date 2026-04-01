@@ -1,7 +1,13 @@
 {
-    "amxdtype": 0,
-    "autolocalize": 0,
+    "name": "AST_V2",
+    "version": 1,
+    "creationdate": 3826427134,
+    "modificationdate": 3857888189,
+    "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
     "autoorganize": 0,
+    "hideprojectwindow": 0,
+    "showdependencies": 1,
+    "autolocalize": 0,
     "contents": {
         "patchers": {
             "AST_V2_Main_RealTime.maxpat": {
@@ -111,45 +117,53 @@
             }
         },
         "media": {
-            "pause_UI.svg": {
+            "UI_stop.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             },
-            "play_UI.svg": {
+            "UI_play.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             },
-            "record_UI.svg": {
+            "UI_pause.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             },
-            "arrowBack_UI.svg": {
+            "UI_move.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             },
-            "Toolkit_Logo.png": {
-                "kind": "imagefile",
-                "local": 1
-            },
-            "grab_UI.svg": {
+            "UI_mark.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             },
-            "mark_UI.svg": {
+            "UI_grab.svg": {
                 "kind": "vectorimagefile",
-                "local": 1
-            },
-            "move_UI.svg": {
-                "kind": "vectorimagefile",
-                "local": 1
-            },
-            "stop_UI.svg": {
-                "kind": "vectorimagefile",
-                "local": 1
-            },
-            "Dimo_Next_Info.png": {
-                "kind": "imagefile",
-                "local": 1
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
+                    "projectrelativepath": "./media"
+                }
             }
         },
         "code": {
@@ -181,23 +195,14 @@
             }
         }
     },
-    "creationdate": 3826427134,
-    "detailsvisible": 0,
-    "devpath": ".",
-    "devpathtype": 0,
-    "hideprojectwindow": 0,
-    "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857886784,
-    "name": "AST_V2",
-    "readonly": 0,
     "searchpath": {    },
-    "showdependencies": 1,
+    "detailsvisible": 0,
+    "amxdtype": 0,
+    "readonly": 0,
+    "devpathtype": 0,
+    "devpath": ".",
     "sortmode": 0,
-    "version": 1,
     "viewmode": 1,
-    "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
-    "category_disclosure": {
-        "media": 0
-    }
+    "includepackages": 0
 }

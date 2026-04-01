@@ -2498,7 +2498,7 @@
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
                     "patching_rect": [ 2671.2765766382217, 947.8723336458206, 66.0, 53.0 ],
-                    "pictures": [ "play_UI.svg", "pause_UI.svg" ],
+                    "pictures": [ "UI_play.svg", "UI_pause.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 13.0, 49.0, 66.0, 53.0 ],
                     "remapsvgcolors": 1,

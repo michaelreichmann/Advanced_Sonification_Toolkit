@@ -1,7 +1,7 @@
 # Advanced Sonification Toolkit
 
 
-![Toolkit Logo](./AST_V2/media/Toolkit_Logo.png)
+![Toolkit Logo](./AST_V2/media/DOC_logo.png)
 
 A modular toolkit for real-time and recorded **movement-based sonification**, designed for flexible exploration of sensor data in contexts such as research, sports, rehabilitation, and interactive performance.
 

@@ -98,7 +98,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "patching_rect": [ 291.0, 97.0, 69.0, 64.0 ],
-                    "pictures": [ "arrowBack_UI.svg", "arrowBack_UI.svg" ],
+                    "pictures": [ "UI_back.svg", "UI_back.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 14.0, 15.0, 48.0, 39.0 ],
                     "remapsvgcolors": 1,
@@ -178,7 +178,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 9.0, 9.0, 626.0, 715.0 ],
                     "rendermode": 0,
-                    "url": "file:///Users/b1110331/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2/other/readme_viewer.html"
+                    "url": "file:///Users/b1110331/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/other/readme_viewer.html"
                 }
             }
         ],

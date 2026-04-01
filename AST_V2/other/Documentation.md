@@ -3,21 +3,21 @@
 
 Max Project for the **Advanced Sonification Toolkit**.
 
-![Toolkit Logo](./media/Toolkit_Logo.png)
+![Toolkit Logo](./media/DOC_logo.png)
 
 ---
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [License](#license)
-- [Funding & Research Context](#funding--research-context)
-- [Functionality Summary](#functionality-summary)
-- [User Interface Overview](#user-interface-overview)
-- [Sound Design Modules](#sound-design-modules)
-- [Detection Modules](#detection-modules)
-- [Max Project Structure and Patch Overview](#max-project-structure-and-patch-overview)
+- Introduction
+- Requirements
+- License
+- Funding & Research Context
+- Functionality Summary
+- User Interface Overview
+- Sound Design Modules
+- Detection Modules
+- Max Project Structure and Patch Overview
 
 
 ---
@@ -92,7 +92,7 @@ Third-party components and referenced projects (e.g., step detection or breathin
 This project was developed within the **Digital Motion (DiMo / DiMo-NEXT)** research initiative, a transdisciplinary program exploring the use of sensor data and movement analysis in areas such as sports, health, and human-centered design.
 Conducted as a collaboration between academic and industry partners.
 
-![DiMo-Next Missio Statement](./media/Dimo_Next_Info.png)
+![DiMo-Next Missio Statement](./media/DOC_dimo_info.png)
 
 [DiMo-NEXT Website](https://www.digital-motion.at)
 
@@ -102,7 +102,7 @@ Conducted as a collaboration between academic and industry partners.
 
 ## Functionality Summary
 
-![Schematic Overview](./media/toolkit_schematic_overview.png)
+![Schematic Overview](./media/DOC_schematic_overview.png)
 
 <br/>
 
@@ -144,7 +144,7 @@ Conducted as a collaboration between academic and industry partners.
   - The final synthesized audio output can be recorded in both Recorded Data Mode and Real-Time Input Mode.
   - Enables saving the resulting sonification as a standard audio file for further analysis, sharing, or documentation.
 
-![Audio Output Recording](./media/audio_REC_Screenshot.png)
+![Audio Output Recording](./media/DOC_audio_rec.png)
 
 <br/>
 
@@ -162,7 +162,7 @@ Both modes share the same processing, mapping, and sound design architecture.
 
 ### Recorded Data Mode
 
-![Toolkit UI](./media/toolkit_Screenshot_D.png)
+![Toolkit UI Recorded data mode](./media/DOC_mode_d.png)
 
 The UI provides playback control, waveform navigation, and data inspection.
 
@@ -184,7 +184,7 @@ Each input channel includes:
 
 ### Real-Time Input Mode
 
-![Toolkit UI](./media/toolkit_Screenshot_R.png)
+![Toolkit UI Real-time mode](./media/DOC_mode_r.png)
 
 The UI provides configuration and monitoring of incoming data streams.
 
@@ -274,7 +274,7 @@ The UI provides configuration and monitoring of incoming data streams.
 
 ## Sound Design Modules
 
-![Sound Design Module UI](./media/abstract_module_Screenshot.png)
+![Sound Design Module UI](./media/DOC_module_sound.png)
 
 - **Choose Module**:
   - Dropdown menu to choose one of the modules that are part of the project  
@@ -343,7 +343,7 @@ A template (`AST_V2_Sounddesign_Module_Template.maxpat`) is included to create c
 
 Detection modules extract features and events from input data and make them available as control signals.
 
-![Detection Module UI](./media/step_detection_module_Screenshot.png)
+![Detection Module UI](./media/DOC_module_det.png)
 
 The toolkit includes:
 
@@ -476,7 +476,7 @@ The naming scheme reflects both functionality and context:
 
 The project follows a hierarchical patch structure:
 
-![Max Project Structure](./media/MaxProject_Structure.png)
+![Max Project Structure](./media/DOC_project_structure.png)
 
 
 ### Design Rationale

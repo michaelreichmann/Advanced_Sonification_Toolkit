@@ -61,7 +61,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "jit_matrix" ],
                     "patching_rect": [ 261.5, 750.0, 100.0, 38.61607142857143 ],
-                    "pic": "Toolkit_Logo.png",
+                    "pic": "DOC_logo.png",
                     "presentation": 1,
                     "presentation_rect": [ 115.0, 151.0, 398.0, 153.6919642857143 ]
                 }
@@ -165,10 +165,10 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 461.0, 368.0, 227.0, 87.0 ],
+                    "patching_rect": [ 461.0, 368.0, 235.0, 87.0 ],
                     "presentation": 1,
                     "presentation_linecount": 6,
-                    "presentation_rect": [ 341.0, 551.0, 227.0, 87.0 ],
+                    "presentation_rect": [ 341.0, 551.0, 235.0, 87.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
