@@ -161,20 +161,20 @@
                 "box": {
                     "fontsize": 12.0,
                     "id": "obj-10",
-                    "linecount": 5,
+                    "linecount": 6,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 461.0, 368.0, 227.0, 74.0 ],
+                    "patching_rect": [ 461.0, 368.0, 227.0, 87.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 5,
-                    "presentation_rect": [ 341.0, 551.0, 227.0, 74.0 ],
+                    "presentation_linecount": 6,
+                    "presentation_rect": [ 341.0, 551.0, 227.0, 87.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
                         }
                     },
-                    "text": "Interactive systems and live performance\n\n• Live sensor data via Serial or OSC\n• Real-time monitoring and processing\n• Recording of raw data input",
+                    "text": "Interactive systems and live performance\n\n• Live sensor data via Serial, OSC, MIDI    \n  or Game Controller\n• Real-time monitoring and processing\n• Recording of raw data input",
                     "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
                 }
             },

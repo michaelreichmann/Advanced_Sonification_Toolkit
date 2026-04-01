@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -12,6 +12,142 @@
         "rect": [ 34.0, 92.0, 1372.0, 774.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.25, 0.75, 0.375, 1.0 ],
+                    "id": "obj-76",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 490.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 490.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.75, 0.25, 0.625, 1.0 ],
+                    "id": "obj-75",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 1130.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 1130.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.5, 0.25, 0.75, 1.0 ],
+                    "id": "obj-74",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 970.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 970.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.25, 0.375, 0.75, 1.0 ],
+                    "id": "obj-73",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 810.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 810.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.25, 0.75, 0.75, 1.0 ],
+                    "id": "obj-72",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 650.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 650.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.5, 0.75, 0.25, 1.0 ],
+                    "id": "obj-71",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 330.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 330.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.75, 0.625, 0.25, 1.0 ],
+                    "id": "obj-69",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 170.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 170.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+                    "border": 2,
+                    "bordercolor": [ 0.75, 0.25, 0.25, 1.0 ],
+                    "id": "obj-68",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 5.0, 10.0, 980.0, 150.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 5.0, 10.0, 980.0, 150.0 ],
+                    "proportion": 0.5
+                }
+            },
             {
                 "box": {
                     "id": "obj-36",
@@ -163,7 +299,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -530,7 +666,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -791,9 +927,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 5.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 10.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 5.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 10.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1122,9 +1258,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 1088.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 1130.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 1088.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 1130.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1145,9 +1281,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 934.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 970.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 934.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 970.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1168,9 +1304,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 780.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 810.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 780.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 810.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1191,9 +1327,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 626.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 650.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 626.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 650.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1214,9 +1350,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 472.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 490.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 472.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 490.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1237,9 +1373,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 318.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 330.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 318.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 330.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1260,9 +1396,9 @@
                     "numoutlets": 1,
                     "offset": [ 5.0, 5.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 164.0, 990.0, 150.0 ],
+                    "patching_rect": [ 0.0, 170.0, 990.0, 150.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 164.0, 990.0, 150.0 ],
+                    "presentation_rect": [ 0.0, 170.0, 990.0, 150.0 ],
                     "viewvisibility": 1
                 }
             }
@@ -1603,6 +1739,14 @@
             "obj-8::obj-136": [ "live.text[27]", "live.text", 0 ],
             "obj-8::obj-186": [ "live.text[26]", "live.text", 0 ],
             "obj-8::obj-40": [ "live.text[25]", "live.text[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1::obj-1": {
                     "parameter_longname": "live.drop[12]"
@@ -1708,6 +1852,21 @@
                 },
                 "obj-7::obj-40": {
                     "parameter_longname": "live.text[3]"
+                },
+                "obj-8::obj-1": {
+                    "parameter_longname": "live.drop[9]"
+                },
+                "obj-8::obj-122": {
+                    "parameter_longname": "live.menu[9]"
+                },
+                "obj-8::obj-136": {
+                    "parameter_longname": "live.text[27]"
+                },
+                "obj-8::obj-186": {
+                    "parameter_longname": "live.text[26]"
+                },
+                "obj-8::obj-40": {
+                    "parameter_longname": "live.text[25]"
                 }
             },
             "inherited_shortname": 1
