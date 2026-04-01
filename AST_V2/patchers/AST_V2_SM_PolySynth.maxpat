@@ -263,20 +263,20 @@
                 "box": {
                     "fontface": 0,
                     "fontname": "Arial",
-                    "fontsize": 10.0,
+                    "fontsize": 9.0,
                     "id": "obj-99",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1888.0, 610.0, 81.0, 18.0 ],
+                    "patching_rect": [ 1888.0, 610.0, 74.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 108.0, 176.0, 81.0, 18.0 ],
+                    "presentation_rect": [ 108.0, 176.0, 74.0, 17.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
                         }
                     },
-                    "text": "Min, / Max. Note"
+                    "text": "Min. / Max. Note"
                 }
             },
             {
@@ -489,20 +489,20 @@
                 "box": {
                     "fontface": 0,
                     "fontname": "Arial",
-                    "fontsize": 10.0,
+                    "fontsize": 9.0,
                     "id": "obj-81",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1398.0, 610.0, 81.0, 18.0 ],
+                    "patching_rect": [ 1398.0, 610.0, 74.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 108.0, 113.0, 81.0, 18.0 ],
+                    "presentation_rect": [ 108.0, 113.0, 74.0, 17.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
                         }
                     },
-                    "text": "Min, / Max. Note"
+                    "text": "Min. / Max. Note"
                 }
             },
             {
@@ -726,20 +726,20 @@
                 "box": {
                     "fontface": 0,
                     "fontname": "Arial",
-                    "fontsize": 10.0,
+                    "fontsize": 9.0,
                     "id": "obj-69",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 908.0, 610.0, 81.0, 18.0 ],
+                    "patching_rect": [ 908.0, 610.0, 74.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 108.0, 50.0, 81.0, 18.0 ],
+                    "presentation_rect": [ 108.0, 50.0, 74.0, 17.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_control_text_selection"
                         }
                     },
-                    "text": "Min, / Max. Note"
+                    "text": "Min. / Max. Note"
                 }
             },
             {

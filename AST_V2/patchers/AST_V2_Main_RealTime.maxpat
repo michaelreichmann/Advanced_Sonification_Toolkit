@@ -15,6 +15,21 @@
         "boxes": [
             {
                 "box": {
+                    "autofit": 1,
+                    "forceaspect": 1,
+                    "id": "obj-76",
+                    "maxclass": "fpic",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_matrix" ],
+                    "patching_rect": [ 785.2127604484558, 35.21276581287384, 210.63829636573792, 82.60793487395333 ],
+                    "pic": "DOC_logo.png",
+                    "presentation": 1,
+                    "presentation_rect": [ 773.4042497873306, 20.930074671082266, 210.63829636573792, 82.60793487395333 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-63",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -1186,7 +1201,7 @@
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
                     "patching_rect": [ 3041.4893399477005, 1526.5957337617874, 66.0, 53.0 ],
-                    "pictures": [ "record_UI.svg", "record_UI.svg" ],
+                    "pictures": [ "UI_record.svg", "UI_record.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 1227.6595656871796, 709.5744630098343, 49.99999964237213, 39.65957462787628 ],
                     "remapsvgcolors": 1,
@@ -1693,7 +1708,7 @@
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
                     "patching_rect": [ 3244.680827856064, 696.808505654335, 66.0, 53.0 ],
-                    "pictures": [ "record_UI.svg", "record_UI.svg" ],
+                    "pictures": [ "UI_record.svg", "UI_record.svg" ],
                     "presentation": 1,
                     "presentation_rect": [ 226.595743060112, 143.0, 66.0, 53.0 ],
                     "remapsvgcolors": 1,
@@ -2805,7 +2820,7 @@
                     "fontface": 1,
                     "fontname": "Arial",
                     "fontsize": 14.0,
-                    "hint": "Number of Input Channels",
+                    "hint": "Set Number of Input Channels",
                     "id": "obj-87",
                     "maxclass": "live.numbox",
                     "numinlets": 1,

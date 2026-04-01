@@ -9,46 +9,49 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 53.0, 87.0, 621.0, 773.0 ],
+        "rect": [ 53.0, 87.0, 627.0, 773.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 15,
         "boxes": [
             {
                 "box": {
+                    "fontface": 2,
                     "fontsize": 12.0,
                     "id": "obj-7",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 187.0, 394.0, 248.0, 20.0 ],
+                    "patching_rect": [ 187.0, 394.0, 249.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 411.0, 734.0, 175.0, 20.0 ],
+                    "presentation_rect": [ 382.5, 734.0, 211.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
-                            "expression": "themecolor.live_contrast_frame"
+                            "expression": "themecolor.live_control_zombie"
                         }
                     },
                     "text": "michael.reichmann@plus.ac.at",
-                    "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
+                    "textcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "textjustification": 2
                 }
             },
             {
                 "box": {
+                    "fontface": 2,
                     "fontsize": 12.0,
                     "id": "obj-4",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 172.0, 379.0, 248.0, 20.0 ],
+                    "patching_rect": [ 172.0, 379.0, 249.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 26.0, 734.0, 161.0, 20.0 ],
+                    "presentation_rect": [ 34.0, 734.0, 186.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
-                            "expression": "themecolor.live_contrast_frame"
+                            "expression": "themecolor.live_control_zombie"
                         }
                     },
                     "text": "Michael Reichmann 2026",
-                    "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
+                    "textcolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ]
                 }
             },
             {
@@ -60,10 +63,10 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "jit_matrix" ],
-                    "patching_rect": [ 261.5, 750.0, 100.0, 38.61607142857143 ],
+                    "patching_rect": [ 261.5, 750.0, 100.0, 39.21790875602154 ],
                     "pic": "DOC_logo.png",
                     "presentation": 1,
-                    "presentation_rect": [ 115.0, 151.0, 398.0, 153.6919642857143 ]
+                    "presentation_rect": [ 89.5, 160.0, 448.0, 175.69623122697647 ]
                 }
             },
             {
@@ -75,13 +78,13 @@
                     "numoutlets": 0,
                     "patching_rect": [ 169.0, 119.0, 552.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 26.0, 336.0, 552.0, 24.0 ],
+                    "presentation_rect": [ 196.0, 376.0, 235.0, 24.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
                         }
                     },
-                    "text": "Choose an input mode to begin:",
+                    "text": "Choose an input mode to begin",
                     "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
                 }
             },
@@ -123,7 +126,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 248.0, 534.0, 127.0, 32.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 238.5, 687.0, 150.0, 34.0 ],
+                    "presentation_rect": [ 238.5, 684.0, 150.0, 34.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_control_zombie"
@@ -168,7 +171,7 @@
                     "patching_rect": [ 461.0, 368.0, 235.0, 87.0 ],
                     "presentation": 1,
                     "presentation_linecount": 6,
-                    "presentation_rect": [ 341.0, 551.0, 235.0, 87.0 ],
+                    "presentation_rect": [ 345.5, 547.0, 248.0, 87.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
@@ -189,7 +192,7 @@
                     "patching_rect": [ 157.0, 364.0, 248.0, 74.0 ],
                     "presentation": 1,
                     "presentation_linecount": 5,
-                    "presentation_rect": [ 37.0, 547.0, 248.0, 74.0 ],
+                    "presentation_rect": [ 33.5, 547.0, 248.0, 74.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_contrast_frame"
@@ -219,37 +222,15 @@
             },
             {
                 "box": {
-                    "fontface": 2,
-                    "fontsize": 16.0,
-                    "id": "obj-6",
-                    "linecount": 3,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 181.0, 155.0, 528.0, 60.0 ],
-                    "presentation": 1,
-                    "presentation_linecount": 3,
-                    "presentation_rect": [ 50.0, 365.0, 528.0, 60.0 ],
-                    "saved_attribute_attributes": {
-                        "textcolor": {
-                            "expression": "themecolor.live_contrast_frame"
-                        }
-                    },
-                    "text": "Recorded Data for analysis and exploration of existing datasets\n\nReal-Time Input for live sonification of incoming sensor streams",
-                    "textcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ]
-                }
-            },
-            {
-                "box": {
-                    "fontface": 1,
+                    "fontface": 3,
                     "fontsize": 16.0,
                     "id": "obj-5",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 157.0, 93.0, 600.0, 24.0 ],
+                    "patching_rect": [ 157.0, 93.0, 601.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 26.0, 84.0, 552.0, 24.0 ],
+                    "presentation_rect": [ 49.0, 100.0, 529.0, 24.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.live_focus_frame"
@@ -270,7 +251,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 157.0, 38.0, 644.0, 46.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 26.0, 20.0, 560.0, 46.0 ],
+                    "presentation_rect": [ 33.5, 21.0, 560.0, 46.0 ],
                     "saved_attribute_attributes": {
                         "bubble_bgcolor": {
                             "expression": "themecolor.live_macro_title"
@@ -299,7 +280,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 484.0, 264.0, 201.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 350.5, 458.0, 208.0, 48.0 ],
+                    "presentation_rect": [ 365.5, 458.0, 208.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_control_zombie"
@@ -427,7 +408,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 191.0, 260.0, 201.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 57.0, 458.0, 208.0, 48.0 ],
+                    "presentation_rect": [ 53.5, 458.0, 208.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.live_control_zombie"

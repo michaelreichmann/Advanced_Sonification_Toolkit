@@ -2,7 +2,7 @@
     "name": "AST_V2",
     "version": 1,
     "creationdate": 3826427134,
-    "modificationdate": 3857888189,
+    "modificationdate": 3857891104,
     "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 0,
@@ -117,53 +117,41 @@
             }
         },
         "media": {
-            "UI_stop.svg": {
+            "UI_pause.svg": {
                 "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
+                "local": 1
             },
             "UI_play.svg": {
                 "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
+                "local": 1
             },
-            "UI_pause.svg": {
+            "UI_record.svg": {
                 "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
-            },
-            "UI_move.svg": {
-                "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
-            },
-            "UI_mark.svg": {
-                "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
+                "local": 1
             },
             "UI_grab.svg": {
                 "kind": "vectorimagefile",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/media",
-                    "projectrelativepath": "./media"
-                }
+                "local": 1
+            },
+            "UI_mark.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "UI_move.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "UI_stop.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "DOC_logo.png": {
+                "kind": "imagefile",
+                "local": 1
+            },
+            "UI_back.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
             }
         },
         "code": {
