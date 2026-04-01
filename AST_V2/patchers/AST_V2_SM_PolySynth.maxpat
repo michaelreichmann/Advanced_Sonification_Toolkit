@@ -1725,8 +1725,8 @@
                     "id": "obj-59",
                     "maxclass": "v8ui",
                     "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 174.0, 521.0, 220.0, 190.0 ],
                     "presentation": 1,
@@ -2178,6 +2178,12 @@
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
                     "source": [ "obj-58", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-92", 0 ],
+                    "source": [ "obj-59", 1 ]
                 }
             },
             {

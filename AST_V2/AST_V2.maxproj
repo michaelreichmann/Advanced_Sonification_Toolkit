@@ -108,21 +108,9 @@
             "AST_V2_Documentation.maxpat": {
                 "kind": "patcher",
                 "local": 1
-            },
-            "AST_V2_SM_bla.maxpat": {
-                "kind": "patcher",
-                "local": 1
             }
         },
         "media": {
-            "Toolkit_Logo.png": {
-                "kind": "imagefile",
-                "local": 1
-            },
-            "arrowBack_UI.svg": {
-                "kind": "vectorimagefile",
-                "local": 1
-            },
             "pause_UI.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
@@ -133,6 +121,14 @@
             },
             "record_UI.svg": {
                 "kind": "vectorimagefile",
+                "local": 1
+            },
+            "arrowBack_UI.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "Toolkit_Logo.png": {
+                "kind": "imagefile",
                 "local": 1
             },
             "grab_UI.svg": {
@@ -192,7 +188,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857833646,
+    "modificationdate": 3857886784,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
