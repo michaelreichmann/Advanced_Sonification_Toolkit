@@ -181,6 +181,171 @@ Each input channel includes:
 - Interactive waveform display with zoom and selection  
 - Playback position cursor  
 
+---
+
+### Recorded Data Format Specification
+
+This section describes in detail how recorded datasets must be formatted in order to be compatible with the Advanced Sonification Toolkit (AST_v2).
+
+#### Overview
+
+Recorded data in AST_v2 is stored using standard `.wav` files.  
+However, these files are **not used as audio signals** in the traditional sense.
+
+Instead, `.wav` files act as **structured data containers** for time-series data.
+
+Each file encodes a single data stream using two channels:
+
+- **Channel 1** → Timestamps  
+- **Channel 2** → Signal values  
+
+
+#### Important Concept: WAV as Data Container
+
+Although `.wav` is an audio format, in this context:
+
+- The data is **not interpreted as sound**
+- The **sampling rate in the file header is not functionally relevant**
+- Playback timing is **not derived from the sample rate**
+
+Instead:
+
+- The toolkit reads the **timestamp channel (Channel 1)**
+- Timing is reconstructed **dynamically in real time**
+- This allows:
+  - Non-uniform sampling
+  - Variable playback speed
+  - Accurate temporal reconstruction independent of file metadata
+
+
+#### File Format Specification
+
+#### General Format
+
+- File type: `.wav`
+- Channels: **2 (stereo)**
+- Data type: **32-bit floating point (float32)**
+- Encoding: **Uncompressed PCM float**
+- Normalization: **none (raw values preserved)**
+
+#### Channel Structure
+
+| Channel | Content        | Data Type | Description |
+|--------|----------------|----------|-------------|
+| 1      | Timestamps     | float32  | Time value per sample |
+| 2      | Signal values  | float32  | Measured data |
+
+
+#### Timestamps
+
+- Unit: **seconds**
+- Format: **float32**
+- Resolution: depends on source data (e.g. 200 Hz → 0.005 s steps)
+
+Example:
+  0.000
+  0.005
+  0.010
+
+
+Key points:
+
+- Timestamps are **monotonically increasing**
+- They do **not need to be uniformly spaced**
+- They define the **true temporal structure** of the data
+- The toolkit uses them to:
+  - Drive playback timing
+  - Enable time-accurate navigation
+  - Support speed scaling
+
+
+#### Signal Values
+
+- Format: **float32**
+- Range: **unrestricted**
+- No normalization is required
+
+Typical cases:
+
+- Raw sensor values
+- Preprocessed signals
+- Feature streams (e.g. magnitude, detection outputs)
+
+#### Sampling Rate (Header)
+
+The `.wav` file still contains a sampling rate in its header (e.g. 48000 Hz), but:
+
+- It is **only required for file compatibility**
+- It does **not determine playback timing in AST_v2**
+
+
+#### Creating Compatible WAV Files
+
+Recorded data can be generated either:
+
+1. **Directly within AST_v2 (Real-Time Mode)**  
+2. **Externally (e.g. from CSV using Python)**  
+
+
+#### Example: Creating WAV Files from CSV
+
+#### Input Requirements
+
+Your CSV file should contain:
+
+- A **timestamp column** (e.g. `Time`)  
+- One or more **signal columns** (e.g. `Data`)  
+
+Example:
+Time, Data
+0.000, 0.12
+0.005, 0.15
+
+
+#### Timestamp Handling
+
+- Timestamps should represent **time in seconds**
+- Accepted formats:
+  - Seconds (preferred) → `0.0, 0.005, 0.01`
+  - Milliseconds → must be converted (`ms / 1000`)
+  - Other units → must be converted to seconds
+
+**Important:**
+
+- The toolkit expects timestamps in **seconds**
+- They must be:
+  - **monotonically increasing**
+  - **numerical (float-compatible)**
+
+
+#### Processing Workflow
+
+For each signal column:
+
+- Read timestamp column → convert to **float32 seconds**
+- Read signal column → convert to **float32**
+- Combine into a 2-channel array:
+  - Channel 1 → timestamps  
+  - Channel 2 → signal values  
+- Write as `.wav`
+
+
+#### Minimal Example (Pseudo-code)
+
+```
+LOAD CSV
+
+GET timestamps (convert to seconds if needed)
+GET data
+
+FOR each signal column:
+    COMBINE (timestamps, date) → 2-channel data
+    SAVE as float32 WAV
+
+END
+```
+
+
 
 ### Real-Time Input Mode
 
