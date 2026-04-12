@@ -451,7 +451,7 @@ The UI provides configuration and monitoring of incoming data streams.
   - Mapping of input data to sound parameter  
   - When input data is mapped to a parameter, manual control is deactivated  
 
-The toolkit currently includes **4 sound design modules**:
+The toolkit currently includes **multiple sound design modules**:
 
 1. **Test**  
    - Simple sine tone  
@@ -489,6 +489,24 @@ The toolkit currently includes **4 sound design modules**:
      - `Oscillator`  
      - `Pitch min. and max.`  
 
+6. **Generative Beat**  
+   - Generative drum beat generator (kick, snare, hi-hat)  
+   - Beats can be randomly generated (*Generate New Beat*) and dynamically modified  
+   - **Parameters**:
+     - `Speed`  
+     - `Speed Min.`  
+     - `Speed Max.` (BPM)  
+     - `Timing Deviation` (%)  
+     - `Density`  
+     - `Volume`  
+
+7. **Simple Noise**  
+   - Pink noise generator with filtering and distortion  
+   - **Parameters**:
+     - `Brightness`  
+     - `Roughness`  
+     - `Volume`  
+
 ### Sound Design Module Template
 
 A template (`AST_V2_Sounddesign_Module_Template.maxpat`) is included to create custom modules.
@@ -521,6 +539,8 @@ The toolkit includes:
 3. **Magnitude**
 - Computes normalized magnitude from 3 channels  
 
+4. **Onset Detection**  
+- Detects onsets / transients / impulses from 1 input channel  
 
 ### Detection Module Template
 

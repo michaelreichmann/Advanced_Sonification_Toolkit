@@ -108,6 +108,38 @@
             "AST_V2_Documentation.maxpat": {
                 "kind": "patcher",
                 "local": 1
+            },
+            "AST_V2_SP_DM_transient_detection.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
+            },
+            "AST_V2_DM_Onset_Detection.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
+            },
+            "AST_V2_SM_Generative_Beat.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
+            },
+            "AST_V2_SM_Simple_Noise.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/DiMo-Next/Sonification/AdvancedSonifcationToolkit/Versions/AST_V2_Root/AST_V2/patchers",
+                    "projectrelativepath": "./patchers"
+                }
             }
         },
         "media": {
@@ -184,7 +216,7 @@
     "hideprojectwindow": 0,
     "includepackages": 0,
     "layout": {    },
-    "modificationdate": 3857895728,
+    "modificationdate": 3858863345,
     "name": "AST_V2",
     "readonly": 0,
     "searchpath": {    },
@@ -194,8 +226,7 @@
     "viewmode": 1,
     "viewrect": [ 28.0, 203.0, 286.0, 354.0 ],
     "category_disclosure": {
-        "media": 0,
         "code": 0,
-        "other": 0
+        "media": 0
     }
 }

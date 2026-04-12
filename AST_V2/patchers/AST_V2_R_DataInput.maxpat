@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 92.0, 1372.0, 774.0 ],
+        "rect": [ 34.0, 92.0, 970.0, 774.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -983,7 +983,7 @@
                     "fontsize": 10.0,
                     "hint": "Select input port",
                     "id": "obj-80",
-                    "items": [ "debug-console", ",", "wlan-debug", ",", "Bluetooth-Incoming-Port", ",", "TAOTRONICSSoundSurge46", ",", "TaoTronicsSoundSurge85", ",", "OnePlusBudsPro2" ],
+                    "items": [ "wlan-debug", ",", "debug-console", ",", "Bluetooth-Incoming-Port", ",", "TAOTRONICSSoundSurge46", ",", "TaoTronicsSoundSurge85", ",", "OnePlusBudsPro2", ",", "usbserial-5A430015331" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -1027,7 +1027,7 @@
                     "fontsize": 10.0,
                     "hint": "Select baudrate",
                     "id": "obj-81",
-                    "items": [ 1200, ",", 2400, ",", 4800, ",", 9600, ",", 19200, ",", 38400 ],
+                    "items": [ 300, ",", 1200, ",", 2400, ",", 4800, ",", 9600, ",", 14400, ",", 19200, ",", 28800, ",", 38400, ",", 57600, ",", 74880, ",", 115200, ",", 230400 ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
