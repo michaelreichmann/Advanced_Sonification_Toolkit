@@ -14,30 +14,6 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-13",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 621.0, 270.0, 39.0, 22.0 ],
-                    "text": "click~"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-10",
-                    "maxclass": "button",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 614.0, 213.0, 24.0, 24.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 614.0, 213.0, 24.0, 24.0 ]
-                }
-            },
-            {
-                "box": {
                     "id": "obj-45",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -2112,23 +2088,6 @@
                                 "box": {
                                     "fontface": 0,
                                     "fontname": "Arial",
-                                    "fontsize": 12.0,
-                                    "id": "obj-7",
-                                    "linecount": 8,
-                                    "maxclass": "comment",
-                                    "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 186.0, 181.0, 163.0, 114.0 ],
-                                    "presentation": 1,
-                                    "presentation_linecount": 4,
-                                    "presentation_rect": [ 7.0, 298.0, 329.0, 60.0 ],
-                                    "text": "Based on\nHarbour, E., Lasshofer, M., Genitrini, M., & Schwameder, H. (2021). Enhanced breathing pattern detection during running using wearable sensors. Sensors, 21(16), 5606."
-                                }
-                            },
-                            {
-                                "box": {
-                                    "fontface": 0,
-                                    "fontname": "Arial",
                                     "fontsize": 13.0,
                                     "id": "obj-6",
                                     "linecount": 8,
@@ -2232,12 +2191,6 @@
             }
         ],
         "lines": [
-            {
-                "patchline": {
-                    "destination": [ "obj-13", 0 ],
-                    "source": [ "obj-10", 0 ]
-                }
-            },
             {
                 "patchline": {
                     "destination": [ "obj-94", 0 ],
@@ -2380,12 +2333,6 @@
                 "patchline": {
                     "destination": [ "obj-23", 3 ],
                     "source": [ "obj-127", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-120", 0 ],
-                    "source": [ "obj-13", 0 ]
                 }
             },
             {

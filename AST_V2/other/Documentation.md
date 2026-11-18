@@ -109,9 +109,9 @@ Conducted as a collaboration between academic and industry partners.
 - **Input Modes**:
 
   **Recorded Data Mode**:
-  - Input data as a 2-channel `.wav` file:
-    - **Channel 1**: Timestamps  
-    - **Channel 2**: Signal values  
+  - Input data as a `.json` file per channel:
+    - **Metadata**: Number of samples, minimum, maximum, mean, and duration  
+    - **Samples**: Timestamps and signal values  
   - Dynamic playback engine with variable speed  
   - Waveform navigation and time selection  
 
@@ -122,7 +122,7 @@ Conducted as a collaboration between academic and industry partners.
     - **MIDI**
     - **Game Controller**
   - Flexible data parsing using address filtering and list item selection  
-  - Recording of incoming data streams to `.wav` files compatible with Recorded Data Mode  
+  - Recording of incoming data streams to `.json` files compatible with Recorded Data Mode  
   - Recording sample rate: **200 Hz**  
   - Raw data is recorded without normalization  
 
@@ -142,7 +142,7 @@ Conducted as a collaboration between academic and industry partners.
 
 - **Audio Output Recording**:
   - The final synthesized audio output can be recorded in both Recorded Data Mode and Real-Time Input Mode.
-  - Enables saving the resulting sonification as a standard audio file for further analysis, sharing, or documentation.
+  - Enables saving the resulting sonification as a standard `.wav` audio file for further analysis, sharing, or documentation.
 
 ![Audio Output Recording](./media/DOC_audio_rec.png)
 
@@ -176,7 +176,7 @@ The UI provides playback control, waveform navigation, and data inspection.
 #### Channel View
 Each input channel includes:
 
-- File loader for `.wav` input  
+- File loader for `.json` input  
 - File information (min, max, average values)  
 - Interactive waveform display with zoom and selection  
 - Playback position cursor  
@@ -189,57 +189,81 @@ This section describes in detail how recorded datasets must be formatted in orde
 
 #### Overview
 
-Recorded data in AST_v2 is stored using standard `.wav` files.  
-However, these files are **not used as audio signals** in the traditional sense.
+Recorded data in AST_v2 is stored using `.json` files.  
+Each file contains a single data stream with two top-level elements:
 
-Instead, `.wav` files act as **structured data containers** for time-series data.
-
-Each file encodes a single data stream using two channels:
-
-- **Channel 1** → Timestamps  
-- **Channel 2** → Signal values  
+- **`metadata`** → Information about the recorded data  
+- **`samples`** → Timestamp and signal value pairs  
 
 
-#### Important Concept: WAV as Data Container
+#### Important Concept: JSON as Data Container
 
-Although `.wav` is an audio format, in this context:
+JSON files act as **structured data containers** for time-series data, not as audio signals.
 
-- The data is **not interpreted as sound**
-- The **sampling rate in the file header is not functionally relevant**
-- Playback timing is **not derived from the sample rate**
+- Each sample contains a timestamp and a signal value
+- Playback timing is **not derived from a fixed sampling rate**
 
 Instead:
 
-- The toolkit reads the **timestamp channel (Channel 1)**
+- The toolkit reads the **timestamp** of each sample
 - Timing is reconstructed **dynamically in real time**
 - This allows:
   - Non-uniform sampling
   - Variable playback speed
-  - Accurate temporal reconstruction independent of file metadata
+  - Accurate temporal reconstruction independent of a fixed sampling rate
 
 
 #### File Format Specification
 
 #### General Format
 
-- File type: `.wav`
-- Channels: **2 (stereo)**
-- Data type: **32-bit floating point (float32)**
-- Encoding: **Uncompressed PCM float**
+- File type: `.json`
+- Data streams: **1 per file**
+- Structure: **`metadata` object and `samples` array**
+- Data type: **JSON numbers** for timestamps and signal values
 - Normalization: **none (raw values preserved)**
 
-#### Channel Structure
+#### JSON Structure
 
-| Channel | Content        | Data Type | Description |
-|--------|----------------|----------|-------------|
-| 1      | Timestamps     | float32  | Time value per sample |
-| 2      | Signal values  | float32  | Measured data |
+Each file contains the following mandatory metadata fields:
 
+| Field | Description |
+|-------|-------------|
+| `numSamples` | Number of samples |
+| `minValue` | Minimum signal value |
+| `maxValue` | Maximum signal value |
+| `meanValue` | Mean signal value |
+| `duration` | Total duration in seconds |
+
+Each entry in the `samples` array contains:
+
+| Field | Description |
+|-------|-------------|
+| `timestamp` | Time value in seconds |
+| `value` | Measured data value |
+
+Example:
+
+```json
+{
+  "metadata": {
+    "numSamples": 2,
+    "minValue": 0.12,
+    "maxValue": 0.15,
+    "meanValue": 0.135,
+    "duration": 0.005
+  },
+  "samples": [
+    { "timestamp": 0.0, "value": 0.12 },
+    { "timestamp": 0.005, "value": 0.15 }
+  ]
+}
+```
 
 #### Timestamps
 
 - Unit: **seconds**
-- Format: **float32**
+- Format: **JSON number**
 - Resolution: depends on source data (e.g. 200 Hz → 0.005 s steps)
 
 Example:
@@ -261,7 +285,7 @@ Key points:
 
 #### Signal Values
 
-- Format: **float32**
+- Format: **JSON number**
 - Range: **unrestricted**
 - No normalization is required
 
@@ -271,15 +295,15 @@ Typical cases:
 - Preprocessed signals
 - Feature streams (e.g. magnitude, detection outputs)
 
-#### Sampling Rate (Header)
+#### Sampling Rate
 
-The `.wav` file still contains a sampling rate in its header (e.g. 48000 Hz), but:
+JSON files do not contain an audio sampling rate header.
 
-- It is **only required for file compatibility**
-- It does **not determine playback timing in AST_v2**
+- Real-Time Mode currently records data at **200 Hz**
+- Playback timing in AST_v2 is determined by the **timestamps**, not the recording rate
 
 
-#### Creating Compatible WAV Files
+#### Creating Compatible JSON Files
 
 Recorded data can be generated either:
 
@@ -287,7 +311,7 @@ Recorded data can be generated either:
 2. **Externally (e.g. from CSV using Python)**  
 
 
-#### Example: Creating WAV Files from CSV
+#### Example: Creating JSON Files from CSV
 
 #### Input Requirements
 
@@ -322,12 +346,13 @@ Time, Data
 
 For each signal column:
 
-- Read timestamp column → convert to **float32 seconds**
-- Read signal column → convert to **float32**
-- Combine into a 2-channel array:
-  - Channel 1 → timestamps  
-  - Channel 2 → signal values  
-- Write as `.wav`
+- Read timestamp column → convert to **seconds**
+- Read signal column → convert to **numeric values**
+- Combine timestamps and signal values into a `samples` array:
+  - `timestamp` → time in seconds  
+  - `value` → signal value  
+- Create the mandatory `metadata` fields: `numSamples`, `minValue`, `maxValue`, `meanValue`, `duration`
+- Write as `.json` (one file per signal column)
 
 
 #### Minimal Example (Pseudo-code)
@@ -339,8 +364,9 @@ GET timestamps (convert to seconds if needed)
 GET data
 
 FOR each signal column:
-    COMBINE (timestamps, date) → 2-channel data
-    SAVE as float32 WAV
+    COMBINE timestamps and values → samples [{timestamp, value}, ...]
+    CALCULATE metadata (numSamples, minValue, maxValue, meanValue, duration)
+    SAVE {metadata, samples} as JSON
 
 END
 ```
@@ -392,10 +418,10 @@ The UI provides configuration and monitoring of incoming data streams.
 - A **Recording Section** in the main panel controls recording  
 - When recording is active:
   - All channels with recording enabled are written to a separate file  
-  - Output format matches the Recorded Data Mode (`2-channel .wav`)  
+  - Output format matches the Recorded Data Mode (`.json`)  
   - Data is stored as:
-    - Channel 1: timestamps  
-    - Channel 2: raw signal values  
+    - `metadata`: `numSamples`, `minValue`, `maxValue`, `meanValue`, `duration`  
+    - `samples`: timestamps and raw signal values  
   - No normalization is applied during recording  
   - Sampling rate: **200 Hz**  
 
